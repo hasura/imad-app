@@ -1,3 +1,3 @@
-# imad-app-v2
+# imad-app
 
-IMAD V2 course application.
+IMAD course application.
