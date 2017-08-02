@@ -37,7 +37,7 @@ function createTemplate(data) {
         <html>
             <head>
                 <title>
-                    $[title]
+                    ${title}
                 </title>
                 <link href="/ui/style.css" rel="stylesheet" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
