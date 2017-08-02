@@ -26,13 +26,13 @@ var articles = {
     }
 };
 
-function createTemplete(data) {
+function createTemplate(data) {
     
     var title = data.title;
     var heading = data.heading;
     var date = data.date;
     var content = data.content;
-    var htmlTemplete = `
+    var htmlTemplate = `
         <!doctype html>
         <html>
             <head>
@@ -59,6 +59,7 @@ function createTemplete(data) {
             </body>
         </html>
     `;
+    return htmlTemplate;
 }
 
 app.get('/', function (req, res) {
@@ -68,7 +69,7 @@ app.get('/', function (req, res) {
 app.get('/:articleName', function (req, res) { // this is the feature of express framework
     // This is the object of articles names which we will pass in url bar
     var articleName = req.params.articleName;
-    res.send(createTemplete(articles[articleName]));
+    res.send(createTemplate(articles[articleName]));
 });
 
 
