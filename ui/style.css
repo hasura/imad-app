@@ -21,11 +21,12 @@ body {
 }
 
 .container {
-    max-width: 800px;
+    
     font-family: sans-serif;
     padding-top: 60px;
     padding-left: 20px;
     padding-right: 20px;
     margin: 0 auto;
     color: grey;
+    max-width: 800px;
 }
