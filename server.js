@@ -15,13 +15,13 @@ var articles = {
     'article-two' : {
       title: 'Article Two | Nitin Jain',
       heading: 'Article Two',
-      date: 'August 2 2017',
+      date: 'August 3 2017',
       content: '<p>This is the content for the article two.</p>'
     },
     'articl-tThree' : {
       title: 'Article Three | Nitin Jain',
       heading: 'Article Three',
-      date: 'August 2 2017',
+      date: 'August 4 2017',
       content: '<p>This is the content for the article three.</p>'
     }
 };
@@ -32,31 +32,33 @@ function createTemplete(data) {
     var heading = data.heading;
     var date = data.date;
     var content = data.content;
-    var htmlTemplete = `<!doctype html>
-<html>
-    <head>
-        <title>
-            $[title]
-        </title>
-        <link href="/ui/style.css" rel="stylesheet" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-    </head>
-    <body>
-        <div class="container">
-            <a href='/'>Home</a>
-            <hr/>
-            <h3>
-                $[heading]
-            </h3>
-            <div>
-                $[date]
-            </div>
-            <div>
-                $[content]
-            </div>
-        </div>
-    </body>
-</html>`;
+    var htmlTemplete = `
+        <!doctype html>
+        <html>
+            <head>
+                <title>
+                    $[title]
+                </title>
+                <link href="/ui/style.css" rel="stylesheet" />
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+            </head>
+            <body>
+                <div class="container">
+                    <a href='/'>Home</a>
+                    <hr/>
+                    <h3>
+                        ${heading}
+                    </h3>
+                    <div>
+                        ${date}
+                    </div>
+                    <div>
+                        ${content}
+                    </div>
+                </div>
+            </body>
+        </html>
+    `;
 }
 
 app.get('/', function (req, res) {
