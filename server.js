@@ -18,7 +18,7 @@ var articles = {
       date: 'August 3 2017',
       content: '<p>This is the content for the article two.</p>'
     },
-    'articl-tThree' : {
+    'article-three' : {
       title: 'Article Three | Nitin Jain',
       heading: 'Article Three',
       date: 'August 4 2017',
