@@ -4,13 +4,19 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
-
-var articleone = {
-   title: 'Senthilkumars', 
+var articles = {
+    'article-one': {
+    title: 'Senthilkumars', 
    heading: 'Article one',
    content: ' Whats up bro . This is my first project and it is successful. I am really happy at this point and i want to improve this page. blah... blah... blah... blah... blah... blah... blah... blah... blah... blah... blah... blah... blah...blah... blah... blah...blah...blah...blah...blah...blah...blah...blah...vvblah...blah...blah...vblah...blah...blah...blah...vvblah...blah...blah...vblah...blah...blah...blah...blah...blah...blah...blah...blah...blah...blah...blah...blah...'
-    
+    },
+    'article-two':{
+    title: 'Senthilkumars2', 
+   heading: 'Article two',
+   content: ' Whats up bro . This is my first project and it is successful. I am really happy at this point and i want to improve this page. blah... blah... blah... blah... blah... blah... blah... blah... blah... blah... blah... blah... blah...blah... blah... blah...blah...blah...blah...blah...blah...blah...blah...vvblah...blah...blah...vblah...blah...blah...blah...vvblah...blah...blah...vblah...blah...blah...blah...blah...blah...blah...blah...blah...blah...blah...blah...blah...'
+    },
 };
+
 function createtemplate (data) {
     var title = data.title;
     var heading = data.heading;
@@ -42,15 +48,13 @@ return htmltemplate;
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
-app.get('/article-one', function (req, res) {
-  res.send(createtemplate(articleone));
+app.get('/:articlename', function (req, res) {
+  var articlename = req.params.articlename;
+  res.send(createtemplate(articles(articlename)));
 });
-app.get('/article-two', function (req, res) {
-   res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
-});
-app.get('/article-three', function (req, res) {
-  res.send('This is article three');
-});
+
+ 
+
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
