@@ -13,7 +13,7 @@ var articles = {
     'article-two':{
     title: 'Senthilkumars2', 
    heading: 'Article two',
-   content: ' Whats up bro . This is my first project and it is successful. I am really happy at this point and i want to improve this page. blah... blah... blah... blah... blah... blah... blah... blah... blah... blah... blah... blah... blah...blah... blah... blah...blah...blah...blah...blah...blah...blah...blah...vvblah...blah...blah...vblah...blah...blah...blah...vvblah...blah...blah...vblah...blah...blah...blah...blah...blah...blah...blah...blah...blah...blah...blah...blah...'
+   content: ' This is my second project and it is successful. I am really happy at this point and i want to improve this page. blah... blah... blah... blah... blah... blah... blah... blah... blah... blah... blah... blah... blah...blah... blah... blah...blah...blah...blah...blah...blah...blah...blah...vvblah...blah...blah...vblah...blah...blah...blah...vvblah...blah...blah...vblah...blah...blah...blah...blah...blah...blah...blah...blah...blah...blah...blah...blah...'
     },
 };
 
