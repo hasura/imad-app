@@ -10,7 +10,7 @@ var marginLeft = 0;
 
 function moveRight() // when u click on the image, every 100 ms the moveRight funtion will be called.
 {
-    marginLeft= marginLeft+10;
+    marginLeft= marginLeft+5;
     img.style.marginLeft= marginLeft +'px'; 
 }
 img.onclick= function()
@@ -19,5 +19,5 @@ img.onclick= function()
    //when u click on the image, then it will increase the left margin to the left, so it will feel like the image is moving to the right a little.
    
    
-   var interval= setInterval(moveRight,100);//this means, every 100ms apply the moveright function
+   var interval= setInterval(moveRight,50);//this means, every 100ms apply the moveright function
 }
