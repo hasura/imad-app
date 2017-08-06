@@ -23,12 +23,12 @@ var htmlTemplate= `
         <title>
                 ${title}
         </title>
-        <link href="/ui/style.css" rel="stylesheet" />
+        
         
     </head>
     
     <body>
-        <div class="container">
+        <div>
             <h3>
                  ${heading}
             </h3>
