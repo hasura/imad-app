@@ -27,7 +27,7 @@ app.get('/article-two', function(req,res)
 });
 
 app.get('ELAD 20170805_074723.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'ELAD 20170805_074723.jpg '));
+  res.sendFile(path.join(__dirname, 'ELAD 20170805_074723.jpg '));
 });
 
 app.get('/ui/madi.png', function (req, res) {
