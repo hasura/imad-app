@@ -26,7 +26,7 @@ app.get('/article-two', function(req,res)
    res.sendFile(path.join(__dirname, 'article-two.html'));
 });
 
-app.get('ELAD 20170805_074723.jpg', function (req, res) {
+app.get('/ELAD 20170805_074723.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ELAD 20170805_074723.jpg '));
 });
 
