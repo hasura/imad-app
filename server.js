@@ -11,7 +11,7 @@ var articleOne={
     date: 'Sept 5, 2016',
     content: 'This is article one'
 };
-
+//this funciton allows us to prevent code reuse
 function createTemplate(data){
 var title= data.title;
 var date= data.date;
