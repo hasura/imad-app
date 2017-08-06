@@ -4,7 +4,7 @@ var element= document.getElementById('main-text');
 element.innerHTML='vaishnavi';
 
 //move the image
-var img= document.getElementById('img');
+var img= document.getElementById('madi');
 //on click is an executer function
 img.onclick= function()
 {
