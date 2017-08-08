@@ -89,12 +89,12 @@ app.get('/:articleName', function (req, res) {
   var articleName=req.params.articleName;
   res.send(createTemplate(articles[articleName]));
 });
-app.get('/articleTwo', function (req, res) {
-   res.sendFile(path.join(__dirname,'ui','articleTwo.html'));
-});
-app.get('/articleThree', function (req, res) {
-   res.sendFile(path.join(__dirname,'ui','articleThree.html'));
-});
+//app.get('/articleTwo', function (req, res) {
+  // res.sendFile(path.join(__dirname,'ui','articleTwo.html'));
+//});
+//app.get('/articleThree', function (req, res) {
+ //  res.sendFile(path.join(__dirname,'ui','articleThree.html'));
+//});
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
