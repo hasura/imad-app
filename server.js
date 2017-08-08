@@ -1,5 +1,5 @@
 var articles={
-articleOne:{
+articleone:{
     title:'Article One',
     heading:'Article One',
     date:'Sep 5 2016',
@@ -12,7 +12,7 @@ articleOne:{
               This is the content for my first article.This is the content for my first article.This is the content for my first article.
           </p>`
 },
-articleTwo:{title:'Article Two',
+articletwo:{title:'Article Two',
     heading:'Article Two',
     date:'Sep 5 2016',
     content:`<p>
@@ -23,7 +23,7 @@ articleTwo:{title:'Article Two',
               This is the content for my second article. This is the content for my second article. This is the content for my second article. 
               This is the content for my second article. This is the content for my second article. This is the content for my second article. 
           </p>`},
-articleThree:{title:'Article Three',
+articlethree:{title:'Article Three',
 heading:'Article Three',
 date:'Sep 5 2016',
 content:`<p>
@@ -86,7 +86,7 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 app.get('/articleOne', function (req, res) {
-  res.send(createTemplate(articleOne));
+  res.send(createTemplate(articles[articleName]));
 });
 app.get('/articleTwo', function (req, res) {
    res.sendFile(path.join(__dirname,'ui','articleTwo.html'));
