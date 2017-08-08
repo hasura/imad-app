@@ -45,16 +45,16 @@ var htmltemplate=`<html>
    <title>
         ${title}
    </title>
-   <style>
-       .container{
-    margin: 0 auto;
-    color: darkgrey;
-    font-family: sans-serif;
-    padding-right: 20px; 
-    padding-top: 50px;
-    padding-left: 20px;
-   }
-   </style>
+ //  <style>
+   //    .container{
+    //margin: 0 auto;
+    //color: darkgrey;
+    //font-family: sans-serif;
+    //padding-right: 20px; 
+    //padding-top: 50px;
+    //padding-left: 20px;
+   //}
+   //</style>
  </head>
  <body>
     <div class="container">
