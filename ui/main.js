@@ -1,3 +1,3 @@
 console.log('Loaded!');
-document.getElementById('maintext');
+var element=document.getElementById('maintext');
 element.innerHTML='New Value';
