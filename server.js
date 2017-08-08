@@ -5,6 +5,15 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
+var content = {
+    title : 'Sandeep Gengineri | Article One',
+    heading : 'Article One',
+    date : 'Aug 06, 2017',
+    content :`<p>
+            This is my first Paragraph
+        </p>`
+};
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
