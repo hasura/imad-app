@@ -85,7 +85,8 @@ app.use(morgan('combined'));
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
-app.get('/articleOne', function (req, res) {
+app.get('/:articleName', function (req, res) {
+  var articleName=req.params.articleName;
   res.send(createTemplate(articles[articleName]));
 });
 app.get('/articleTwo', function (req, res) {
