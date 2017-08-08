@@ -1,5 +1,5 @@
 var articles={
-articleone:{
+'article-one':{
     title:'Article One',
     heading:'Article One',
     date:'Sep 5 2016',
@@ -12,7 +12,7 @@ articleone:{
               This is the content for my first article.This is the content for my first article.This is the content for my first article.
           </p>`
 },
-articletwo:{title:'Article Two',
+'article-two':{title:'Article Two',
     heading:'Article Two',
     date:'Sep 5 2016',
     content:`<p>
@@ -23,7 +23,7 @@ articletwo:{title:'Article Two',
               This is the content for my second article. This is the content for my second article. This is the content for my second article. 
               This is the content for my second article. This is the content for my second article. This is the content for my second article. 
           </p>`},
-articlethree:{title:'Article Three',
+'article-three':{title:'Article Three',
 heading:'Article Three',
 date:'Sep 5 2016',
 content:`<p>
