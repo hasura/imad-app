@@ -12,12 +12,12 @@ app.get('/artical1', function(req, res) {
     res.send("artical one is geting started its fine!!!!");
 });
 
-app.get('/artical1', function(req, res) {
-    res.send("artical one is geting started its fine!!!!");
+app.get('/artical2', function(req, res) {
+    res.send("artical 2 is geting started its fine!!!!");
 });
 
-app.get('/artical1', function(req, res) {
-    res.send("artical one is geting started its fine!!!!");
+app.get('/artical3', function(req, res) {
+    res.send("artical 3 is geting started its fine!!!!");
 });
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
