@@ -15,6 +15,28 @@ var articleOne = {
                 html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.
             <p>`
 };
+var articleTwo = {
+  title:'Article Two: Learning to use html  is really simple',
+  heading:'Article Two',
+  content:`<p>
+                html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.
+            <p>
+            <p>
+                html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.
+            <p>`
+};
+
+var articleThree = {
+  title:'Article Three: Learning to use html  is really simple',
+  heading:'Article Three',
+  content:`<p>
+                html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.
+            <p>
+            <p>
+                html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.
+            <p>`
+};
+
 function createTemplate(data){
 var title = data.title;    
 var heading = data.heading;
@@ -59,10 +81,12 @@ app.get('/article-one', function (req, res) {
 });
 
 app.get('/article-two', function (req, res) {
- res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));});
+res.send(createTemplate(articleTwo));
+}); 
 
 app.get('/article-three', function (req, res) {
- res.sendFile(path.join(__dirname, 'ui', 'article-three.html'));});
+res.send(createTemplate(articleThree));
+});
 
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
