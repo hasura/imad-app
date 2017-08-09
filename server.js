@@ -6,7 +6,7 @@ var app = express();
 app.use(morgan('combined'));
 
 var articles = {
- 'articleone' : {
+ 'article-one' : {
   title:'Article 1: Learning to use html is really simple!!',
   heading:'Article One',
   content:`<p>
@@ -16,7 +16,7 @@ var articles = {
                 html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.
             <p>`
 },
- 'articletwo' : {
+ 'article-two' : {
   title:'Article Two: Learning to use html  is really simple',
   heading:'Article Two',
   content:`<p>
@@ -26,7 +26,7 @@ var articles = {
                 html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.
             <p>`
 },
- 'articlethree' : {
+ 'article-three' : {
   title:'Article Three: Learning to use html  is really simple',
   heading:'Article Three',
   content:`<p>
