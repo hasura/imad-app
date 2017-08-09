@@ -10,15 +10,15 @@ app.get('/', function (req, res) {
 });
 
 app.get('/article-one', function (req, res) {
-  res.sendFile("Article one will be uploaded in a few days");
+  res.send("Article one will be uploaded in a few days");
 });
 
 app.get('/article-two', function (req, res) {
-  res.sendFile("Article two will be uploaded in a few days");
+  res.send("Article two will be uploaded in a few days");
 });
 
 app.get('/article-three', function (req, res) {
-  res.sendFile("Article three will be uploaded in a few days");
+  res.send("Article three will be uploaded in a few days");
 });
 
 app.get('/ui/style.css', function (req, res) {
