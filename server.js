@@ -9,15 +9,15 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('http://amoghprajapati.imad.hasura-app.io/article-one', function (req, res) {
+app.get('/article-one', function (req, res) {
   res.sendFile("Article one will be uploaded in a few days");
 });
 
-app.get('http://amoghprajapati.imad.hasura-app.io/article-two', function (req, res) {
+app.get('/article-two', function (req, res) {
   res.sendFile("Article two will be uploaded in a few days");
 });
 
-app.get('http://amoghprajapati.imad.hasura-app.io/article-three', function (req, res) {
+app.get('/article-three', function (req, res) {
   res.sendFile("Article three will be uploaded in a few days");
 });
 
