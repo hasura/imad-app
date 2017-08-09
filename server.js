@@ -5,7 +5,8 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var articleOne = {
+var articles = {
+ articleOne : {
   title:'Article 1: Learning to use html is really simple!!',
   heading:'Article One',
   content:`<p>
@@ -14,8 +15,8 @@ var articleOne = {
             <p>
                 html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.
             <p>`
-};
-var articleTwo = {
+},
+ articleTwo : {
   title:'Article Two: Learning to use html  is really simple',
   heading:'Article Two',
   content:`<p>
@@ -24,9 +25,8 @@ var articleTwo = {
             <p>
                 html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.
             <p>`
-};
-
-var articleThree = {
+},
+ articleThree : {
   title:'Article Three: Learning to use html  is really simple',
   heading:'Article Three',
   content:`<p>
@@ -35,6 +35,7 @@ var articleThree = {
             <p>
                 html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.
             <p>`
+}
 };
 
 function createTemplate(data){
@@ -72,20 +73,13 @@ var htmlTemplate =
 `;
 return htmlTemplate;
 }
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/article-one', function (req, res) {
- res.send(createTemplate(articleOne));
-});
-
-app.get('/article-two', function (req, res) {
-res.send(createTemplate(articleTwo));
-}); 
-
-app.get('/article-three', function (req, res) {
-res.send(createTemplate(articleThree));
+app.get('/:articleName', function (req, res) {
+ res.send(createTemplate(artices[articleName]));
 });
 
 app.get('/ui/style.css', function (req, res) {
