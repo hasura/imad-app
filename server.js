@@ -16,7 +16,7 @@ var articles = {
                 html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.
             <p>`
 },
- article-two : {
+ article-Two : {
   title:'Article Two: Learning to use html  is really simple',
   heading:'Article Two',
   content:`<p>
@@ -26,7 +26,7 @@ var articles = {
                 html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.html is one of the most simple syntax of any language that is interpreted by software.
             <p>`
 },
- article-three : {
+ article-Three : {
   title:'Article Three: Learning to use html  is really simple',
   heading:'Article Three',
   content:`<p>
