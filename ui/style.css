@@ -20,7 +20,7 @@ body {
     height: 200px;
 }
 .container {
-    max-width: 100px;
+    max-width: 1000px;
     padding-left: 80px;
     font-family: sans-serif;
     /* background-color: lightgrey; */
