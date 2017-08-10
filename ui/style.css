@@ -21,11 +21,11 @@ body {
 }
 .container {
     max-width: 100px;
-    color: #000;
-    font : sans-serif;
-    padding top: 80px;
-    padding right: 80px;
-    padding left: 80px;
+    color: red;
+    font: sans-serif;
+    padding-top: 100px;
+    padding-right: 80px;
+    padding-left: 80px;
     
     
 }
