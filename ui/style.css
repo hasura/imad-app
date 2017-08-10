@@ -17,9 +17,10 @@ body {
 }
 
 .img-medium {
-    height: 4000px;
+    height: 400px;
 }
 .container {
+    height: 4000px;
     max-width: 1000px;
     margin: 0 auto;
     padding-left: 80px;
