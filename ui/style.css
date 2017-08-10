@@ -17,6 +17,21 @@ body {
 }
 
 .img-medium {
-    height: 200px;
+    height: 400px;
 }
+.container {
+    height: 1000px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-left: 80px;
+    font-family: sans-serif;
+    /* background-color: lightgrey; */
+    margin-top: 75px;
+    background-color: #8fc351;
+}
+
+    
+
+
+    
 
