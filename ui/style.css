@@ -21,6 +21,7 @@ body {
 }
 .container {
     max-width: 1000px;
+    margin: 0 auto;
     padding-left: 80px;
     font-family: sans-serif;
     /* background-color: lightgrey; */
