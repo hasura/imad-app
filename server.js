@@ -23,9 +23,11 @@ function makePage(data) {
           </head>
           <body>
             <div class = "container">
-                <a href="/"> Home </a?
-                <br/>
-                 <h1>
+                <div>
+                    <a href="/"> Home </a?
+                    <br/>
+                </div>
+                <h1>
                     ${data.header}
                  </h1>
                 <div>
