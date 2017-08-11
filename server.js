@@ -24,7 +24,7 @@ function makePage(data) {
           <body>
             <div class = "container">
                 <div>
-                    <a href="/"> Home </a?
+                    <a href="/" > Home </a>
                     <br/>
                 </div>
                 <h1>
