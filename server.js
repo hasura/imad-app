@@ -4,15 +4,39 @@ var path = require('path');
 
 var app = express();
 
-var pageContent = {
-    title: "iMAD Web Application Example",
-    date: "11-Aug-2017",
-    header: "Main Page",
-    content: `<p>This is contents for Page 1 which is pretty long
-    and has several few lines of text, written into the server dot js file
-    as an object </p>
-    <p> This is another paragraph to show how paragraphs are formatted by html and how
-    they are distinguished </p>`
+var pageContents = {
+    'article-one' : {
+        title: "iMAD Web Application Example",
+        date: "11-Aug-2017",
+        header: "Main Page",
+        content: `<p>This is contents for Page 1 which is pretty long
+        and has several few lines of text, written into the server dot js file
+        as an object </p>
+        <p> This is another paragraph to show how paragraphs are formatted by html and how
+        they are distinguished </p>`
+    },
+    'article-two' : {
+        title: "iMAD Web Application Refresher",
+        date: "24-Sep-2016",
+        header: "Page Two",
+        content: `<h1>Important </h1>
+        <p> In order to make your learning process smooth and your experience at IMAD better, we advise you to please read 
+        this </p>`  
+    },
+    'article-three' : {
+        title: "iMAD Web Application Reminder",
+        date: "15-Nov-2015",
+        header: "Page Three",
+        content: `<h1>Attention </h1>
+        <p> As a poke at Emacs' creeping featurism, vi advocates have been known to describe Emacs as "a great operating system, lacking only a decent editor". Emacs advocates have been known to respond that the editor is actually very good, but the operating system could use improvement (referring to Emacs' famous lack of concurrency.) </p>
+        <p> 
+            A game among UNIX users, either to test the depth of an Emacs user's understanding of the editor or to poke fun at the complexity of Emacs, involved predicting what would happen if a user held down a modifier key (such as Control or Alt) and typed their own name. A similar "game" was reportedly played[32] among users of the old TECO editor, in which lay the roots of Emacs.
+        </p>
+        <p>
+        Due to the unintuitive character sequence to exit vi (":q!"), hackers joke that there is a proposed method of creating a pseudorandom character sequence by having a user unfamiliar with vi seated in front of an open editor and asking them to exit the program.
+        </p>
+        `         
+    }
 };
 function makePage(data) {
     var frontPageTemplate = `
@@ -55,8 +79,8 @@ app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 
-app.get('/article-one', function (req,res) {
-    res.send(makePage(pageContent));
+app.get('/:articleName', function (req,res) {
+    res.send(makePage(pageContents[req.params.articleName]));
 });
 
 // Do not change port, otherwise your app won't run on IMAD servers
