@@ -10,6 +10,7 @@ body {
 
 .text-big {
     font-size: 300%;
+    border-color:#345678;
     border-style:groove;
 }
 
