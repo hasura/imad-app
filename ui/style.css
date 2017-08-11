@@ -11,6 +11,7 @@ body {
 .text-big {
     color:#999999;
     font-size: 300%;
+    border-width:thick;
     border-color:#FF44FF;
     border-style:groove;
 }
