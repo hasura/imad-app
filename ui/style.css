@@ -2,10 +2,7 @@ body
 {
     font-family: sans-serif;
     background-color: #176587;
-    border-width:thick;
-    border-color:#FFFF00;
-    border-style:ridge;
-    margin-top: 75px;
+   
 }
 
 .center
@@ -27,5 +24,9 @@ body
 .img-medium
 {
     height:300px;
+    border-width:thick;
+    border-color:#FFFF00;
+    border-style:ridge;
+    margin-top: 75px;
 }
 
