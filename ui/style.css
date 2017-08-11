@@ -1,6 +1,6 @@
 body {
     font-family: sans-serif;
-    background-color: #F6F6F6;
+    background-color: #000000;
     margin-top: 75px;
 }
 
@@ -9,6 +9,7 @@ body {
 }
 
 .text-big {
+    color:#999999;
     font-size: 300%;
     border-color:#FF44FF;
     border-style:groove;
