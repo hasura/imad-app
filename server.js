@@ -5,7 +5,7 @@ var path = require('path');
 var app = express();
 
 var pageContent = {
-    title: "iMad Web Appliation Example",
+    title: "iMAD Web Application Example",
     date: "11-Aug-2017",
     header: "Main Page",
     content: `<p>This is contents for Page 1 which is pretty long
@@ -23,10 +23,6 @@ function makePage(data) {
           </head>
           <body>
             <div class = "container">
-                <div>
-                    <a href="/", Home /a>
-                </div>
-                <br/>
                  <h1>
                     ${data.header}
                  </h1>
