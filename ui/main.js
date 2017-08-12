@@ -10,7 +10,7 @@ function moveDrago(){
     }
     else if (leftmarg == 10)
     {
-        rightmar = rightmarg + 1;
+        rightmarg = rightmarg + 1;
         img.style.marginRight = rightmarg + 'px';
         if(rightmarg == 10)
         {
