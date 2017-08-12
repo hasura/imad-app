@@ -64,3 +64,9 @@ function Sound(source,volume,loop)
         this.loop=loop;
     }
 }
+var foo=new Sound('/ui/Raptor.mp3',100,true);
+foo.start();
+foo.stop();
+foo.start();
+foo.init(100,false);
+foo.remove();
