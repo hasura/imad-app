@@ -13,8 +13,12 @@ body {
     font-size: 300%;
 }
 
+.style
+{
+    font:"text-shadow:4px 4px 8px blue";
+}
 .bold {
-    font-weight: bold;
+    font-weight: bold
 }
 
 .img-medium {
