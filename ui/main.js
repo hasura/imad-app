@@ -15,6 +15,7 @@ function moveDrago(){
         if(rightmarg >= 10)
         {
             leftmarg = 0;
+            rightmarg = 0;
         }
     }
     else
