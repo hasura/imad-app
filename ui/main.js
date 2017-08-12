@@ -25,5 +25,5 @@ function moveDrago(){
     }
 }
 img.onclick = function(){
-    var interval = setInterval(moveDrago, 50);
+    var interval = setInterval(moveDrago, 1);
 };
