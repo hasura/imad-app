@@ -1,6 +1,6 @@
 console.log('Loaded!');
 
-var img = document.getElementbyId('drago');
+var img = document.getElementById('drago');
 var leftmarg = 0;
 function moveright(){
     leftmarg = leftmarg + 1;
