@@ -1,6 +1,6 @@
 body {
-    font-family: sans-serif;
-    background-color: lightgrey;
+    font-family: georgia;
+    background-color: black;
     margin-top: 75px;
 }
 
@@ -9,14 +9,19 @@ body {
 }
 
 .text-big {
+    color:cyan;
     font-size: 300%;
 }
 
+.style
+{
+    font:"text-shadow:4px 4px 8px blue";
+}
 .bold {
-    font-weight: bold;
+    font-weight: bold
 }
 
 .img-medium {
-    height: 200px;
+    height: 300px;
 }
 
