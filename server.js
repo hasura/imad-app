@@ -14,7 +14,7 @@ app.get('/ui/style.css', function (req, res) {
 });
 
 app.get('/articleone', function (req, res) {
-  res.sendFile('Article requested will be hosted here');
+  res.send('Article requested will be hosted here');
 });
 
 app.get('/ui/madi.png', function (req, res) {
