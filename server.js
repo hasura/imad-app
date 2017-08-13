@@ -14,7 +14,7 @@ app.get('/ui/style.css', function (req, res) {
 });
 
 app.get('/articleone', function (req, res) {
-  res.sendFile(path.join('https://www.qualcomm.co.in/','/products', '/snapdragon'));
+  res.sendFile('Article requested will be hosted here');
 });
 
 app.get('/ui/madi.png', function (req, res) {
