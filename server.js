@@ -5,6 +5,11 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
+app.get('/aswin',function(req,res)
+{
+    res.send('i love Heisorone cecilia who is my sister and i love her');
+});
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
