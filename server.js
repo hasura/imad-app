@@ -14,7 +14,7 @@ app.get('/ui/style.css', function (req, res) {
 });
 
 app.get('/ui/article-one',function(req,res){
-    res.sendfile(path.join(_dirname,'ui','article_one.html'));
+    res.sendfile(path.join(_dirname,'article_one.html'));
 });
 
 app.get('/ui/article-two',function(req,res){
