@@ -5,6 +5,14 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
+app.get('/article-one', function (req, res){
+    res.sendFile(path.join(__dirname, 'ui','article-one.html'));
+});
+
+app.get('/article-two.html', function (req, res){
+    res.sendFile(path.join(__dirname, 'ui','article-two.html'));
+});
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
