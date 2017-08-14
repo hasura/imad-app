@@ -6,9 +6,33 @@ var app = express();
 app.use(morgan('combined'));
 
 var articles = {
-    'article-one':{},
-    'article-two':{},
-    'article-three':{}
+    'article-one':{
+        title: 'Chandu Srinivas | Article One',
+        heading: 'Article One',
+        date: 'Aug 13, 2017',
+        content:`
+        <p>
+            This is the content for my first article
+        </p>`
+    },
+    'article-two':{
+        title: 'Chandu Srinivas | Article Two',
+        heading: 'Article Two',
+        date: 'Aug 18, 2017',
+        content:`
+        <p>
+            This is the content for my second article
+        </p>`
+    },
+    'article-three':{
+        title: 'Chandu Srinivas | Article Three',
+        heading: 'Article Three',
+        date: 'Aug 25, 2017',
+        content:`
+        <p>
+            This is the content for my Third article
+        </p>`
+    }
 };
 
 function createTemplate (data) {}
