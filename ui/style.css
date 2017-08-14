@@ -1,7 +1,7 @@
 body {
     font-family: sans-serif;
-    background-color: black;
-    color: green;
+    background-color: whitesmoke;
+    color: black;
     margin-top: 75px;
 }
 
@@ -11,16 +11,16 @@ body {
 
 .text-big {
     font-size: 300%;
-    color: green;
+    color: brown;
 }
 
 .bold {
     font-weight: bold;
-    color: green;
+    color: brown;
 }
 
 h4{
-	color: green;
+	color: blue;
 
 }
 
@@ -40,9 +40,9 @@ h4{
 }
 
 .holder_one{
-	background-color: black;
+	background-color: whitesmoke;
 	color: green;
-	padding-block-end: 1px;
+	padding-block-end: 10px;
 	padding-right: 09px;
 	padding-left: 09px;
 	padding-block-start: 3px;
@@ -62,9 +62,9 @@ h4{
 
 .holder_two {
 	color: red;
-	background-color: black;
-	padding-block-end: 2px;
-	padding-block-start: 1px;
-	padding-left: 09px;
-	padding-right: 09px;
+	background-color: whitesmoke;
+	padding-block-end: 10px;
+	padding-block-start: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
