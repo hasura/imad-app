@@ -14,15 +14,15 @@ app.get('/ui/style.css', function (req, res) {
 });
 
 app.get('/article-one',function(req,res){
-    res.sendfile(path.join(_dirname,ui,'article_one.html'));
+    res.sendfile(path.join(_dirname,'ui','article_one.html'));
 });
 
 app.get('/article-two',function(req,res){
-    res.sendfile(path.join(_dirname,ui,'article_two.html'));
+    res.sendfile(path.join(_dirname,'ui','article_two.html'));
 });
 
 app.get('/article-three',function(req,res){
-    res.sendfile(path.join(_dirname,ui,'article_three.html'));
+    res.sendfile(path.join(_dirname,'ui','article_three.html'));
 });
 
 app.get('/ui/madi.png', function (req, res) {
