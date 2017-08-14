@@ -41,7 +41,7 @@ h4{
 
 .holder_one{
 	background-color: whitesmoke;
-	color: grey;
+	color: #2a2b2b;
 	padding-block-end: 10px;
 	padding-right: 09px;
 	padding-left: 09px;
@@ -61,7 +61,7 @@ h4{
 }
 
 .holder_two {
-	color: red;
+	color: #2a2b2b;
 	background-color: whitesmoke;
 	padding-block-end: 10px;
 	padding-block-start: 10px;
