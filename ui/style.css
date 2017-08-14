@@ -1,22 +1,32 @@
-body {
+body 
+{
     font-family: sans-serif;
-    background-color: lightgrey;
-    margin-top: 75px;
+    background-color: #176587;
+   
 }
 
-.center {
+.center
+{
     text-align: center;
 }
 
-.text-big {
+.text-big 
+{
+    color:#EF6713;
     font-size: 300%;
+    text-decoration:overline;
 }
 
 .bold {
-    font-weight: bold;
+    font-weight: bolder;
 }
 
-.img-medium {
-    height: 200px;
+.img-medium
+{
+    height:300px;
+    border-width:thick;
+    border-color:#FFFF00;
+    border-style:ridge;
+    margin-top: 75px;
 }
 
