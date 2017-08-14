@@ -31,8 +31,8 @@ h4{
 .container_one{
 	max-width: 835px;
 	margin: 90px auto;
-	color: green;
-	background-color: #112c18;
+	color: grey;
+	background-color: #2e3530;
 	padding-block-end: 3px;
 	padding-left: 10px;
 	padding-right: 10px;
@@ -41,7 +41,7 @@ h4{
 
 .holder_one{
 	background-color: whitesmoke;
-	color: green;
+	color: grey;
 	padding-block-end: 10px;
 	padding-right: 09px;
 	padding-left: 09px;
@@ -52,7 +52,7 @@ h4{
 	max-width: 817px;
 	margin: 74px auto;
 	color: whitesmoke;
-	background-color: #2d2323;
+	background-color: #2e3530;
 	font-family: sans-serif;
 	padding-top: 25px;
 	padding-right: 10px;
