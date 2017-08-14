@@ -4,7 +4,7 @@ console.log('Loaded!');
 
 var element = document.getElementById('main');
 
-element.innerHTML = "Changes in the sever,but u can get the source codes in gitHub"
+element.innerHTML = 'Changes in the sever,but u can get the source codes in gitHub'
 
 //Moving the madi image
 
