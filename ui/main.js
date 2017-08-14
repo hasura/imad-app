@@ -8,7 +8,7 @@ element.innerHTML = 'Changes in the sever,but u can get the source codes in gitH
 
 //Moving the madi image
 
-var img = document.getElementById('madi');
+var img = document.getElementById('lomi');
 var marginLeft = 0;
 function moveRight() {
     marginLeft = marginLeft + 5;
