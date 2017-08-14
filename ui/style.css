@@ -1,6 +1,7 @@
 body {
     font-family: sans-serif;
-    background-color: lightgrey;
+    background-color: black;
+    color: green;
     margin-top: 75px;
 }
 
@@ -10,13 +11,60 @@ body {
 
 .text-big {
     font-size: 300%;
+    color: green;
 }
 
 .bold {
     font-weight: bold;
+    color: green;
+}
+
+h4{
+	color: green;
+
 }
 
 .img-medium {
     height: 200px;
 }
 
+.container_one{
+	max-width: 835px;
+	margin: 90px auto;
+	color: green;
+	background-color: #112c18;
+	padding-block-end: 3px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+}
+
+.holder_one{
+	background-color: black;
+	color: green;
+	padding-block-end: 1px;
+	padding-right: 09px;
+	padding-left: 09px;
+	padding-block-start: 3px;
+}
+
+.container_two {
+	max-width: 817px;
+	margin: 74px auto;
+	color: whitesmoke;
+	background-color: #2d2323;
+	font-family: sans-serif;
+	padding-top: 25px;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-block-end: 3px;
+}
+
+.holder_two {
+	color: red;
+	background-color: black;
+	padding-block-end: 2px;
+	padding-block-start: 1px;
+	padding-left: 09px;
+	padding-right: 09px;
+}
