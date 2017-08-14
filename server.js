@@ -29,7 +29,7 @@ function createTemplate(data){
 			<html>
 			<head>
 				<title>
-					$[title]
+				${title}
 				</title>
 				<meta name="viewport" content="width_-device-width , initial-scale=1"/>
 				<link rel="stylesheet" type="text/css" href="/ui/style.css"/>
@@ -38,12 +38,12 @@ function createTemplate(data){
 				<div class="container_one">
 					<div>
 						<h1>
-							$[heading]
+							${heading}
 						</h1>
 					</div>
 					<hr style="color: red">
 					<div class="holder_one">
-						$[content]
+						${content}
 					</div>
 				</div>
 			</body>
