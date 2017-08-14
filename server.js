@@ -5,21 +5,32 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var articleOne = {
-	title: 'The Introduction | Web Articles',
-	heading: 'The Introduction',
-	content:`
-	 		<p>
-				New things can be added to this article...
-			</p>
-			<p>
-				Only some files can be added to this article that can be human readable rest of the files are for machine
-			</p>
-			<p>
-				Machine can read various type of file that are written by humans...<br />Continues in next article...
-			</p>
-		`
-}
+var articles ={
+    'article-one' : {
+    	title: 'The Introduction | Web Articles',
+    	heading: 'The Introduction',
+    	content:`
+    	 		<p>
+    				New things can be added to this article...
+    			</p>
+    			<p>
+    				Only some files can be added to this article that can be human readable rest of the files are for machine
+    			</p>
+    			<p>
+    				Machine can read various type of file that are written by humans...<br />Continues in next article...
+    			</p>
+    		`
+    },
+    'article-two' : {
+        title: 'The Chapter | Web Articles',
+    	heading: '|| The Chapter ||',
+    	content:`
+    	 		<p>
+				So Machines can read various types files <em>e.g HTML , CSS , JavaScript , C , C++ , JAVA</em> <br />
+				but there is a problem to this, Machines can't read these files directly, to do so it needs to convert these files into machine codes and then it executes the files
+			</p>`
+    }
+};
 function createTemplate(data){
 	var title = data.title;
 	var heading = data.heading;
@@ -56,17 +67,11 @@ app.get('/', function (req, res) {
 	res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/article-one',function ( req, res) {
-	res.send( createTemplate(articleOne));
-});
-app.get('/article-two',function ( req, res) {
-	res.sendFile(path.join(__dirname, 'ui','article-two.html'));
+app.get('/articleName',function ( req, res) {
+    var articleName = req.param.articleName;
+	res.send( createTemplate(articles[articleName]));
 });
 
-app.get('/article-three', function ( res, req){
-	res.sendFile(path.join(__dirname, 'ui', 'article-three.html'));
-
-});
 
 app.get('/ui/style.css', function ( req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
