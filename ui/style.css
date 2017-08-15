@@ -1,7 +1,7 @@
 body 
 {
     font-family: sans-serif;
-    background-color: #176587;
+    background-color:grey;
    
 }
 
@@ -18,8 +18,8 @@ h1
 .text-big 
 {
     color:#EF6713;
-    font-size: 300%;
-    text-decoration:overline;
+    font-size: 100%;
+    
 }
 
 .bold {
