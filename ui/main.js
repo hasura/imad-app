@@ -2,7 +2,7 @@
 
 var bittuon = document.getElementById('counter');
 var counter = 0;
-buton.onclick=function () {
+button.onclick=function () {
   
   // make a req to counter end point
   
