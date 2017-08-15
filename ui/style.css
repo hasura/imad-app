@@ -37,3 +37,11 @@ h1
     margin-top: 75px;
 }
 
+.container
+{
+    max-width: 800px;
+    margin:0 auto;
+}
+    
+}
+
