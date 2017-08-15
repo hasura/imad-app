@@ -13,16 +13,16 @@ app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
 
-app.get('/ui/Wiki.html',function(req,res){
+app.get('/ui/Article_One.html',function(req,res){
     res.sendFile(path.join(__dirname, 'ui', 'Wiki.html'));
 });
 
-app.get('/ui/article-two',function(req,res){
-    res.sendfile(path.join(__dirname,'ui','article_two.html'));
+app.get('/ui/Article_Two.html',function(req,res){
+    res.sendfile(path.join(__dirname,'ui','Article_Two.html'));
 });
 
-app.get('/ui/article-three',function(req,res){
-    res.sendfile(path.join(__dirname,'ui','article_three.html'));
+app.get('/ui/Article_Three.html',function(req,res){
+    res.sendfile(path.join(__dirname,'ui','Article_Three.html'));
 });
 
 app.get('/Bumblebee.jpg',function(req,res){
