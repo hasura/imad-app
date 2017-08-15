@@ -23,7 +23,7 @@ body {
     width: 300px;
     border: 10px solid green;
     padding: 25px;
-    margin: 25px;
-    margin-left:500px;
-    margin-right:200px;
+    position: absolute;
+    left:25px;
+    
 }
