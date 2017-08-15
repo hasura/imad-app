@@ -1,6 +1,6 @@
 body 
 {
-    font-family:"Alconia",serif;
+    font-family:"",serif;
     font-size:100%;
     background-color:#EEEEEE;
    
@@ -39,6 +39,7 @@ h1
 
 .container
 {
+    color:yellow;
     max-width: 1000px;
     margin:0 auto;
 }
