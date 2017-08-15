@@ -14,15 +14,15 @@ app.get('/ui/style.css', function (req, res) {
 });
 
 app.get('/ui/Wiki.html',function(req,res){
-    res.sendfile(path.join(_dirname,'ui','Wiki.html'));
+    res.sendFile(path.join(__dirname, 'ui', 'Wiki.html'));
 });
 
 app.get('/ui/article-two',function(req,res){
-    res.sendfile(path.join(_dirname,'ui','article_two.html'));
+    res.sendfile(path.join(__dirname,'ui','article_two.html'));
 });
 
 app.get('/ui/article-three',function(req,res){
-    res.sendfile(path.join(_dirname,'ui','article_three.html'));
+    res.sendfile(path.join(__dirname,'ui','article_three.html'));
 });
 
 app.get('/ui/madi.png', function (req, res) {
