@@ -19,3 +19,9 @@ body {
 .img-medium {
     height: 200px;
 }
+.box {
+    width: 300px;
+    border: 25px solid green;
+    padding: 25px;
+    margin: 25px;
+}
