@@ -14,7 +14,7 @@ app.get('/ui/style.css', function (req, res) {
 });
 
 app.get('/ui/Article_One.html',function(req,res){
-    res.sendFile(path.join(__dirname, 'ui', 'Wiki.html'));
+    res.sendFile(path.join(__dirname, 'ui', 'Article_One.html'));
 });
 
 app.get('/ui/Article_Two.html',function(req,res){
