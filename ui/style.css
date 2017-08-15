@@ -10,6 +10,11 @@ body
     text-align: center;
 }
 
+h1
+{
+    font-family:monotype corsiva;
+}
+
 .text-big 
 {
     color:#EF6713;
