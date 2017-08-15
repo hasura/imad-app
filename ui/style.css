@@ -21,7 +21,7 @@ body {
 }
 .box {
     width: 300px;
-    border: 10px solid green;
+    border: 10px solid black;
     padding: 25px;
    margin: auto;
     width: 50%;
