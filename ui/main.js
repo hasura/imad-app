@@ -7,6 +7,6 @@ function movr() {
    marginLeft=marginLeft + 10;
     img.style.marginLeft=marginLeft+'px';
 }
-img.onClick = function(){
+img.onclick = function(){
     var ele = setInterval(movr,50);
 };
