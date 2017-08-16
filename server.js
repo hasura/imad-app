@@ -67,7 +67,7 @@ function makePage(data) {
         `;
     return frontPageTemplate;
 }
-var names = [];
+var names = 'empty';
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
