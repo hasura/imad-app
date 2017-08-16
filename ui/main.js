@@ -1,4 +1,3 @@
-console.log('Loaded!');
 var button = document.getElementById('submit_button');
 button.onclick = function () {
 //    var request = new XMLHTTPRequest ();
