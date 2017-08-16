@@ -4,8 +4,7 @@ button.onclick = function () {
     var name = document.getElementById('name');
     var inputName = name.value;
     
-    request.open('GET','http://mramanm.imad.hasura-app.io/submit-info?name=' + inputName, true);
-    request.send(null);
+
     request.onreadystatechange = function() {
         if ( request.readystate == XMLHttpRequest.DONE) {
             if ( request.status == 200 ) {
@@ -21,7 +20,8 @@ button.onclick = function () {
                 
         }
     };
-
+    request.open('GET','http://mramanm.imad.hasura-app.io/submit-info?name=' + inputName, true);
+    request.send(null);
 
     
 };
