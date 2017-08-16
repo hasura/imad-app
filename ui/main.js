@@ -1,6 +1,9 @@
 var button = document.getElementById('submit_button');
 button.onclick = function () {
     var request = new XMLHttpRequest();
+    var name = document.getElementById('name');
+    var inputName = name.value;
+    
     request.open('GET','http://mramanm.imad.hasura-app.io/submit-info?name=' + inputName, true);
     request.send(null);
     request.onreadystatechange = function() {
@@ -18,9 +21,7 @@ button.onclick = function () {
                 
         }
     };
-    var name = document.getElementById('name');
-    var inputName = name.value;
-    
+
 
     
 };
