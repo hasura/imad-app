@@ -1,5 +1,8 @@
 var button = document.getElementById('submit_button');
-
+function fill_names() {
+    
+    
+}
 button.onclick = function () {
 
     var name = document.getElementById('name');
