@@ -1,8 +1,8 @@
 var button = document.getElementById('submit_button');
 button.onclick = function () {
-    var request = new XMLHTTPRequest ();
+    var request = new XMLHttpRequest();
     request.onreadystatechange = function() {
-        if ( request.readystate == XMLHTTPRequest.DONE) {
+        if ( request.readystate == XMLHttpRequest.DONE) {
             if ( request.status == 200 ) {
                 var names = request.responseText;
                 names = JSON.parse(names);
