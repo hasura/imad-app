@@ -1,6 +1,7 @@
 var button = document.getElementById('submit_button');
+var request = new XMLHttpRequest();
 button.onclick = function () {
-    var request = new XMLHttpRequest();
+
     var name = document.getElementById('name');
     var inputName = name.value;
     
