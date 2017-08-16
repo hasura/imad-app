@@ -1,11 +1,12 @@
 console.log('Loaded!');
 
+//alert('hi how r u???');
 
 var img = document.getElementById('image');
-var marginLeft=0;
+var mov=0;
 function movr() {
-   marginLeft=marginLeft + 10;
-    img.style.marginLeft=marginLeft+'px';
+    mov=mov + 10;
+    img.style.marginLeft=mov+'px';
 }
 img.onclick = function(){
     var ele = setInterval(movr,50);
