@@ -1,9 +1,9 @@
 console.log('Loaded!');
 var button = document.getElementById('submit_button');
 button.onclick = function () {
-    var request = new XMLHTTPRequest ();
+//    var request = new XMLHTTPRequest ();
     request.onreadystatechange = function() {
-        if ( request.readystate == XMLHTTPRequest.DONE) {
+ /*       if ( request.readystate == XMLHTTPRequest.DONE) {
             if ( request.status == 200 ) {
                 var names = request.responseText;
                 names = JSON.parse(names);
@@ -15,7 +15,7 @@ button.onclick = function () {
                 ul.innerHtml = list;
             }
                 
-        }
+        } */
     };
     var name = document.getElementById('name');
     var inputName = name.value;
