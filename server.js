@@ -84,6 +84,10 @@ app.get('/submit-name', function (req,res) {
  names.push(name);
  res.send(JSON.stringify(names));
 });
+app.get('/ui/main.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'main.js'));
+});
+
 app.get('/:articleName', function (req,res) {
     res.send(makePage(pageContents[req.params.articleName]));
 });
