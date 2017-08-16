@@ -1,13 +1,13 @@
 var button = document.getElementById('submit_button');
-var request = new XMLHttpRequest();
+
 button.onclick = function () {
 
     var name = document.getElementById('name');
     var inputName = name.value;
     
-
+    var request = new XMLHttpRequest();
     request.onreadystatechange = function() {
-        if ( request.readystate == XMLHttpRequest.DONE) {
+        if ( request.readyState == XMLHttpRequest.DONE) {
             if ( request.status == 200 ) {
                 var names = request.responseText;
                 names = JSON.parse(names);
