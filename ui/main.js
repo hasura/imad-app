@@ -5,7 +5,7 @@ console.log('Loaded!');
 var img = document.getElementById('image');
 var mov=0;
 function movr() {
-    mov=mov + 10;
+    mov=mov + 5;
     img.style.marginLeft=mov+'px';
 }
 img.onclick = function(){
