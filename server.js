@@ -5,20 +5,41 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var articleOne= {
-    title: 'Article One | Chintamani Koli',
-    heading: 'Article One',
-    date: 'Aug 20, 2017',
-    content: ` <p>
-                    This is the content for first article one and will be related to Introduction to Modern Application Development. Followed by Phyton Programming
-                </p>
-                <p>
-                    This is the content for first article one and will be related to Introduction to Modern Application Development. Followed by Phyton Programming
-                </p>
-                <p>
-                    This is the content for first article one and will be related to Introduction to Modern Application Development. Followed by Phyton Programming
-                </p>`
-};
+var articles = {
+    articleOne: {
+        title: 'Article One | Chintamani Koli',
+        heading: 'Article One',
+        date: 'Aug 20, 2017',
+        content: ` <p>
+                        This is the content for first article one and will be related to Introduction to Modern Application Development. Followed by Phyton Programming
+                    </p>
+                    <p>
+                        This is the content for first article one and will be related to Introduction to Modern Application Development. Followed by Phyton Programming
+                    </p>
+                    <p>
+                        This is the content for first article one and will be related to Introduction to Modern Application Development. Followed by Phyton Programming
+                    </p>`
+    },
+    articleTwo: {
+        title: 'Article Two | Chintamani Koli',
+        heading: 'Article Two',
+        date: 'Aug 20, 2017',
+        content: ` <p>
+                        This is the content for second article one and will be related to Introduction to Modern Application Development. Followed by Phyton Programming
+                    </p>`
+    },
+    articleThre: {
+        title: 'Article Three | Chintamani Koli',
+        heading: 'Article Three',
+        date: 'Aug 20, 2017',
+        content: ` <p>
+                        This is the content for third article one and will be related to Introduction to Modern Application Development. Followed by Phyton Programming
+                    </p>`
+    }
+  
+};    
+
+
 function createTemplate(data) {
     var title = data.title;
     var heading = data.heading;
