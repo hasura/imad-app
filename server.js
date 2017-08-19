@@ -6,7 +6,7 @@ var app = express();
 app.use(morgan('combined'));
 
 var articles = {
-    articleOne: {
+    'article-one': {
         title: 'Article One | Chintamani Koli',
         heading: 'Article One',
         date: 'Aug 20, 2017',
@@ -20,7 +20,7 @@ var articles = {
                         This is the content for first article one and will be related to Introduction to Modern Application Development. Followed by Phyton Programming
                     </p>`
     },
-    articleTwo: {
+    'article-two': {
         title: 'Article Two | Chintamani Koli',
         heading: 'Article Two',
         date: 'Aug 21, 2017',
@@ -28,7 +28,7 @@ var articles = {
                         This is the content for second article one and will be related to Introduction to Modern Application Development. Followed by Phyton Programming
                     </p>`
     },
-    articleThre: {
+    'article-three': {
         title: 'Article Three | Chintamani Koli',
         heading: 'Article Three',
         date: 'Aug 22, 2017',
@@ -85,8 +85,11 @@ app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
 
-app.get('/article-one', function (req, res) {
-    res.send(createTemplate(articleOne));
+app.get('/:articleName', function (req, res) {
+// articleName = article-one
+//articles[articleName] = {} content object for article one
+var articleName = req.params.articleName;
+    res.send(createTemplate(articles[articleName]));
 });
 
 app.get('/article-two', function (req, res) {
