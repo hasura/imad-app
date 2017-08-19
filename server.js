@@ -23,7 +23,7 @@ var articles = {
     articleTwo: {
         title: 'Article Two | Chintamani Koli',
         heading: 'Article Two',
-        date: 'Aug 20, 2017',
+        date: 'Aug 21, 2017',
         content: ` <p>
                         This is the content for second article one and will be related to Introduction to Modern Application Development. Followed by Phyton Programming
                     </p>`
@@ -31,7 +31,7 @@ var articles = {
     articleThre: {
         title: 'Article Three | Chintamani Koli',
         heading: 'Article Three',
-        date: 'Aug 20, 2017',
+        date: 'Aug 22, 2017',
         content: ` <p>
                         This is the content for third article one and will be related to Introduction to Modern Application Development. Followed by Phyton Programming
                     </p>`
