@@ -6,7 +6,7 @@ body{
 .container {
     max-width: 800px;
     font-family: 'Roboto', sans-serif;
-    padding: 60px 30px 40px 30px;
+    padding: 60px 40px 40px 40px;
     margin: 0 auto;
     background-color: #ffffff;
 }
