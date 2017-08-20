@@ -92,9 +92,9 @@ var createTemplate = function(data) {
                     <a href="/">Home</a>
                 </div>
                 <hr/>
-                <h3 class="heading">
+                <h2 class="heading">
                     ${heading}
-                </h3>
+                </h2>
                 <div class="date">
                     ${date}
                 </div>
