@@ -13,6 +13,26 @@ app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
 
+app.get('/aku', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'aku.html'));
+});
+
+app.get('/one', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'one.html'));
+});
+
+app.get('/profile1', function (req,res) {
+  res.sendFile(path.join(__dirname, 'ui', 'profile1.html'));
+});
+
+app.get('/two', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'two.html'));
+});
+
+app.get('/three', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'three.html'));
+});
+
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
