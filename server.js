@@ -64,7 +64,7 @@ var articles = {
                 Pellentesque tincidunt ut turpis quis vestibulum. Ut tincidunt ultrices sapien, vel aliquam elit luctus quis. Vestibulum volutpat eros nec dui hendrerit varius. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed suscipit lectus non enim porta maximus. Quisque tincidunt congue ligula vel tristique. Nullam pharetra erat ut sem fringilla ultricies. Fusce eu pulvinar nisi, sed hendrerit neque.
              </p>
              <p> 
-                Aliquam nec velit tempor, faucibus quam eget, finibus justo. Fusce ornare odio ac suscipit consequat. Maecenas et ante sed lectus luctus dapibus tristique eget nunc. Donec tempor nunc id dictum tristique. Quisque eleifend condimentum orci. Integer elementum ornare malesuada. Aenean viverra diam sed eros scelerisque, sit amet molestie ex ultrices. Ut eget risus id nunc consectetur iaculis. Vivamus sed ex libero. Fusce id elementum enim, in consectetur sem.<br>br>
+                Aliquam nec velit tempor, faucibus quam eget, finibus justo. Fusce ornare odio ac suscipit consequat. Maecenas et ante sed lectus luctus dapibus tristique eget nunc. Donec tempor nunc id dictum tristique. Quisque eleifend condimentum orci. Integer elementum ornare malesuada. Aenean viverra diam sed eros scelerisque, sit amet molestie ex ultrices. Ut eget risus id nunc consectetur iaculis. Vivamus sed ex libero. Fusce id elementum enim, in consectetur sem.<br><br>
                 Thank You.
             </p>`
     }
