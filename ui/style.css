@@ -9,6 +9,14 @@ body{
     
 }
 
+.heading{
+    color: #f45f42;
+}
+
+.date{
+    color: #4286f4;
+}
+
 .center {
     text-align: center;
 }
