@@ -34,7 +34,7 @@ var createTemplate = function(data) {
         <html>
         <head>
             <title>
-                ${title};
+                ${title}
             </title>
             <meta name="view-port" content="width=device-width">
             <link type="text/css" rel="stylesheet" href="ui/style.css"/>
@@ -47,13 +47,13 @@ var createTemplate = function(data) {
                 </div>
                 <hr/>
                 <h3 class="heading">
-                    ${heading};
+                    ${heading}
                 </h3>
                 <div class="date">
-                    ${date};
+                    ${date}
                 </div>
                 <div>
-                    ${content};
+                    ${content}
                 </div>
             </div>
         </body>
