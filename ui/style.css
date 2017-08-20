@@ -1,6 +1,6 @@
 body{
     background-color: lightgrey;
-    padding: 60 20px 0px 20px ;
+    padding: 60px 20px 0px 20px ;
 }
 
 .container {
@@ -8,6 +8,7 @@ body{
     margin: 0 auto;
     width: 80%;
     background-color: #ffffff;
+    margin: ;
 }
 
 .heading{
