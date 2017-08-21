@@ -1,5 +1,5 @@
 var counter=0;
-var button=document.getElementById('button');
+var button=document.getElementById('counter');
 button.onClick=function(){
     alert("vs");
     counter=counter+1;
