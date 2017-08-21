@@ -7,7 +7,7 @@ var config={
     user:'chintaramvarma1',
     database:'chintaramvarma1',
     host:'db.io.hasura-app.io',
-    port:'5432'
+    port:'5432',
     password:process.env.DB_PASSWORD
 };
 
