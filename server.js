@@ -6,7 +6,11 @@ var app = express();
 app.use(morgan('combined'));
 
 app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+  res.sendFile(path.join(__dirname, 'ui', 'index.html'))
+}); 
+
+app.get('/urvashi',function (req , res){
+    res.send('Urvashi Hi I am getting mad in web development');
 });
 
 app.get('/ui/style.css', function (req, res) {
