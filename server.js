@@ -9,7 +9,7 @@ var config = {
     user: 'mramanm',
     database: 'mramanm',
     host: 'db.imad.hasura-app.io',
-    password: 'db-mramanm-4197',
+    password: '',
     port: '5432'
 };
 
