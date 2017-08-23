@@ -104,7 +104,7 @@ app.get('/test-db', function(req,res){
          res.send(JSON.stringify(results.rows));
      }
   });
- res.send(" I am alive for now!");
+ //res.send(" I am alive for now!");
 });
 
 app.get('/ui/main.js', function (req, res) {
