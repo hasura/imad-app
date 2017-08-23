@@ -96,14 +96,15 @@ app.get('/submit-info', function (req,res) {
 var pool = new pg(config);
 
 app.get('/test-db', function(req,res){
-  pool.query("SELECT * FROM client_master", function (err, result){
-     if ( err) {
-         res.status(500).send(err.toString());
-     } 
-     else {
-         res.send(JSON.stringfy(results.rows));
-     }
-  });  
+ // pool.query("SELECT * FROM client_master", function (err, result){
+ //    if ( err) {
+ //        res.status(500).send(err.toString());
+ //    } 
+ //    else {
+ //        res.send(JSON.stringfy(results.rows));
+ //    }
+ // });
+ res.send(" I am alive for now!");
 });
 
 app.get('/ui/main.js', function (req, res) {
