@@ -13,6 +13,14 @@ app.get('/urvashi',function (req , res){
     res.send('Urvashi Hi I am getting mad in web development');
 });
 
+app.get('/Leno',function(req,res){
+    res.send('Leno what is happening to me Can I become a web developer');
+})
+
+app.get('/girlfriend',function(req,res){
+    res.send('Leno is my best friend and internet is my girlfriend');
+})
+
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
