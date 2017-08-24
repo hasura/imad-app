@@ -101,7 +101,7 @@ app.get('/test-db', function(req,res){
          res.status(500).send(err.toString());
      } 
      else {
-         res.send(JSON.stringify(results.rows));
+         res.send(JSON.stringify(results));
      }
   });
  //res.send(" I am alive for now!");
