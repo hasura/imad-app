@@ -1,5 +1,5 @@
 body {
-    font-family: sans-serif;
+    font-family: bold italic
     background-color: blue;
     margin-top: 75px;
 }
@@ -9,7 +9,7 @@ body {
 }
 
 .text-big {
-    font-size: 300%;
+    font-size: 400%;
 }
 
 .bold {
@@ -17,10 +17,10 @@ body {
 }
 
 .img-medium {
-    height: 200px;
+    height: 400px;
 }
 
 body {
-    font-family: cursive;
-    background-color: #ad0b0b;
+    font-family: italic;
+    background-color: red;
     margin-top: 111px;
