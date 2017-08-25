@@ -13,12 +13,13 @@ app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
   
 });
-app.get('/article one', function(req,res)){
+app.get('/article one', function(req,res){
     res.send('this content is no more available');
 });
-app.get('/article two', function(req,res)){
+app.get('/article two', function(req,res){
     res.send('this content is not available');
-});app.get('/article three', function(req,res)){
+});
+app.get('/article three', function(req,res){
     res.send('this content is not available(manisivii kadhaa)');
 });
 }
