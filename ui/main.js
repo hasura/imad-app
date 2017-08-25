@@ -49,11 +49,11 @@ datareq.onclick = function() {
             	list += '</tr>';
                 for ( var i=0; i < names.length; i++ ) {
             		list += '<tr>';
-            		list += '<td style="width: 105.4px;">names[i][0]</td>';
-            		list += '<td style="width: 105.4px;">names[i][1]</td>';
-            		list += '<td style="width: 105.4px;">names[i][2]</td>';
-            		list += '<td style="width: 105.4px;">names[i][4]</td>';
-            		list += '<td style="width: 105.4px;">names[i][5]</td>';
+            		list += '<td style="width: 105.4px;">' +names[i][0] +'</td>';
+            		list += '<td style="width: 105.4px;">' +names[i][1] + '</td>';
+            		list += '<td style="width: 105.4px;">' +names[i][2] + '</td>';
+            		list += '<td style="width: 105.4px;">' +names[i][4] + '</td>';
+            		list += '<td style="width: 105.4px;">' + names[i][5] + '</td>';
             		list += '</tr>';
                 }
                 var ul = document.getElementById('namelist');
