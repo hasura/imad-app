@@ -14,12 +14,12 @@ app.get('/ui/style.css', function (req, res) {
   
 });
 app.get('/article one', function(req,res)){
-    res.sendfile('this content is no more available');
+    res.send('this content is no more available');
 });
 app.get('/article two', function(req,res)){
-    res.sendfile('this content is not available');
+    res.send('this content is not available');
 });app.get('/article three', function(req,res)){
-    res.sendfile('this content is not available(manisivii kadhaa)');
+    res.send('this content is not available(manisivii kadhaa)');
 });
 }
 app.get('/ui/madi.png', function (req, res) {
