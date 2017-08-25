@@ -38,7 +38,6 @@ datareq.onclick = function() {
         if ( request.readyState == XMLHttpRequest.DONE) {
             if ( request.status == 200 ) {
                 var names = request.responseText;
-                names = JSON.parse(names);
                 var list = [];
                 list += '<tr>';
             	list += '<td style="width: 105.4px;">Key</td>';
