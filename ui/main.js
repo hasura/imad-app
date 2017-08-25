@@ -40,7 +40,7 @@ datareq.onclick = function() {
                 var names = request.responseText;
                 var list = [];
                 var col = [];
-                for (var i = 0; i < myBooks.length; i++) {
+                for (var i = 0; i < names.length; i++) {
                     for (var key in names[i]) {
                         if (col.indexOf(key) === -1) {
                              col.push(key);
