@@ -14,7 +14,7 @@ app.get('/ui/style.css', function (req, res) {
   
 });
 app.get('/articleone', function(req,res){
-    res.send('this content is no more available');
+     res.sendFile(path.join(__dirname, 'ui', 'article-one.hthml'));
 });
 app.get('/articletwo', function(req,res){
     res.send('this content is not available');
