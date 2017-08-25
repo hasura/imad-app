@@ -96,7 +96,7 @@ app.get('/submit-info', function (req,res) {
 var pool = new pg(config);
 
 app.get('/test-db', function(req,res){
-	res.sendFile(path.join(__dirname,'ui','disdata.html'));
+	res.sendFile(path.join(__dirname,'ui','datadis.html'));
 	pool.query('SELECT * FROM client_master' , function (err, result){
 		 if ( err) {
 			 res.status(500).send(err.toString());
