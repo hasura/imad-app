@@ -96,19 +96,23 @@ app.get('/submit-info', function (req,res) {
 var pool = new pg(config);
 
 app.get('/test-db', function(req,res){
-  pool.query('SELECT * FROM client_master' , function (err, result){
-     if ( err) {
-         res.status(500).send(err.toString());
-     } 
-     else {
-         res.send(JSON.stringify(result.rows));
-     }
-  });
- //res.send(" I am alive for now!");
+	res.sendFile(path.join(__dirname,'ui','disdata.html'));
+	pool.query('SELECT * FROM client_master' , function (err, result){
+		 if ( err) {
+			 res.status(500).send(err.toString());
+		 } 
+		 else {
+			 res.send(JSON.stringify(result.rows));
+		 }
+	});
+
 });
 
 app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
+});
+app.get('/ui/disdata.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'disdata.js'));
 });
 
 app.get('/:articleName', function (req,res) {
