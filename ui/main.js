@@ -39,25 +39,29 @@ datareq.onclick = function() {
             if ( request.status == 200 ) {
                 var names = request.responseText;
                 var list = [];
-                list += '<tr>';
-            	list += '<td style="width: 105.4px;">Key</td>';
-            	list += '<td style="width: 105.4px;">Client Name</td>';
-            	list += '<td style="width: 105.4px;">Client Gender</td>';
-            	list += '<td style="width: 105.4px;">Client Email</td>';
-            	list += '<td style="width: 105.4px;">Client Mobile</td>';
-            	list += '</tr>';
-                for ( var i=0; i < names.length; i++ ) {
-            		list += '<tr>';
-            		list += '<td style="width: 105.4px;">' +names[i][0] +'</td>';
-            		list += '<td style="width: 105.4px;">' +names[i][1] + '</td>';
-            		list += '<td style="width: 105.4px;">' +names[i][2] + '</td>';
-            		list += '<td style="width: 105.4px;">' +names[i][4] + '</td>';
-            		list += '<td style="width: 105.4px;">' + names[i][5] + '</td>';
-            		list += '</tr>';
+                var col = [];
+                for (var i = 0; i < myBooks.length; i++) {
+                    for (var key in names[i]) {
+                        if (col.indexOf(key) === -1) {
+                             col.push(key);
+                         }
+                    }
+                } // extract Header information
+                // CREATE DYNAMIC TABLE.
+                var table = document.createElement("table");
+
+                // CREATE HTML TABLE HEADER ROW USING THE EXTRACTED HEADERS ABOVE.
+        
+                var tr = table.insertRow(-1);                   // TABLE ROW.
+
+                for ( i = 0; i < col.length; i++) {
+                    var th = document.createElement("th");      // TABLE HEADER.
+                    th.innerHTML = col[i];
+                    tr.appendChild(th);
                 }
-                var ul = document.getElementById('namelist');
-                ul.innerHTML = list;
-            }
+                var divContainer = document.getElementById("table_data");
+                divContainer.innerHTML = "";
+                divContainer.appendChild(table);            }
                 
         }
     };
