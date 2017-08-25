@@ -60,6 +60,15 @@ datareq.onclick = function() {
                     th.innerHTML = col[i];
                     tr.appendChild(th);
                 }
+                for ( i = 1; i < names.length; i++) {
+
+                    tr = table.insertRow(-1);
+
+                    for (var j = 0; j < col.length; j++) {
+                        var tabCell = tr.insertCell(-1);
+                        tabCell.innerHTML = names[i][col[j]];
+                    }
+                }
                 var divContainer = document.getElementById("table_data");
                 divContainer.innerHTML = "";
                 divContainer.appendChild(table);            }
