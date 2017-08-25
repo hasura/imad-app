@@ -62,8 +62,8 @@ var html Template=
      
 </html>`
 ;
-return html Template
-
+return html Template;
+}
 
 var app = express();
 app.use(morgan('combined'));
@@ -77,7 +77,7 @@ app.get('/ui/style.css', function (req, res) {
   
 });
 app.get('/article-one', function(req,res){
-     res.send(create Template(article one)));
+     res.send(createTemplate(articleone));
 });
 app.get('/article-two', function(req,res){
      res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
