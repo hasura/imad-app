@@ -1,10 +1,9 @@
 
-function () {
+function disJSON (data) {
 
-    var request = new XMLHttpRequest();
+//    var request = new XMLHttpRequest();
 	
-    var names = request.responseText;
-    names = JSON.parse(names);
+    var names = JSON.parse(data);
     var list = [];
 	list += '<tr>';
 	list += '<td style="width: 105.4px;">Key</td>';
@@ -25,5 +24,4 @@ function () {
     var ul = document.getElementById('client_table');
     ul.innerHTML = list;
   
-};
-
+}
