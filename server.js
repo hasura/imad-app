@@ -22,7 +22,6 @@ app.get('/article two', function(req,res){
 app.get('/article three', function(req,res){
     res.send('this content is not available(manisivii kadhaa)');
 });
-}
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
