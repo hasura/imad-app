@@ -60,7 +60,7 @@ datareq.onclick = function() {
                     th.innerHTML = col[i];
                     tr.appendChild(th);
                 }
-                for ( i = 1; i < names.length; i++) {
+                for ( i = 0; i < names.length; i++) {
 
                     tr = table.insertRow(-1);
 
