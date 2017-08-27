@@ -8,7 +8,7 @@ function moveRight(){
   img.style.marginLeft = marginLeft+"px";
   if(img.style.marginLeft>300)
     {document.getElementById("Main").InnerHTML="MADI BHAAG GAYA!!!!";
-        document.write(gugu);
+        document.write("gugu");
     }
 }
 img.onclick = function(){
