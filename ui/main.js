@@ -9,4 +9,8 @@ function moveRight(){
   }
 img.onclick = function(){
     var Interval = setInterval(moveRight , 100);
+    if(img.style.marginLeft>300)
+    {document.getElementById("Main").InnerHTML="MADI BHAAG GAYA!!!!";
+        document.write("gugu");
+    }
 };
