@@ -128,11 +128,8 @@ app.get('/verify', function (req,res) {
             var output ="";
             var type = typeof result;
             if ( type === 'object') {
-                output += 'Object/' + getClass(result).toLowerCase() +'/ ';
-                for ( var i in result) {
-                    output += ':' + i.toString();
-                }
-                output +=' / '; 
+                output += 'rows[' + result.rows +' ]';
+                output += 'row count ='+ result.rowCount;
             }
             else if ( type === 'number')
                 output += 'Number';
