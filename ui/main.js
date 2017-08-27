@@ -6,7 +6,7 @@ var marginLeft = 0;
 function moveRight(){
   marginLeft += 5;
   img.style.marginLeft = marginLeft+"px";
-  if(img.style.marginLeft>1366)
+  if(img.style.marginLeft>300)
     document.getElementById("Main").InnerHTML="MADI BHAAG GAYA!!!!";
 }
 img.onclick = function(){
