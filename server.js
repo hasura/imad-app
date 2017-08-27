@@ -126,18 +126,13 @@ app.get('/verify', function (req,res) {
     	 else {
 //    		res.send(JSON.stringify(result.rows));
             var output ="";
-            output += 'at line 125';
             var type = typeof result;
-            output += ',typeof works';
             if ( type === 'object') {
-                output += 'inside object';
-                output += 'Object/' + getClass(result).toLowerCase();
-                output += 'past getClass';
+                output += 'Object/' + getClass(result).toLowerCase() +'/ ';
                 for ( var i in result) {
                     output += ':' + i.toString();
                 }
-                output += 'for loop covered';
-                output +='/'; 
+                output +=' / '; 
             }
             else if ( type === 'number')
                 output += 'Number';
