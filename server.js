@@ -128,7 +128,7 @@ app.get('/verify', function (req,res) {
             var output ="";
             var type = typeof result;
             if ( type === 'object') {
-                output += 'rows[' + JSON.stringigy(result.rows) +' ]';
+                output += 'rows[' + JSON.stringify(result.rows) +' ]';
                 output += 'row count ='+ result.rowCount;
             }
             else if ( type === 'number')
