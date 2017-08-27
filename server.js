@@ -6,7 +6,7 @@ var app = express();
 app.use(morgan('combined'));
 
 var Articles = {    
-    ArticleOne : {
+    'Article_One' : {
         title:'Article One|Apoorva Kashyap',
         heading:'Article One',
         date:'Aug 7, 20XX',
@@ -21,7 +21,7 @@ var Articles = {
             This is the content of the first article.This is the content of the first article.This is the content of the first article.This is the content of the first article.This is the content of the first article.This is the content of the first article.This is the content of the first article.This is the content of the first article.This is the content of the first article.
         </p> `
     },
-   ArticleTwo : {
+    'Article_Two' : {
         title:'Article Two|Apoorva Kashyap',
         heading:'Article Two',
         date:'Aug 14, 20XX',
@@ -36,7 +36,7 @@ var Articles = {
             This is the content of the second article.This is the content of the second article.This is the content of the second article.This is the content of the second article.This is the content of the second article.This is the content of the second article.This is the content of the second article.This is the content of the second article.This is the content of the second article.        
         </p> `
     },
-    ArticleThree : {
+    'Article_Three' : {
         title:'Article Three|Apoorva Kashyap',
         heading:'Article Three',
         date:'Aug 21, 20XX',
@@ -67,7 +67,7 @@ function createTemp (data) {
             </head>
             <body>
                 <div class=container>
-                <a href='/'>Home</a>&emsp;<a href='/ui/Article_Two.html'>Article Two</a>&emsp;<a href='/ui/Article_Three.html'>Article Three</a>
+                <a href='/'>Home</a>&emsp;<a href='/ui/Article_One'>Article One</a>&emsp;<a href='/ui/Article_Two'>Article Two</a>&emsp;<a href='/ui/Article_Three'>Article Three</a>
                 <hr>
                 <div>
                 <h1 align="center">${heading}</h1>
@@ -93,7 +93,7 @@ app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
 
-app.get('/ui/Article_One.html',function(req,res){
+app.get('/ui/Article_One',function(req,res){
     res.send(createTemp(ArticleOne));
 });
 
