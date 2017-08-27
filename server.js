@@ -127,13 +127,13 @@ app.get('/verify', function (req,res) {
             output += ',typeof works';
             if ( type === 'object') {
                 output += 'inside object';
-                output += 'Object/' + getClass(result);
+  /*              output += 'Object/' + getClass(result);
                 output += 'past getClass';
                 for ( var i in result) {
                     output += ':' + i.toString();
                 }
                 output += 'for loop covered';
-                output +='/';
+                output +='/'; */
             }
             else if ( type === 'number')
                 output += 'Number';
