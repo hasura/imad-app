@@ -16,7 +16,7 @@ var Articles = {
         date:'Aug 7, 20XX',
         content:`
          <p>
-            This is the content of the first article.This is the content of the first article.This is the content of the first article.This is the content of the first article.This is the content of the first article.This is the content of the first article.This is the content of the first article.This is the content of the first article.This is the content of the first article.
+            Equipped with the ultimate and most advanced governmental weapon called 'Thunder Master III', you are the last resort, only you can stop them... Fire and Forget is a shooting game featuring an amazing flying 'tank' equipped with 2 deadly weapons. A manual aiming dual cannon and a rocket launcher with auto-guided missiles. While the vehicle move forward by itself at high speed, you just have to focus on avoiding obstacles and blasting the enemies on your way. Free Game features: - Hundred of enemies to blast in each level; - 10 challenging levels in all over a devastated post- apocalyptic world; - Drive and fly the most advanced vehicle ever created; - Destroy as much enemies as you can to reach the best scores; - Customize your vehicle with impressive skins and upgrades
         </p>
         <p>
             This is the content of the first article.This is the content of the first article.This is the content of the first article.This is the content of the first article.This is the content of the first article.This is the content of the first article.This is the content of the first article.This is the content of the first article.This is the content of the first article.
