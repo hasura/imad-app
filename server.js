@@ -119,21 +119,12 @@ app.get('/ui/disdata.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'disdata.js'));
 });
 app.get('/verify', function (req,res) {
-    pool.query('SELECT * FROM client_master', function(err, result){
+    pool.query('SELECT "client_name", "client_email" FROM client_master', function(err, result){
         if ( err) {
     		 res.status(500).send(err.toString());
     	 } 
     	 else {
-//    		res.send(JSON.stringify(result.rows));
-            var output ="";
-            var type = typeof result;
-            if ( type === 'object') {
-                output += 'rows[' + JSON.stringify(result.rows) +' ]';
-                output += 'row count ='+ result.rowCount;
-            }
-            else if ( type === 'number')
-                output += 'Number';
-            res.send(output);
+   		    res.send(JSON.stringify(result.rows));
     	 }
     });
     
