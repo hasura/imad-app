@@ -5,20 +5,52 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var ArticleOne = {
-    title:'Article One|Apoorva Kashyap',
-    heading:'Article One',
-    date:'Aug 7, 20XX',
-    content:`
-     <p>
-        This is the content of the first article.This is the content of the first article.This is the content of the first article.This is the content of the first article.This is the content of the first article.This is the content of the first article.This is the content of the first article.This is the content of the first article.This is the content of the first article.
-    </p>
-    <p>
-        This is the content of the first article.This is the content of the first article.This is the content of the first article.This is the content of the first article.This is the content of the first article.This is the content of the first article.This is the content of the first article.This is the content of the first article.This is the content of the first article.
-    </p>
-    <p>
-        This is the content of the first article.This is the content of the first article.This is the content of the first article.This is the content of the first article.This is the content of the first article.This is the content of the first article.This is the content of the first article.This is the content of the first article.This is the content of the first article.
-    </p> `
+var Articles = {    
+    ArticleOne : {
+        title:'Article One|Apoorva Kashyap',
+        heading:'Article One',
+        date:'Aug 7, 20XX',
+        content:`
+         <p>
+            This is the content of the first article.This is the content of the first article.This is the content of the first article.This is the content of the first article.This is the content of the first article.This is the content of the first article.This is the content of the first article.This is the content of the first article.This is the content of the first article.
+        </p>
+        <p>
+            This is the content of the first article.This is the content of the first article.This is the content of the first article.This is the content of the first article.This is the content of the first article.This is the content of the first article.This is the content of the first article.This is the content of the first article.This is the content of the first article.
+        </p>
+        <p>
+            This is the content of the first article.This is the content of the first article.This is the content of the first article.This is the content of the first article.This is the content of the first article.This is the content of the first article.This is the content of the first article.This is the content of the first article.This is the content of the first article.
+        </p> `
+    },
+   ArticleTwo : {
+        title:'Article Two|Apoorva Kashyap',
+        heading:'Article Two',
+        date:'Aug 14, 20XX',
+        content:`
+         <p>
+            This is the content of the second article.This is the content of the second article.This is the content of the second article.This is the content of the second article.This is the content of the second article.This is the content of the second article.This is the content of the second article.This is the content of the second article.This is the content of the second article.
+        </p>
+        <p>
+            This is the content of the second article.This is the content of the second article.This is the content of the second article.This is the content of the second article.This is the content of the second article.This is the content of the second article.This is the content of the second article.This is the content of the second article.This is the content of the second article.
+        </p>
+        <p>
+            This is the content of the second article.This is the content of the second article.This is the content of the second article.This is the content of the second article.This is the content of the second article.This is the content of the second article.This is the content of the second article.This is the content of the second article.This is the content of the second article.        
+        </p> `
+    },
+    ArticleThree : {
+        title:'Article Three|Apoorva Kashyap',
+        heading:'Article Three',
+        date:'Aug 21, 20XX',
+        content:`
+         <p>
+            This is the content of the third article.This is the content of the third article.This is the content of the third article.This is the content of the third article.This is the content of the third article.This is the content of the third article.This is the content of the third article.This is the content of the third article.This is the content of the third article.
+        </p>
+        <p>
+            This is the content of the third article.This is the content of the third article.This is the content of the third article.This is the content of the third article.This is the content of the third article.This is the content of the third article.This is the content of the third article.This is the content of the third article.This is the content of the third article.  
+        </p>
+        <p>
+            This is the content of the third article.This is the content of the third article.This is the content of the third article.This is the content of the third article.This is the content of the third article.This is the content of the third article.This is the content of the third article.This is the content of the third article.This is the content of the third article.
+        </p> `
+    } 
 };
 
 function createTemp (data) {
