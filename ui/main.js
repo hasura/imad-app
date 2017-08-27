@@ -1,7 +1,12 @@
 console.log('Loaded!');
 
 //To move MADI
-var img=document.getElementById("MADI");
+var img = document.getElementById("MADI");
+var marginLeft = 0;
+function moveRight(){
+  marginLeft += 10;
+  img.style.marginLeft = marginLeft+"px";
+}
 img.onclick = function(){
-    img.style.marginLeft+="30px";
+    var Interval = setInterval(moveRight , 100);
 };
