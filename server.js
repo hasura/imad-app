@@ -78,10 +78,14 @@ function makePage(data) {
     return frontPageTemplate;
 }
 var names = [];
+
+var getClass = function(val) {
+	return Object.prototype.toString.call(val)
+		.match(/^\[object\s(.*)\]$/)[1];
+};
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
-
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
@@ -127,7 +131,7 @@ app.get('/verify', function (req,res) {
             output += ',typeof works';
             if ( type === 'object') {
                 output += 'inside object';
-               output += 'Object/' + getClass(result).toLowerCase();
+                output += 'Object/' + getClass(result).toLowerCase();
                 output += 'past getClass';
                 for ( var i in result) {
                     output += ':' + i.toString();
