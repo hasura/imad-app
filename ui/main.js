@@ -4,11 +4,11 @@ console.log('Loaded!');
 var img = document.getElementById("MADI");
 var marginLeft = 0;
 function moveRight(){
-  marginLeft += 1;
+  marginLeft += 5;
   img.style.marginLeft = marginLeft+"px";
   if(img.style.marginLeft>1366)
     document.getElementById("Main").InnerHTML="MADI BHAAG GAYA!!!!";
 }
 img.onclick = function(){
-    var Interval = setInterval(moveRight , 50);
+    var Interval = setInterval(moveRight , 100);
 };
