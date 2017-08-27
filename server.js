@@ -2,6 +2,7 @@ var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
 var pg = require('pg').Pool;
+var bodyParser = require('body-parser');
 
 var app = express();
 
@@ -113,7 +114,29 @@ app.get('/ui/main.js', function (req, res) {
 app.get('/ui/disdata.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'disdata.js'));
 });
-
+app.get('/verify', function (req,res) {
+    pool.query('SELECT * FROM client_master', function(err, result){
+        if ( err) {
+    		 res.status(500).send(err.toString());
+    	 } 
+    	 else {
+    		res.send(JSON.stringify(result.rows));
+            var output ="";
+            var type = typeof result;
+            if ( type === 'object') {
+                output += 'Object/' + getClass(result);
+                for ( var i in result) {
+                    output += ':' + i.toString();
+                }
+                output +='/';
+            }
+            else if ( type === 'number')
+                output += 'Number';
+            res.send(output);
+    	 }
+    });
+    
+});
 app.get('/:articleName', function (req,res) {
     res.send(makePage(pageContents[req.params.articleName]));
 });
