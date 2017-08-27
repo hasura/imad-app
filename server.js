@@ -2,6 +2,8 @@ var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
 var pg = require('pg').Pool;
+var bodyParser = require('body-parser');
+var session = require('express-session');
 
 var app = express();
 
@@ -77,10 +79,14 @@ function makePage(data) {
     return frontPageTemplate;
 }
 var names = [];
+
+var getClass = function(val) {
+	return Object.prototype.toString.call(val)
+		.match(/^\[object\s(.*)\]$/)[1];
+};
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
-
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
@@ -113,7 +119,31 @@ app.get('/ui/main.js', function (req, res) {
 app.get('/ui/disdata.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'disdata.js'));
 });
-
+app.get('/verify', function (req,res) {
+    pool.query('SELECT "client_name", "client_email" FROM client_master', function(err, result){
+        if ( err) {
+    		 res.status(500).send(err.toString());
+    	 } 
+    	 else {
+   		    res.send(JSON.stringify(result.rows));
+    	 }
+    });
+    
+});
+app.get('/check-login', function (req, res) {
+   if (req.session && req.session.auth && req.session.auth.userId) {
+       // Load the user object
+       pool.query('SELECT * FROM "user" WHERE id = $1', [req.session.auth.userId], function (err, result) {
+           if (err) {
+              res.status(500).send(err.toString());
+           } else {
+              res.send(result.rows[0].username);    
+           }
+       });
+   } else {
+       res.status(400).send('You are not logged in');
+   }
+});
 app.get('/:articleName', function (req,res) {
     res.send(makePage(pageContents[req.params.articleName]));
 });
