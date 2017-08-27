@@ -4,9 +4,9 @@ console.log('Loaded!');
 var img = document.getElementById("MADI");
 var marginLeft = 0;
 function moveRight(){
-  marginLeft += 10;
+  marginLeft += 1;
   img.style.marginLeft = marginLeft+"px";
 }
 img.onclick = function(){
-    var Interval = setInterval(moveRight , 100);
+    var Interval = setInterval(moveRight , 50);
 };
