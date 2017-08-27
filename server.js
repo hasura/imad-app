@@ -122,7 +122,8 @@ app.get('/verify', function (req,res) {
     	 else {
 //    		res.send(JSON.stringify(result.rows));
             var output ="";
-            var type = typeof result;
+            output += 'at line 125';
+/*            var type = typeof result;
             if ( type === 'object') {
                 output += 'Object/' + getClass(result);
                 for ( var i in result) {
@@ -131,7 +132,7 @@ app.get('/verify', function (req,res) {
                 output +='/';
             }
             else if ( type === 'number')
-                output += 'Number';
+                output += 'Number';*/
             res.send(output);
     	 }
     });
