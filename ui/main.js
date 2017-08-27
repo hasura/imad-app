@@ -7,7 +7,9 @@ function moveRight(){
   marginLeft += 5;
   img.style.marginLeft = marginLeft+"px";
   if(img.style.marginLeft>300)
-    document.getElementById("Main").InnerHTML="MADI BHAAG GAYA!!!!";
+    {document.getElementById("Main").InnerHTML="MADI BHAAG GAYA!!!!";
+        document.write(gugu);
+    }
 }
 img.onclick = function(){
     var Interval = setInterval(moveRight , 100);
