@@ -94,7 +94,7 @@ app.get('/ui/style.css', function (req, res) {
 });
 
 app.get('/ui/:articlename',function(req,res){
-    var articlename = req.param.articlename;
+    var articlename = req.params.articlename;
     res.send(createTemp(Articles[articlename]));
 });
 
