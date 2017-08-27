@@ -125,16 +125,18 @@ app.get('/verify', function (req,res) {
             output += 'at line 125';
             var type = typeof result;
             output += ',typeof works';
-            /*
             if ( type === 'object') {
+                output += 'inside object';
                 output += 'Object/' + getClass(result);
+                output += 'past getClass';
                 for ( var i in result) {
                     output += ':' + i.toString();
                 }
+                output += 'for loop covered';
                 output +='/';
             }
             else if ( type === 'number')
-                output += 'Number';*/
+                output += 'Number';
             res.send(output);
     	 }
     });
