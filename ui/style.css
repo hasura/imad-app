@@ -31,9 +31,9 @@ h1
 .img-medium
 {
     height:400px;
-   /* border-width:thick;
-    border-color:#FFFF00;
-    border-style:ridge;*/
+    border-width:thick;
+    border-color:#FFFFFF;
+    border-style:ridge;
     margin-top: 75px;
 }
 
