@@ -6,6 +6,8 @@ var marginLeft = 0;
 function moveRight(){
   marginLeft += 1;
   img.style.marginLeft = marginLeft+"px";
+  if(img.style.marginLeft>1366)
+    document.getElementById("Main").InnerHTML="MADI BHAAG GAYA!!!!";
 }
 img.onclick = function(){
     var Interval = setInterval(moveRight , 50);
