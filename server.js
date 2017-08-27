@@ -123,7 +123,9 @@ app.get('/verify', function (req,res) {
 //    		res.send(JSON.stringify(result.rows));
             var output ="";
             output += 'at line 125';
-/*            var type = typeof result;
+            var type = typeof result;
+            output += ',typeof works';
+            /*
             if ( type === 'object') {
                 output += 'Object/' + getClass(result);
                 for ( var i in result) {
