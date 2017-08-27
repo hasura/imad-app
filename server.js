@@ -93,8 +93,9 @@ app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
 
-app.get('/ui/Article_One',function(req,res){
-    res.send(createTemp(ArticleOne));
+app.get('/ui/:articlename',function(req,res){
+    var articlename = req.param.articlename;
+    res.send(createTemp(Articles[articlename]));
 });
 
 app.get('/ui/Article_Two.html',function(req,res){
