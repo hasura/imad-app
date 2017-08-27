@@ -98,14 +98,6 @@ app.get('/ui/:articlename',function(req,res){
     res.send(createTemp(Articles[articlename]));
 });
 
-app.get('/ui/Article_Two.html',function(req,res){
-    res.sendfile(path.join(__dirname,'ui','Article_Two.html'));
-});
-
-app.get('/ui/Article_Three.html',function(req,res){
-    res.sendfile(path.join(__dirname,'ui','Article_Three.html'));
-});
-
 app.get('/Bumblebee.jpg',function(req,res){
     res.sendfile(path.join(__dirname,'Bumblebee.jpg'));
 });
