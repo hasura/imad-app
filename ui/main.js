@@ -154,6 +154,7 @@ displayMembers = function(){
         // Make the request
     request.open('GET', '/verify', true);
     request.send(null);  
-}
+};
+// lets get these going
 verifyLogin();
 displayMembers();
