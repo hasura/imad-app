@@ -9,6 +9,10 @@ app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 
+app.get('/Bumblebee.jpg',function(req,res){
+    res.sendfile(path.join(__dirname,'Bumblebee.jpg'));
+});
+
 var Articles = {    
     'Article_One' : {
         title:'Article One|Apoorva Kashyap',
@@ -111,8 +115,8 @@ app.get('/ui/:articlename',function(req,res){
     res.send(createTemp(Articles[articlename]));
 });
 
-app.get('/Bumblebee.jpg',function(req,res){
-    res.sendfile(path.join(__dirname,'Bumblebee.jpg'));
+app.get('/Bumbly_Prof',function(req,res){
+    res.sendfile(path.join(__dirname,'ui','Bumbly_prof.html'));
 });
 
 //Do not change port, otherwise your app won't run on IMAD servers
