@@ -21,12 +21,11 @@ app.get('/article-three', function (req, res) {
 });
 
 app.get('/', function (req, res) {
-});
-  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
-// Do not change port, otherwise your app won't run on IMAD servers
-// Use 8080 only for local development if you already have apache running on 80
+   res.sendfile(path.join(__dirname 'ui' . modi.png'png'));
+ 
+
 
 var port = 80;
 app.listen(port, function () {
   console.log(`IMAD course app listening on port ${port}!`);
-}
+}):
