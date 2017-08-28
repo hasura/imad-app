@@ -92,7 +92,45 @@ var createTemplate = function(data) {
                 ${title}
             </title>
             <meta name="view-port" content="width=device-width, initial-scale=1/">
-            <link type="text/css" rel="stylesheet" href="ui/style.css"/>
+            <!--<link type="text/css" rel="stylesheet" href="ui/style.css"/>-->
+            <style>
+                body{
+                    background-color: lightgrey;
+                    padding: 0px 20px 0px 20px ;
+                }
+                
+                .container {
+                    max-width: 800px;
+                    font-family: 'Roboto', sans-serif;
+                    padding: 60px 40px 40px 40px;
+                    margin: 0 auto;
+                    background-color: #ffffff;
+                }
+                
+                .heading{
+                    color: #f45f42;
+                }
+                
+                .date{
+                    color: #4286f4;
+                }
+                
+                .center {
+                    text-align: center;
+                }
+                
+                .text-big {
+                    font-size: 300%;
+                }
+                
+                .bold {
+                    font-weight: bold;
+                }
+                
+                .img-medium {
+                    height: 200px;
+                }
+            </style>
             <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
         </head>
         <body>
