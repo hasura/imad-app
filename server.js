@@ -13,8 +13,8 @@ app.get('/Bumblebee.jpg',function(req,res){
     res.sendfile(path.join(__dirname,'Bumblebee.jpg'));
 });
 
-app.get('/Bumbly_Prof',function(req,res){
-    res.sendfile(path.join(__dirname,'ui','Bumbly_prof.html'));
+app.get('/ui/Bumbly_Prof',function(req,res){
+    res.sendfile(path.join(__dirname,'ui','Bumbly_Prof.html'));
 });
 
 var Articles = {    
