@@ -91,7 +91,7 @@ var createTemplate = function(data) {
             <title>
                 ${title}
             </title>
-            <meta name="view-port" content="width=device-width">
+            <meta name="view-port" content="width=device-width, initial-scale=1/">
             <link type="text/css" rel="stylesheet" href="ui/style.css"/>
             <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
         </head>
