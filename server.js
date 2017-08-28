@@ -137,7 +137,7 @@ app.get('/test-db', function(req, res) {
 app.get('/articles/:articleName', function(req, res){
     //aticleName create the object as per the url typed by user.
     
-    pool.query("Select * from article where title =" + req.params.articleName, function(err, result){
+    pool.query("Select * from article where title =" + req.params.articleName + "'", function(err, result){
        if(err) {
            res.status(500).send(err.toString());
        } else {
