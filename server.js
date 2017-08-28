@@ -13,6 +13,10 @@ app.get('/Bumblebee.jpg',function(req,res){
     res.sendfile(path.join(__dirname,'Bumblebee.jpg'));
 });
 
+app.get('/Bumbly_Prof',function(req,res){
+    res.sendfile(path.join(__dirname,'ui','Bumbly_prof.html'));
+});
+
 var Articles = {    
     'Article_One' : {
         title:'Article One|Apoorva Kashyap',
@@ -113,10 +117,6 @@ app.get('/ui/main.js', function (req, res) {
 app.get('/ui/:articlename',function(req,res){
     var articlename = req.params.articlename;
     res.send(createTemp(Articles[articlename]));
-});
-
-app.get('/Bumbly_Prof',function(req,res){
-    res.sendfile(path.join(__dirname,'ui','Bumbly_prof.html'));
 });
 
 //Do not change port, otherwise your app won't run on IMAD servers
