@@ -1,4 +1,4 @@
-console.log('Loaded!');
+/*console.log('Loaded!');
 
 //To move MADI
 var img = document.getElementById("MADI");
@@ -10,13 +10,14 @@ function moveRight(){
 img.onclick = function(){
     var Interval = setInterval(moveRight , 100);
 };
+*/
 
 //Counter Code
-var counter=document.getElementById("counter");
+var counter=document.getElementById('counter');
 var count=0;
 counter.onclick=function(){
  
  count++;
- var visitors=document.getElementById("count");
+ var visitors=document.getElementById('count');
  visitors.InnerHTML=count.toString();
 };
