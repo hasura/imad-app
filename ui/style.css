@@ -44,5 +44,24 @@ h1
     margin:0 auto;
     
 }
+
+.img-large
+{
+    height:540px;
+	width :990px;
+    border-width:thick;
+    border-color:#FFFFFF;
+    border-style:ridge;
+    margin-top: 25px;
+}
+
+.withborder
+{
+	margin-top:-10px;
+	border-style:dashed;
+	border-width:thick;
+	border-color:black;
+	text-align:left;
+}
     
 
