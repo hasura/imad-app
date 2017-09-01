@@ -22,8 +22,6 @@ app.get('/article-three', function (req, res) {
 
 app.get('/', function (req, res) {
    res.sendfile(path.join(__dirname 'ui' . modi.png'png'));
- 
-
 
 var port = 80;
 app.listen(port, function () {
