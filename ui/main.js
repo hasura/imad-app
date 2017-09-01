@@ -13,11 +13,11 @@ img.onclick = function(){
 */
 
 //Counter Code
-var counter = document.getElementById('counter');
-var count = 0;
-counter.onclick = function(){
+var button = document.getElementById('counter');
+var counter = 0;
+button.onclick = function(){
  
- count+=1;
- var visitors = document.getElementById('count');
- visitors.InnerHTML = count.toString();
+ counter=counter+1;
+ var span = document.getElementById('count');
+ span.InnerHTML = counter.toString();
 };
