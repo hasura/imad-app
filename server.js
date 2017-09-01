@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
   <title>JEEVAN IMAD profile</title>
@@ -7,8 +7,8 @@
   <link rel="stylesheet" href="static/style.css">
 </head>
 <body>
-  <div class=CONTINER TEXT CENTER>
-    <div class="row content">
+  <div class=9>
+    <div class="9">
       <div class="col-sm-4 sidenav">
         <div class="thumbnail">
           <!-- Change the link in the src attribute below to an image available on the Internet -->
