@@ -20,3 +20,8 @@ body {
     height: 200px;
 }
 
+.container {
+    color: blue;
+    padding-left : 20px;
+    padding-right: 20px;
+}
