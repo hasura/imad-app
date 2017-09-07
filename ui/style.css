@@ -25,18 +25,3 @@ body {
     background-color: blue;
     margin-top: 110px;
 } REOL
-font-family: cursive;
-    background-color: #bb1313;
-    margin-top: 110px;
-}
-style.css:1
-body {
-    font-family: bold italic;
-    background-color: blue;
-    margin-top: 800px;
-}
-
-user agent stylesheet
-body {
-    display: block;
-    margin: 8px;
