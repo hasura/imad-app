@@ -15,7 +15,7 @@ app.get("/arcticle-one",function(req,res){
 
 
 
-app.get("/arcticle-three",function(req,res){
+app.get("/arcticle-tWO",function(req,res){
     res.sendFile(path.join(__dirname, 'ui', 'arcticle-three.html'));
 });
 
