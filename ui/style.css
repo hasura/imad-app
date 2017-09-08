@@ -1,6 +1,6 @@
 body {
     font-family: bold italic;
-    background-color: blue;
+    background-color: red;
     margin-top: 800px;
 }
 
@@ -9,7 +9,7 @@ body {
 }
 
 .text-big {
-    font-size: 400%;
+    font-size: 800%;
 }
 
 .bold {
@@ -17,10 +17,10 @@ body {
 }
 
 .img-medium {
-    height: 200px;
+    height: 400px;
 }
 
 body {
     font-family: italic;
     background-color: blue;
-    margin-top: 110px;
+    margin-top: 160px;
