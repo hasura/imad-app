@@ -92,7 +92,7 @@ var createTemplate = function(data) {
                 <hr />
                 <div class="comments">
                     <h3>Comments</h3>
-                    <br>
+                    <hr />
                     <textarea maxlength=150></textarea> <br>
                     <input type="submit" id="submit-comm">
                     <input type="reset" id="clear">
