@@ -20,7 +20,7 @@ button.onclick = function() {
   };
   
   //make a request
-  request.open('GET', 'http://coco98.imad.hasura-app.io/counter', true);
+  request.open('GET', 'http://ssttrinath.imad.hasura-app.io/counter', true);
   request.send(null);
   
 };
