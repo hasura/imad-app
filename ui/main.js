@@ -50,7 +50,7 @@ submit.onclick = function() {
   };
   
   //make a request
-  request.open('GET', 'http://ssttrinath.imad.hasura-app.io/counter', true);
+  request.open('GET', 'http://ssttrinath.imad.hasura-app.io/submit-name?name='+name, true);
   request.send(null);
    
    var nameInput = document.getElementById('name');  
