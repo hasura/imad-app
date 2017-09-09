@@ -89,6 +89,14 @@ var createTemplate = function(data) {
                 <div>
                     ${content}
                 </div>
+                <hr />
+                <div class="comments">
+                    <h3>Comments</h3>
+                    <br>
+                    <textarea maxlength=150></textarea> <br>
+                    <input type="submit" id="submit-comm">
+                    <input type="reset" id="clear">
+                </div>
             </div>
         </body>
     </html>
