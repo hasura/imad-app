@@ -14,6 +14,12 @@ var config = {
 var app = express();
 app.use(morgan('combined'));
 
+var counter=0;
+app.get('/counter', function() {
+    counter++;
+    res.send(counter.toString());
+});
+
 var createTemplate = function(data) { 
     var title = data.title;
     var heading = data.heading;
