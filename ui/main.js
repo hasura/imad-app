@@ -1,15 +1,26 @@
 //counter code
-var counter=0;
 
 var button = document.getElementById('counter');
 button.onclick = function() {
   
-  //make a request to get the counter value
+  //create a new request
+  var request = new XMLHttpRequest();
   
-  //extract the counter value into a variable
   
-  //render the counter value in the correct span
-  counter++;
-  var span=document.getElementById('count');
-  span.innerHTML=counter.toString();
+  //capture the response and store in a variable
+  request.onreadystatechange = function() {
+      if(request.readyState === XMLHttpRequest.DONE){
+          //Take some action
+          if(request.status === 200) {
+              var counter = request.responseText;
+              var span=document.getElementById('count');
+              span.innerHTML=counter.toString();
+          }
+      }
+  };
+  
+  //make a request
+  request.open('GET', 'http://ssttrinath.imad.hasura-app.io/counter', true);
+  request.send(null);
+  
 };
