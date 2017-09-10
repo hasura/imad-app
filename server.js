@@ -32,7 +32,7 @@ app.get('/hash/:input', function(req, res) {
     res.send(hashedString);
 });
 
-app.get('/create-user', function(req, res) {
+app.post('/create-user', function(req, res) {
     //username, password
     //JSON
     var username = req.body.username;
