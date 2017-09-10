@@ -98,6 +98,7 @@ app.get('/logout', function(req, res) {
     res.send('Logged out!');
 });
 
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
