@@ -2,6 +2,7 @@ var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
 var Pool = require('pg').Pool;
+var crypto = require('crypto');
 
 var config = {
     user: 'ssttrinath',
@@ -20,6 +21,40 @@ app.get('/counter', function(req, res) {
     res.send(counter.toString());
 });
 
+function hash(input, salt) {
+    var hashed = crypto.pbkdf2Sync(input, salt, 10000, 512, 'sha512');
+    return hashed.toString('hex');
+}
+app.get('/hash/:input', function(req, res) {
+    var hashedString = hash(req.params.input, 'This-is-some-random-string');
+    res.send(hashedString);
+});
+
+app.get('/', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+});
+
+var names=[];
+app.get('/submit-name', function(req, res) {
+    var name = req.query.name;
+    names.push(name);
+    res.send(JSON.stringify(names));
+});
+
+var pool = new Pool(config);
+/*
+app.get('/test-db', function(req, res) {
+    //make a select request
+    //return a response with the results
+    pool.query('SELECT * FROM test', function(err, result){
+        if(err) {
+            res.status(500).send(err.toString());
+        } else {
+            res.send(JSON.stringify(result.rows));
+        }
+    });
+});
+*/
 var createTemplate = function(data) { 
     var title = data.title;
     var heading = data.heading;
@@ -103,32 +138,6 @@ var createTemplate = function(data) {
     `;
     return template;
 };
-
-app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
-});
-
-var names=[];
-app.get('/submit-name', function(req, res) {
-    var name = req.query.name;
-    names.push(name);
-    res.send(JSON.stringify(names));
-});
-
-var pool = new Pool(config);
-/*
-app.get('/test-db', function(req, res) {
-    //make a select request
-    //return a response with the results
-    pool.query('SELECT * FROM test', function(err, result){
-        if(err) {
-            res.status(500).send(err.toString());
-        } else {
-            res.send(JSON.stringify(result.rows));
-        }
-    });
-});
-*/
 
 app.get('/articles/:articleName', function(req, res){
     //aticleName create the object as per the url typed by user.
