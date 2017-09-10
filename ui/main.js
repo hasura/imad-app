@@ -89,7 +89,7 @@ function checkLogin() {
           //Take some action
           if(request.status === 200) {
               if(request.responseText === 'yes') {
-                  loggedFrom();
+                  loggedForm();
               } else if(request.responseText === 'no') {
                   loginForm();
               }
