@@ -18,3 +18,4 @@ function clicked()
  var span = document.getElementById('no_of_times');
  span.InnerHTML = counter.toString();
 }
+console.log("hi");
