@@ -1,6 +1,6 @@
 
 var login = document.getElementById('login');
-submit.onclick = function() {
+login.onclick = function() {
    
    var request = new XMLHttpRequest();
   
