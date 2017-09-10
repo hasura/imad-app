@@ -88,9 +88,9 @@ app.post('/login', function(req, res){
 
 app.get('/check-login', function(req, res) {
    if(req.session && req.session.auth && req.session.auth.userId) {
-       res.send('you are logged in' );
+       res.send('yes' );
    } else {
-       res.send('you are not logged in');
+       res.send('no');
    }
 });
 
