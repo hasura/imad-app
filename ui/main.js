@@ -14,7 +14,7 @@ button.onclick = function() {
 function clicked()
 {
     counter=counter+1;
-    Document.write(counter);
+    document.write(counter);
  var span = document.getElementById('no_of_times');
  span.InnerHTML = counter.toString();
 }
