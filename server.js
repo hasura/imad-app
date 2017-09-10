@@ -88,16 +88,26 @@ app.post('/login', function(req, res){
 
 app.get('/check-login', function(req, res) {
    if(req.session && req.session.auth && req.session.auth.userId) {
-       res.send('you are logged in with id ' +req.session.auth.userId.toString());
+       res.send('you are logged in' );
    } else {
        res.send('you are not logged in');
    }
 });
+
 app.get('/logout', function(req, res) {
     delete req.session.auth;
     res.send('Logged out!');
 });
 
+/*
+app.get('renderlogin', function(req, res) {
+   var region =  document.getElementById('')
+});
+
+app.get('renderlogin', function(req, res) {
+    
+});
+*/
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
