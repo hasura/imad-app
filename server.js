@@ -66,6 +66,9 @@ app.post('/login', function(req, res){
                 var hashedPassword = hash(password, salt);  //creating hashed password with the password submitted by the user while login
                 if(hashedPassword === dbString) {       //matching stored password and subitted password.
                     res.send('credentials are correct!');
+                    
+                    //set a session
+                    
                 } else {
                     res.status(403).send('Username/Password is incorrect!!!');   
                 }
