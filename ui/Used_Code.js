@@ -10,3 +10,12 @@ function moveRight(){
 img.onclick = function(){
     var Interval = setInterval(moveRight , 100);
 };
+
+var button = document.getElementById('clicking');
+/*document.getElementById('clicking').onclick = function() {
+ 
+// console.log("hi");
+ counter++;
+ var span = document.getElementById('nooftimes');
+ span.innerHTML=counter.toString();
+};*/
