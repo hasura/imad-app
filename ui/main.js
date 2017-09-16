@@ -8,7 +8,7 @@ button.onclick = function() {
  console.log("hi");
  counter=counter+1;
  var span = document.getElementById("no_of_times");
- span.innerHTML = counter.toString();
+ span.innerHTML=counter.toString();
 };
 
 /*function clicked()
