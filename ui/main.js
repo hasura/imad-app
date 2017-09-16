@@ -16,6 +16,6 @@ function clicked()
     };
     
     //Make the request
-    request.open('GET','http://apoorvakashyap54.imad.hasura-app.io/',true);
+    request.open('GET','http://apoorvakashyap54.imad.hasura-app.io/counter',true);
     request.send(null);
 }
