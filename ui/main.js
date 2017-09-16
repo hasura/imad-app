@@ -7,7 +7,7 @@ button.onclick = function() {
  
 // console.log("hi");
  counter++;
- var span = document.getElementById("nooftimes");
+ var span = document.getElementById('nooftimes');
  span.innerHTML=counter.toString();
 };
 /*
