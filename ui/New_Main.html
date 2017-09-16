@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+    <head>
+        <link href="/ui/style.css" rel="stylesheet" />
+        <title>
+            My First WebApp
+        </title>
+    </head>
+    <body>
+        <div class="center" id = "main">
+            <img src="/ui/madi.png" id="MADI" class="img-medium" alt="MADI bhaag gaya!:)"/>
+        </div>
+        <br><br>
+        <div class="center text-big bold">
+                Hello:)
+            <br>
+	        <p align=center>
+	             Welcome to my first webapp.
+	        </p>
+	       <br>
+	    </div>
+	    <hr>
+	    <p>
+	        This is a list of links to other webpages.
+	    </p>
+	    <ul>
+            <li><a href='/ui/Article_One'>Article One</a></li>
+	        <li><a href='/ui/Article_Two'>Article Two</a></li>
+	        <li><a href='/ui/Article_Three'>Article Three</a></li>
+	        <li><a href='/ui/Bumbly_Prof'>Bumblebee Profile</a></li>
+        </ul>
+	    <!--
+        <marquee direction="down" width="1366" height="768" behavior="alternate" truespeed=1>
+            <marquee behavior="alternate">
+            </marquee>
+        </marquee>-->
+        <div class="footer">
+            This button <button id="counter">Click Me!</button> has been clicked <span id = "count">0</span> times.
+        </div>
+        <script>
+            var opinion=confirm("JS Added!Did you like it?");
+            if(opinion)
+                document.write("<h1 align = center>YIPPEE!!</h1>");
+            else
+                document.write("<h1 align = center>BOOHOO!!:(</h1>");
+        </script>
+        <script type="text/javascript" src="/ui/main.js">
+        </script>
+    </body>
+</html>

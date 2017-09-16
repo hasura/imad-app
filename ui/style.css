@@ -1,22 +1,67 @@
-body {
-    font-family: sans-serif;
-    background-color: lightgrey;
-    margin-top: 75px;
+body 
+{
+    font-family:"",serif;
+    font-size:100%;
+    background-color:#EEEEEE;
+   
 }
 
-.center {
+.center
+{
     text-align: center;
 }
 
-.text-big {
-    font-size: 300%;
+h1
+{
+    font-family:"Times New Roman", Times, serif;
+    color:#00AAFF;
+}
+
+.text-big 
+{
+    color:green;
+    font-size: 100%;
+    
 }
 
 .bold {
-    font-weight: bold;
+    font-weight: bolder;
 }
 
-.img-medium {
-    height: 200px;
+.img-medium
+{
+    height:400px;
+    border-width:thick;
+    border-color:#FFFFFF;
+    border-style:ridge;
+    margin-top: 75px;
 }
+
+.container
+{
+    
+    max-width: 1000px;
+    margin:0 auto;
+    
+}
+
+.img-large
+{
+    height:540px;
+	width :990px;
+    border-width:thick;
+    border-color:#FFFFFF;
+    border-style:ridge;
+    margin-top: 25px;
+}
+
+.withborder
+{
+	margin-top:-10px;
+	border-style:dashed;
+	border-width:thick;
+	border-color:black;
+	text-align:left;
+}
+    
 
