@@ -1,16 +1,16 @@
 //Counter Code
 
-var button = document.getElementById("clicking");
+var button = document.getElementById('clicking');
 var counter = 0;
-/*
-button.onClick = function() {
+
+button.onclick = function() {
  
 // console.log("hi");
- counter=counter+1;
+ counter++;
  var span = document.getElementById("nooftimes");
  span.innerHTML=counter.toString();
 };
-*/
+/*
 function clicked()
 {
     console.log("hi");
@@ -19,4 +19,4 @@ function clicked()
  var span = document.getElementById('nooftimes')
  span.innerHTML = counter.toString();
 }
-console.log("hi");
+console.log("hi");*/
