@@ -2,7 +2,7 @@
 
 var button = document.getElementById("clicking");
 var counter = 0;
-
+/*
 button.onClick = function() {
  
 // console.log("hi");
@@ -10,8 +10,8 @@ button.onClick = function() {
  var span = document.getElementById("nooftimes");
  span.innerHTML=counter.toString();
 };
-
-/*function clicked()
+*/
+function clicked()
 {
     console.log("hi");
     counter++;
@@ -19,4 +19,4 @@ button.onClick = function() {
  var span = document.getElementById('no_of_times');
  span.InnerHTML = counter.toString();
 }
-console.log("hi");*/
+console.log("hi");
