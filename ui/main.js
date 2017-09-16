@@ -17,6 +17,6 @@ function clicked()
     counter++;
     document.write(counter);
  //var span = 
- document.getElementById('nooftimes') = counter.toString();
+ document.getElementById('nooftimes').innerHTML = counter.toString();
 }
 console.log("hi");
