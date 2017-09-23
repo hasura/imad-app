@@ -61,8 +61,8 @@ function template(value)
 
 
 app.get('/:pageArea', function (req, res) {
-  var findpage = req.paramas.pageArea;
-  res.send(template(page[findpage]));
+  var pageArea = req.paramas.pageArea;
+  res.send(template(page[pageArea]));
   //functioon(variable[object])
 });
 
