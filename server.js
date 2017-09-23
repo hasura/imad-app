@@ -60,8 +60,8 @@ function template(value)
 
 
 
-app.get('/:pageone', function (req, res) {
-  res.sendFile();
+app.get('/:page', function (req, res) {
+  res.send(template(page[page]));
 });
 
 app.get('/ui/style.css', function (req, res) {
