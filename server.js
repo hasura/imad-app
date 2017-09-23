@@ -5,7 +5,7 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var page =
+var pagearea =
 {
     pageone:
     {
@@ -61,7 +61,7 @@ function template(value)
 
 
 app.get('/:page', function (req, res) {
-  res.send(template(page[page]));
+  res.send(template(pagearea[page]));
 });
 
 app.get('/ui/style.css', function (req, res) {
