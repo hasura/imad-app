@@ -63,7 +63,7 @@ function template(value)
 app.get('/:page-Area', function(req, res) {
   var pagecontent = req.paramas.page-Area;
   //alert(pagecontent);
-  res.send(template(page[pagecontent]));
+  res.sendFile(template(page[pagecontent]));
   //function(variable[object])
 });
 
