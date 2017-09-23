@@ -18,15 +18,15 @@ var page =
     pagetwo:
     {
     name:`suhail`,
-    age:`21`,
+    age:`22`,
     fathername:`sahul`
     link:'/ui/pagethree'
     },
     pagethree:
     {
-    name:`suhail`,
-    age:`21`,
-    fathername:`sahul`
+    name:`vel`,
+    age:`23`,
+    fathername:`venayagam`
     link:'/'
     }
 };
