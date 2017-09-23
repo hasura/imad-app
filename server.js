@@ -11,22 +11,21 @@ var page =
     {
     name:`vijay`,
     age:`21`,
-    fathername:`kannan`
-    link:'/ui/pagetwo'
-        
+    fathername:`kannan`,
+    link:`/ui/pagetwo`
     },
     pagetwo:
     {
     name:`suhail`,
     age:`22`,
-    fathername:`sahul`
+    fathername:`sahul`,
     link:'/ui/pagethree'
     },
     pagethree:
     {
     name:`vel`,
     age:`23`,
-    fathername:`venayagam`
+    fathername:`venayagam`,
     link:'/'
     }
 };
@@ -47,7 +46,9 @@ function template(value)
         </div>
         <br>
         <div class="center text-big bold">
-			${name};<br> ${age}<br>${fathername}<br>
+			${name}<br> 
+			${age}<br>
+			${fathername}<br>
 			<a href="${link}">next</a><br>
         </div>
         <script type="text/javascript" src="/ui/main.js">
