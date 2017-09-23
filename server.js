@@ -12,21 +12,21 @@ var page =
     name:`vijay`,
     age:`21`,
     fathername:`kannan`,
-    link:`/pagetwo`
+    linkpage:`/pagetwo`
     },
     pagetwo:
     {
     name:`suhail`,
     age:`22`,
     fathername:`sahul`,
-    link:'/pagethree'
+    linkpage:'/pagethree'
     },
     pagethree:
     {
     name:`vel`,
     age:`23`,
     fathername:`venayagam`,
-    link:'/'
+    linkpage:'/'
     }
 };
 
@@ -49,7 +49,7 @@ function template(value)
 			${name}<br> 
 			${age}<br>
 			${fathername}<br>
-			<a href="${link}">next</a><br>
+			<a href="${linkpage}">next</a><br>
         </div>
         <script type="text/javascript" src="/ui/main.js">
         </script>
@@ -60,7 +60,7 @@ function template(value)
 
 
 
-app.get('/:pageArea', function (req, res) {
+app.get('/:pageArea', function(req, res) {
   var pageArea = req.paramas.pageArea;
   res.send(template(page[pageArea]));
   //functioon(variable[object])
