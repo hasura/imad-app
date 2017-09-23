@@ -12,6 +12,7 @@ var page =
     name:`vijay`,
     age:`21`,
     fathername:`kannan`
+    link:'/ui/pagetwo'
         
     },
     pagetwo:
@@ -19,12 +20,14 @@ var page =
     name:`suhail`,
     age:`21`,
     fathername:`sahul`
+    link:'/ui/pagetwo'
     },
     pagethree:
     {
     name:`suhail`,
     age:`21`,
     fathername:`sahul`
+    link:'/ui/pagethree'
     }
 };
 
