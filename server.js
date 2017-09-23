@@ -49,7 +49,7 @@ function template(value)
 			${name}<br> 
 			${age}<br>
 			${fathername}<br>
-			<a href="${linkpage}">next</a><br>
+			<!--<a href="${linkpage}">next</a><br>-->
         </div>
         <script type="text/javascript" src="/ui/main.js">
         </script>
