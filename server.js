@@ -12,14 +12,14 @@ var page =
     name:`vijay`,
     age:`21`,
     fathername:`kannan`,
-    link:`/:pagetwo`
+    link:`/pagetwo`
     },
     pagetwo:
     {
     name:`suhail`,
     age:`22`,
     fathername:`sahul`,
-    link:'/:pagethree'
+    link:'/pagethree'
     },
     pagethree:
     {
@@ -60,8 +60,8 @@ function template(value)
 
 
 
-app.get('/:page', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+app.get('/:pageone', function (req, res) {
+  res.sendFile();
 });
 
 app.get('/ui/style.css', function (req, res) {
