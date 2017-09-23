@@ -61,7 +61,9 @@ function template(value)
 
 
 app.get('/:page', function (req, res) {
-  res.send(template(pagearea[page]));
+  var getpage = req.paramas.page;
+  res.send(template(pagearea[getpage]));
+  //functioon(variable[object])
 });
 
 app.get('/ui/style.css', function (req, res) {
