@@ -2,6 +2,7 @@ h1 {
     font-family: sans-serif;
     background-color: lightgrey;
     margin-top: 60px;
+    text-align:center;
 }
 
 p {
@@ -12,11 +13,6 @@ footer {
     font-size: 300%;
 }
 
-.bold {
-    font-weight: bold;
-}
 
-.img-medium {
-    height: 200px;
-}
+
 
