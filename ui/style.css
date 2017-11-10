@@ -1,14 +1,13 @@
-h1 {
+h{
     font-family: sans-serif;
     background-color: lightgrey;
     margin-top: 60px;
     text-align:center;
+    text-decoration:underline;
 }
-
-p {
-    text-align: center;
+p{
+    font-weight:bold;
 }
-
 footer {
     font-size: 300%;
 }
