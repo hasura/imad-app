@@ -1,14 +1,14 @@
-body {
+h1 {
     font-family: sans-serif;
     background-color: lightgrey;
     margin-top: 60px;
 }
 
-.center {
+p {
     text-align: center;
 }
 
-.text-big {
+footer {
     font-size: 300%;
 }
 
