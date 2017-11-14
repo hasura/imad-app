@@ -7,10 +7,10 @@ app.get('/ui/index.html',function(req,res){
     //'res.sendFile(path,join(__dirname,'ui','index.html'));'
     res.sendFile('/ui/index.html');
 });
-app.get('/ui/style.css',function(req,res){
-    res.sendFile(path,join(__dirname,'ui','style.css'));
-});
-var port=8080;
-app.listen(8080,function(){
-    console.log('IMAD is listnening to  port "${port}"');
-});
+//app.get('/ui/style.css',function(req,res){
+ //   res.sendFile(path,join(__dirname,'ui','style.css'));
+//});
+//var port=8080;
+//app.listen(8080,function(){
+//    console.log('IMAD is listnening to  port "${port}"');
+//});
