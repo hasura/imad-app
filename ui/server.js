@@ -4,7 +4,8 @@ var path=require('path');
 var app=express();
 app.use(morgan('combined'));
 app.get('/ui/index.html',function(req,res){
-    res.sendFile(path,join(__dirname,'ui','index.html'));
+    //'res.sendFile(path,join(__dirname,'ui','index.html'));'
+    res.sendFile('/ui/index.html');
 });
 app.get('/ui/style.css',function(req,res){
     res.sendFile(path,join(__dirname,'ui','style.css'));
