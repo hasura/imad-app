@@ -13,4 +13,5 @@ app.get('/ui/index.html',function(req,res){
 //var port=8080;
 //app.listen(8080,function(){
 //    console.log('IMAD is listnening to  port "${port}"');
-//});
+//});'
+app.listen(8080);
