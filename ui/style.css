@@ -1,5 +1,5 @@
 body {
-    font-family: sans-serif;
+    font-family: 'Aclonica';
     background-color: lightgrey;
     margin-top: 75px;
 }
@@ -19,4 +19,15 @@ body {
 .img-medium {
     height: 200px;
 }
+.box {
+    width: 300px;
+    border: 10px solid black;
+    padding: 25px;
+   margin: auto;
+    width: 50%;
+    height:100%;
+    font-family:Monotype Corsiva;
+    font-style:italic;
+}
 
+    
