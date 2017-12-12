@@ -1,22 +1,13 @@
-body {
+h{
     font-family: sans-serif;
     background-color: lightgrey;
-    margin-top: 75px;
+    margin-top: 60px;
+    text-align:center;
+    text-decoration:underline;
 }
-
-.center {
-    text-align: center;
+p{
+    font-weight:bold;
 }
-
-.text-big {
+footer{
     font-size: 300%;
 }
-
-.bold {
-    font-weight: bold;
-}
-
-.img-medium {
-    height: 200px;
-}
-
