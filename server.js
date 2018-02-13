@@ -20,8 +20,8 @@ app.get('/ui/madi.png', function (req, res) {
 
 //--------user changes-----------
 
-app.get('/article-one', function(req, res){
-   res.sendFile('article will be served here....');
+app.get('/article-one', function (req, res) {
+  res.sendFile('onaonfon');
 });
 
 app.get('/article-one', function(req, res){
