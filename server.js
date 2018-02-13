@@ -25,11 +25,11 @@ app.get('/article-one', function (req, res) {
 });
 
 app.get('/article-one', function(req, res){
-   res.sendFile('article will be served here....');
+   res.send('article will be served here....');
 });
 
 app.get('/article-one', function(req, res){
-   res.sendFile('article will be served here....');
+   res.send('article will be served here....');
 });
 
 
