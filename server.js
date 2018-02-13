@@ -21,15 +21,15 @@ app.get('/ui/madi.png', function (req, res) {
 //--------user changes-----------
 
 app.get('/article-one', function (req, res) {
-  res.send('onaonfon');
+  res.send('article one will be served here');
 });
 
-app.get('/article-one', function(req, res){
-   res.send('article will be served here....');
+app.get('/article-two', function(req, res){
+   res.send('article two will be served here....');
 });
 
-app.get('/article-one', function(req, res){
-   res.send('article will be served here....');
+app.get('/article-three', function(req, res){
+   res.send('article three will be served here....');
 });
 
 
