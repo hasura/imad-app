@@ -1,6 +1,8 @@
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
+var articles=require('./ui/articles');
+var template=require('./ui/article-template');
 
 var app = express();
 app.use(morgan('combined'));
@@ -9,12 +11,11 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/ui/style.css', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'style.css'));
+app.get('/ui/:id', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', req.params.id));
 });
-
-app.get('/ui/madi.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
+app.get('/:article', function (req, res) {
+  res.send(template(articles[req.params.article]));
 });
 
 
