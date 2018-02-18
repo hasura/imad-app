@@ -9,5 +9,5 @@ element.innerHTML="New Value";
 var picture1= document.getElementById('madi');
 
 picture1.onClick = function(){
-picture1.src=" ";
+    picture1.style.marginLeft= '100px';
 }
