@@ -13,7 +13,7 @@ var articleOne =
 {
   title : 'Article One | Akash Hadagali',
   heading : 'Article One',
-  date : Sep '5, 2016',
+  date : 'Sep 5, 2016',
   content : `<p>
     This is the content for my first article.
     This is the content for my first article.
