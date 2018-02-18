@@ -40,6 +40,7 @@ function createTemplate (data) {
         ${title}
       </title>
       <meta name="viewport" content="width=device-width, intial">
+      <link href="/ui/style.css" rel="stylesheet" />
       <style>
           .container{
               max-width: 800px;
