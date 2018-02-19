@@ -16,6 +16,9 @@ console.log('Loaded!');
   //  var interval= setInterval(moveRight, 100);
 //};
 
+
+//create the counter button and making ajax call
+
 var btn=document.getElementById('counter--button');
 btn.onclick=function(){
 
