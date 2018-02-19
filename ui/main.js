@@ -21,12 +21,8 @@ console.log('Loaded!');
 //counter button
 var counter=0;
 var btn=document.getElementById('counter--button');
-function setText(){
-    var lol=document.getElementById('count');
-    lol=counter;
-}
-
 btn.onclick=function(){
     counter++;
-    setText();
+    var span=document.getElementById('count');
+    span.innerHTML = counter.toString();
 };
