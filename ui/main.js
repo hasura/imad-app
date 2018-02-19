@@ -1,8 +1,8 @@
 console.log('Loaded!');
 
 //change contents of an element
-var element= document.getElementById('main-text');
-element.innerHTML="New Value";
+//var element= document.getElementById('main-text');
+//element.innerHTML="New Value";
 
 
 //hiding the image
