@@ -35,15 +35,8 @@ btn.onclick=function(){
         }
         
         //not done yet
-    }
+    };
 
     request.open('GET','http://parmeetasi.imad.hasura-app.io/counter',true);
     request.send(null);
 };
-
-
-
-
-//counter button
-var counter=0;
-    counter++;
