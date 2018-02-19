@@ -22,7 +22,8 @@ console.log('Loaded!');
 var nameInput= document.getElementById('name');
 var name= nameInput.value;
 var btn=document.getElementById('counter--button');
-btn.onclick=function(){
+var submit= document.getElementById('submit--btn');
+submit.onclick=function(){
 
     //create a request object
     var request=new XMLHttpRequest();
@@ -50,19 +51,4 @@ btn.onclick=function(){
 
     request.open('GET','http://parmeetasi.imad.hasura-app.io/submit-name?name'+name,true);
     request.send(null);
-};
-
-
-
-
-
-
-
-
-
-//submit name
-var submit= document.getElementById('submit--btn');
-submit.onclick = function(){
-    //make a request to the server and send the name
-  
 };
