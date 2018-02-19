@@ -19,11 +19,11 @@ console.log('Loaded!');
 
 //create the counter button and making ajax call
 
-var nameInput= document.getElementById('name');
-var name= nameInput.value;
 var btn=document.getElementById('counter--button');
 var submit= document.getElementById('submit--btn');
 submit.onclick=function(){
+    var nameInput= document.getElementById('name');
+    var name= nameInput.value;
 
     //create a request object
     var request=new XMLHttpRequest();
