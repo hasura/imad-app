@@ -14,7 +14,7 @@ function moveRight(){
 }
 img.onclick = function(){
     var interval= setInterval(moveRight, 100);
-}
+};
 
 
 
@@ -29,4 +29,4 @@ function setText(){
 btn.onclick=function(){
     counter++;
     setText();
-}
+};
