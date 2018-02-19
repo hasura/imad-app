@@ -107,6 +107,15 @@ app.get('/ui/main.js', function (req, res) {
 });
 
 
+//counter 
+var counter=0
+app.get('/counter',function(req,res){
+    counter++;
+    res.send(counter.toString());
+})
+
+
+
 // Do not change port, otherwise your app won't run on IMAD servers
 // Use 8080 only for local development if you already have apache running on 80
 
