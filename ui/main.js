@@ -22,8 +22,6 @@ console.log('Loaded!');
 var btn=document.getElementById('counter--button');
 var submit= document.getElementById('submit--btn');
 submit.onclick=function(){
-    var nameInput= document.getElementById('name');
-    var name= nameInput.value;
 
     //create a request object
     var request=new XMLHttpRequest();
@@ -49,6 +47,8 @@ submit.onclick=function(){
         //not done yet
     };
 
+    var nameInput= document.getElementById('name');
+    var name= nameInput.value;
     request.open('GET','http://parmeetasi.imad.hasura-app.io/submit-name?name'+name,true);
     request.send(null);
 };
