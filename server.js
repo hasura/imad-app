@@ -6,6 +6,11 @@ var app = express();
 app.use(morgan('combined'));
 
 
+var counter = 0;
+app.get('/counter', function (req, res) {
+  counter = counter + 1 ;
+  res.send(counter.toString());
+});
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
@@ -104,11 +109,7 @@ function createTemplate (data) {
 
 }
 
-var counter = 0;
-app.get('/counter', function (req, res) {
-  counter = counter + 1 ;
-  res.send(counter.toString());
-});
+
 
 app.get('/:articleName',function(req, res) {
     var articleName = req.params.articleName;
@@ -134,7 +135,7 @@ app.get('/ui/madi.png', function (req, res) {
 // Do not change port, otherwise your app won't run on IMAD servers
 // Use 8080 only for local development if you already have apache running on 80
 
-var port = 80;
+var port = 8080;
 app.listen(port, function () {
   console.log(`IMAD course app listening on port ${port}!`);
 });
