@@ -13,7 +13,8 @@ app.get('/guess', function (req, res) {
 });
 app.get('/ui/guess.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'guess.css'));
-});app.get('/ui/guess.js', function (req, res) {
+});
+app.get('/ui/guess.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'guess.js'));
 });
 app.get('/ui/style.css', function (req, res) {
