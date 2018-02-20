@@ -1,0 +1,32 @@
+body {
+	    background: mistyrose;
+    text-align: initial;
+    text-decoration: blink;
+    text-shadow: salmon;
+}
+}
+#first {
+    font-size: -webkit-xxx-large;
+    font-style: italic;
+    width: 584px;
+    height: 197px;
+    background: lightpink;
+}
+    
+	#second{
+		background: lightpink;
+    font-size: large;
+    text-align: center;
+	}
+	header{
+    font-size: 2em;
+    text-align: center;
+    text-decoration: underline;
+    color: indianred;
+}
+.third{
+	    background: hotpink;
+}
+h2{
+	color: darkred;
+}
