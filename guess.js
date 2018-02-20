@@ -11,7 +11,7 @@ else
 move=move-1;
 moves.innerHTML=move;
 }
-if(move==0)
+if(move===0)
 {
 alert("You lost Play again ");
 }
