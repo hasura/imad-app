@@ -11,18 +11,28 @@ app.get('/', function (req, res) {
 app.get('/guess', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'guess.html'));
 });
+app.get('/app', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'app.html'));
+});
 app.get('/ui/guess.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'guess.css'));
 });
 app.get('/ui/guess.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'guess.js'));
 });
+app.get('/ui/app.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'app.css'));
+});
+app.get('/ui/app.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'app.js'));
+});
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
 
-app.get('/ui/madi.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
+
+app.get('/ui/download.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'download.png'));
 });
 
 
