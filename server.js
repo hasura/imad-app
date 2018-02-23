@@ -9,14 +9,14 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 }); 
 
-app.get('/aim1', fuction(req,res){
-    res.send('AIM1:To make my father proud on me'));
+app.get('/aim1', function(req,res){
+    res.send('AIM1:To make my father proud on me');
 });
 app.get('/aim2',function(req,res){
     res.send('AIM2:To create something in C++ as soon as possible');
 });
 
-app.get('/aim3',fuction(req,res){
+app.get('/aim3',function(req,res){
     res.send('AIM3:To become a best web developer');
 });
 app.get('/Leno',function(req,res){
