@@ -6,20 +6,26 @@ var app = express();
 app.use(morgan('combined'));
 
 app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'index.html'))
+  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 }); 
 
-app.get('/urvashi',function (req , res){
-res.sendFile(path.join(__dirname, 'ui', 'Coding.html'))
+app.get('/aim1', fuction(req,res){
+    res.send('AIM1:To make my father proud on me'));
+});
+app.get('/aim2',function(req,res){
+    res.send('AIM2:To create something in C++ as soon as possible');
 });
 
+app.get('/aim3',fuction(req,res){
+    res.send('AIM3:To become a best web developer');
+});
 app.get('/Leno',function(req,res){
     res.send('Leno what is happening to me Can I become a web developer');
-})
+});
 
 app.get('/girlfriend',function(req,res){
     res.send('Leno is my best friend and internet is my girlfriend');
-})
+});
 
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
@@ -28,7 +34,6 @@ app.get('/ui/style.css', function (req, res) {
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
-
 
 // Do not change port, otherwise your app won't run on IMAD servers
 // Use 8080 only for local development if you already have apache running on 80
