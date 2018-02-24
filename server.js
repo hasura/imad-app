@@ -9,9 +9,10 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 }); 
 
-app.get('/aim1', function(req,res){
+app.get('/aim1', function(req, res) {
     res.sendFile(path.join(__dirname, 'ui', 'aim1.html'));
 });
+
 app.get('/aim2',function(req,res){
     res.send('AIM2:To create something in C++ as soon as possible');
 });
