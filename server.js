@@ -5,8 +5,9 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-
-var f1={
+var article={
+    
+   f1:{
     title:"article1",
     head:"first article",
     
@@ -27,7 +28,28 @@ var f1={
     
     
     
-};
+    },
+    f2:{
+            title:"article2",
+            head:"second article",
+    
+            content:`<p>
+                    JavaScript, often abbreviated as JS, is a high-level, interpreted programming language. It is a language which is also characterized as dynamic, weakly typed, prototype-based and multi-paradigm. Wikipedia
+                </p>
+                
+            
+                <p>
+                    Developer: Netscape Communications Corporation, Mozilla Foundation, Ecma International
+                Typing discipline: dynamic, duck
+            
+                </p>
+                `
+         }   
+        
+    };
+    
+  
+
 
 function create(data)
 {
