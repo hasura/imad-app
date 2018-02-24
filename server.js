@@ -21,9 +21,9 @@ var dreams = {
             </p>`
     },
     
-    dream1 : {content:<p>This is the content of dream1</p>},
-    dream2 : {content:<p>This is the content of dream 2</p>},
-    dream3 : {<p>This is the content of dream 3</p>},
+    dream1 : {content:`<p>This is the content of dream1</p>`},
+    dream2 : {content:`<p>This is the content of dream 2</p>`},
+    dream3 : {content:`<p>This is the content of dream 3</p>`},
     
 };
 
