@@ -5,7 +5,7 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var content = {
+var aim1 = {
     title: 'Dream Diary',
     date: '24 Februaury 2018',
     heading2: 'Dreams Become true',
@@ -23,6 +23,7 @@ var content = {
 function createTemplate(data){ 
     var title = data.title;
     var date = data.date;
+    var heading2 = data.heading2; 
     var content = data.content;
     var htmlTemplate = `
     <html>
@@ -48,6 +49,7 @@ function createTemplate(data){
       </body>
     </html>
     `;
+    return htmlTemplate;
 }
 app.get('/ui/index', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
