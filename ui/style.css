@@ -20,3 +20,20 @@ body {
     height: 200px;
 }
 
+.container{
+  max-width:800px;
+  margin:auto;
+  padding:0px 10px 0px 10px;
+}
+
+.navBar{
+  background-color: #1f1f1f;
+  color: white;
+  text-align: center;
+  padding-bottom: 10px;
+  font-size:20px;
+  
+}
+
+
+
