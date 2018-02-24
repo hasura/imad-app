@@ -10,7 +10,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/first',function(req,res){
-    res.send(path.join('first.html'));
+    res.sendFile(path.join('first.html'));
 });
 
 app.get('/second',function(req,res){
