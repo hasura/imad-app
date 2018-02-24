@@ -20,9 +20,9 @@ var content = {
         </p>`
 };
 
-function createTemplate(object){ 
+function createTemplate(data){ 
     var title = data.title;
-    var date = data.title;
+    var date = data.date;
     var content = data.content;
     var htmlTemplate = `
     <html>
@@ -54,7 +54,7 @@ app.get('/ui/index', function (req, res) {
 }); 
 
 app.get('/ui/aim1', function(req, res) {
-    res.sendFile(path.join(__dirname, 'ui', 'aim1.html'));
+    res.send(createTemplate(aim1));
 });
 
 app.get('/aim2',function(req,res){
