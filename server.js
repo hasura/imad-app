@@ -65,6 +65,7 @@ app.get('/', function (req, res) {
 app.get('/:dreamName', function(req, res) {
     //dreamName = dream1
     //dream[dreamName] = dream[dream1]
+    var dreamName = req.params.dreamName ; //To extract the information from dreamName parameter;
     res.send(createTemplate(dream[dreamName]));
 });
 
