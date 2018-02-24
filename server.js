@@ -89,6 +89,10 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
+app.get('/third',function(req,res){
+    res.sendFile(path.join(__dirname, 'ui','third.html'));
+});
+
 app.get('/:articleName',function(req,res){
     
     articleName=req.params.articleName;
@@ -97,9 +101,7 @@ app.get('/:articleName',function(req,res){
 
 
 
-app.get('/third',function(req,res){
-    res.sendFile(path.join(__dirname, 'ui','third.html'));
-});
+
 
 
 app.get('/ui/style.css', function (req, res) {
