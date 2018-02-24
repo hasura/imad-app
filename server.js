@@ -47,6 +47,7 @@ function createTemplate(data){
             <a href='/'>Home</a>
             <a href='/'>Dreams list</a>
           </div>
+          
           <hr/>
     
           <div class="box">
