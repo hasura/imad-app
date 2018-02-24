@@ -5,6 +5,34 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
+
+var f1={
+    title:"article1",
+    heading:"first article",
+    
+        content:`<p>
+                JavaScript, often abbreviated as JS, is a high-level, interpreted programming language. It is a language which is also characterized as dynamic, weakly typed, prototype-based and multi-paradigm. Wikipedia
+            </p>
+            <p>
+                First appeared: December 4, 1995; 22 years ago
+                Stable release: ECMAScript 2017 / June 2017; 8 months ago
+            </p>
+        
+            <p>
+                Developer: Netscape Communications Corporation, Mozilla Foundation, Ecma International
+            Typing discipline: dynamic, duck
+        
+            </p>
+            `
+    
+    
+    
+};
+
+
+
+
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
