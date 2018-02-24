@@ -5,19 +5,26 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var aim1 = {
-    title: 'Dream Diary',
-    date: '24 Februaury 2018',
-    heading2: 'Dreams Become true',
-    content:
-        `<p>                                
-            <h3>Hello Everyone</h3><br>
-             Myself Shubham a computer geek and tech enthuastic.I am 
-             2nd year CSE student in Dronacharya College of Engineering.And today on 24 
-             February 2018 I am trying to create my dreams diary online.Well see how far I am
-             able to make my dream dairy attractive and beautiful.<br>I hope you will enjoy
-             it. For review my dream diary click on the link below.
-        </p>`
+var dreams = {
+    home : {
+        title: 'Dream Diary',
+        date: '24 Februaury 2018',
+        heading2: 'Dreams Become true',
+        content:
+            `<p>                                
+                <h3>Hello Everyone</h3><br>
+                 Myself Shubham a computer geek and tech enthuastic.I am 
+                 2nd year CSE student in Dronacharya College of Engineering.And today on 24 
+                 February 2018 I am trying to create my dreams diary online.Well see how far I am
+                 able to make my dream dairy attractive and beautiful.<br>I hope you will enjoy
+                 it. For review my dream diary click on the link below.
+            </p>`
+    },
+    
+    dream1 : {content:<p>This is the content of dream1</p>},
+    dream2 : {content:<p>This is the content of dream 2</p>},
+    dream3 : {<p>This is the content of dream 3</p>},
+    
 };
 
 function createTemplate(data){ 
@@ -51,21 +58,16 @@ function createTemplate(data){
     `;
     return htmlTemplate;
 }
-app.get('/ui/index', function (req, res) {
+app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 }); 
 
-app.get('/ui/aim1', function(req, res) {
-    res.send(createTemplate(aim1));
+app.get('/:dreamName', function(req, res) {
+    //dreamName = dream1
+    //dream[dreamName] = dream[dream1]
+    res.send(createTemplate(dream[dreamName]));
 });
 
-app.get('/aim2',function(req,res){
-    res.send('AIM2:To create something in C++ as soon as possible');
-});
-
-app.get('/aim3',function(req,res){
-    res.send('AIM3:To become a best web developer');
-});
 app.get('/Leno',function(req,res){
     res.send('Leno what is happening to me Can I become a web developer');
 });
