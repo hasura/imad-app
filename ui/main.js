@@ -6,4 +6,4 @@ element.innerHTML='okay';
 
 var img=document.getElementById('c').src;
 var oldimg=document.getElementById('b');
-oldimg.innerHTML='https://fyf.tac-cdn.net/images/products/large/BF116-11KM.jpg';
+oldimg.innerHTML=img;
