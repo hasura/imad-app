@@ -8,7 +8,7 @@ app.use(morgan('combined'));
 
 var f1={
     title:"article1",
-    heading:"first article",
+    head:"first article",
     
         content:`<p>
                 JavaScript, often abbreviated as JS, is a high-level, interpreted programming language. It is a language which is also characterized as dynamic, weakly typed, prototype-based and multi-paradigm. Wikipedia
@@ -29,8 +29,38 @@ var f1={
     
 };
 
+function create(data)
+{
+    var title=data.title;
+     var head=data.head;
+      var content=data.content;
+    
 
-
+var htmlt=`
+            <html>
+        <head>
+        <title>${title}</title>
+        
+           <link href="/ui/style.css" rel="stylesheet">
+        
+        
+        <body>
+        <div>
+          <a href='/'>HOME</a>
+        </div>
+        <hr/>
+        <h1 style="align:center"> ${head}</h1>
+        <div class="container">
+            <div>
+                
+              ${content}  
+            </div>
+        </div>
+        </body>
+        </html>
+`;
+return htmlt;
+}
 
 
 app.get('/', function (req, res) {
@@ -38,7 +68,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/first',function(req,res){
-    res.sendFile(path.join(__dirname, 'ui','first.html'));
+    res.send(create(f1));
 });
 
 app.get('/second',function(req,res){
