@@ -7,7 +7,7 @@ app.use(morgan('combined'));
 
 var article={
     
-   f1:{
+   first:{
     title:"article1",
     head:"first article",
     
@@ -29,7 +29,7 @@ var article={
     
     
     },
-    f2:{
+    second:{
             title:"article2",
             head:"second article",
     
@@ -89,13 +89,13 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/first',function(req,res){
-    res.send(create(f1));
+app.get('/:articleName',function(req,res){
+    
+    articleName=req.params.articleName;
+    res.send(create(article[articleName]));
 });
 
-app.get('/second',function(req,res){
-     res.sendFile(path.join(__dirname, 'ui','second.html'));
-});
+
 
 app.get('/third',function(req,res){
     res.sendFile(path.join(__dirname, 'ui','third.html'));
