@@ -1,13 +1,10 @@
-//Move the image
+//Counter Code
 
-var marginLeft = 0;
-function moveRight() {
-    marginLeft = marginLeft + 10;
-    img.style.marginLeft = marginLeft + 'px';
-}
+var button = document.getElementById('counter');
 
-var img = document.getElementById('coder');
-img.onclick = function() {
-    var interval = setInterval(moveRight,100);
-}
-
+button.onclick = fuction(){
+    //render the variable in correct span
+    counter = counter + 1;
+    var span = document.getElementById('count');
+    span.innerHTML = counter.toString(); 
+} 
