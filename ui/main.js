@@ -9,7 +9,7 @@ button.onclick = function() {
     request.onreadystatechange = function(){
       if(request.readyState === XMLHttpRequest.DONE) {
           //Take some action
-          if(request.status == 500) {
+          if(request.status == 200) {
               var counter = request.responseText;
               var span = document.getElementById('count');
               span.innerHtml = counter.toString();
@@ -17,7 +17,7 @@ button.onclick = function() {
       }  
     };
     //Make a request
-    request.open('GET','http://www.google.com',true);
+    request.open('GET','https://sqlzoo.net/',true);
     request.send(null);
 };    
     
