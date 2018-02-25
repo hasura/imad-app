@@ -2,7 +2,7 @@ console.log('Loaded!');
 
 //writinG new content to index.html
  
-var element = document.getElementByid('main-text');
+var element = document.getElementById('main-text');
 
 alert("hi I'm CoderOO7");
 
