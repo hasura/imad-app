@@ -78,9 +78,10 @@ app.get('/girlfriend',function(req,res){
     res.send('Leno is my best friend and internet is my girlfriend');
 });
 
-app.get('/ui/main.js',function(req, res){
-    res.sendFile(path.join(__dirname, 'ui', 'main.js'));
+app.get('/ui/main.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
+
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
