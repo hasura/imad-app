@@ -12,6 +12,6 @@ element.innerHTML = 'Hello CoderOO7(WEB DEVELOPER)';
 
 var img = document.getElementById('madi');
 madi.onclick = function() {
-    madi.style.marginLeft = '100px';
+    img.style.marginLeft = '100px';
 }
 
