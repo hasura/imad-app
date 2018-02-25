@@ -6,5 +6,5 @@ var element = document.getElementById('main-text');
 
 alert("hi I'm CoderOO7");
 
-element.innerHtml = 'Hello CoderOO7(WEB DEVELOPER)';
+element.innerHTML = 'Hello CoderOO7(WEB DEVELOPER)';
 
