@@ -17,7 +17,7 @@ button.onclick = function() {
       }  
     };
     //Make a request
-    request.open('GET','https://sqlzoo.net/',true);
+    request.open('GET','http://coco98.imad.hasura-app.io/counter',true);
     request.send(null);
 };    
     
