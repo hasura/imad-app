@@ -8,6 +8,8 @@ var config={
     database: 'parmeetasi',
     host: 'db.imad.hasura-app.io',
     port: '5432',
+    
+   password: 'db-parmeetasi-21419'
    // password: process.emv.DB_PASSWORD
 };
 var app = express();
