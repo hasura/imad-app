@@ -15,44 +15,6 @@ var config={
 var app = express();
 app.use(morgan('combined'));
 
-var articles={
-    'article-one':{
-        title: 'Article One | Parmeet Singh',
-        heading: 'Article One',
-        date: '13-FEB-2017',
-        content: `<p>
-                    This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. 
-                </p>
-                <p>
-                    This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. 
-                </p>
-                <p>
-                    This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. 
-                </p>
-        
-        `
-    },
-    'article-two':{
-        title: 'Article Two | Parmeet Singh',
-        heading: 'Article Two',
-        date: '14-FEB-2017',
-        content: `<p>
-                   This is the content for my second article. 
-                </p>
-        
-        `
-    },
-    'article-three':{
-        title: 'Article Three | Parmeet Singh',
-        heading: 'Article Three',
-        date: '17-FEB-2017',
-        content: `<p>
-                 This is the content for my third article.
-                </p>
-        
-        `
-    }
-};
 
 
 
