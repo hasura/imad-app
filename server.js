@@ -115,7 +115,7 @@ app.post('/login', function(req,res){
     
     
     //var dbString = hash(password, salt);
-    pool.query('SELECT * FROM "user" WHERE username = $1' , [username], function(err,result){
+    pool.query('SELECT * FROM "user" WHERE username = $1', [username], function(err,result){
        if(err){
            res.status(500).send(err.toString());
        } else{
@@ -123,7 +123,7 @@ app.post('/login', function(req,res){
                res.send(403).send('username/password is invalid');
            }else{
                //match the password
-               var dbString = result.row[0].password;
+               var dbString = result.rows[0].password;
                var salt = dbString.split('$')[2];
                var hashedPassword = hash(password, salt); //creating a hash based on password submitted and orginal salt
                if(hashedPassword === dbString){
