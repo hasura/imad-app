@@ -18,9 +18,15 @@ console.log('Loaded!');
 
 
 //create the counter button and making ajax call
+//var btn=document.getElementById('counter--button');
 
-var btn=document.getElementById('counter--button');
-var submit= document.getElementById('submit--btn');
+
+
+//------------------------------------------------------------------------------
+// LOGIN PAGE
+
+//submit username/password to login
+var submit= document.getElementById('submit_btn');
 submit.onclick=function(){
 
     //create a request object
@@ -47,8 +53,11 @@ submit.onclick=function(){
         //not done yet
     };
 
-    var nameInput= document.getElementById('name');
-    var name= nameInput.value;
-    request.open('GET','http://parmeetasi.imad.hasura-app.io/submit-name?name='+name,true);
-    request.send(null);
+    var username= document.getElementById('username').value;
+    var password= document.getElementById('password').value;
+    console.log(username);
+    console.log(password);
+    
+    request.open('POST','http://parmeetasi.imad.hasura-app.io/login',true);
+    request.send(JSON.stringify({username: username, password: password}));
 };
