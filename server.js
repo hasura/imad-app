@@ -82,12 +82,15 @@ app.get('/hash/:input', function(req,res){
 //rather it should be sent using post method
 app.post('/create-user', function(req,res){
     //username and password
+    
+    //{"username": "parmeetasi", "password" : "password"
+    
     //JSON request
     var username = req.body.username;
     var password = req.body.password;
     
     
-    var salt = crypto.getRandomBytes(128).toString('hex');
+    var salt = crypto.randomBytes(128).toString('hex');
     //salt is created usin random bytes function
     
     
