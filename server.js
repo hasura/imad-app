@@ -60,6 +60,7 @@ app.get('/', function (req, res) {
 function hash(input, salt){
     //how do we create the hash
     var hashed = crypto.pbkdf2Sync(input, salt, 10000, 512, 'sha512');
+    //pbkdf stands for Password-Based Key Derivation
     //first the password is taken and converted using a particular algo[FOR example: md5]
     //But this could be reverse engineered as hackers maintains tables storing commonly used strings
     //Thats why we then append the input with SALT and what salt does it converts the input into such a string which can't be found on tables
