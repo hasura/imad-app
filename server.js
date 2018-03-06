@@ -65,7 +65,7 @@ function hash(input, salt){
     //Thats why we then append the input with SALT and what salt does it converts the input into such a string which can't be found on tables
     //Then to further  safety we further hash it 10000 times....
     
-    return ["pbkdf", "10000", salt, hashed.toString('hex')];
+    return ["pbkdf", "10000", salt, hashed.toString('hex')].join('$');
 }
 
 
