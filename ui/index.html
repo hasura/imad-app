@@ -25,6 +25,17 @@
  {
      alert("you refused to anser");
  }
+ window.onload = initAll;
+ function initAll()
+ {
+     document.getElementById("redirect").onclick = initRedirect;
+     
+ }
+ function initRedirect()
+ {
+     window.location = "https://auto.ndtv.com";
+     return false;
+ }
    </script>
     </body>
 </html>
