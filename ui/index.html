@@ -14,10 +14,23 @@
  
      <script type="text/javascript" src="/ui/main.js">
    </script>
-    <a href="http://panditdeepakgautam.imad.hasura-app.io/article-one" id="redirect">
+  <script>
+  <a href="http://panditdeepakgautam.imad.hasura-app.io/article-one" id="redirect">
    welcome to our site </a>
- 
-   <script>
+
+  window.onload = initAll;
+ function initAll()
+ {
+     document.getElementById("redirect").onclick = initRedirect;
+     
+ }
+ function initRedirect()
+ {
+     window.location = "https://auto.ndtv.com";
+     return false;
+ }
+ </script>
+   
    
    
   var ans = prompt("are you sure you want to do that");
@@ -30,18 +43,7 @@
  {
      alert("you refused to anser");
  }
- window.onload = initAll;
- function initAll()
- {
-     document.getElementById("redirect").onclick = initRedirect;
-     
- }
- function initRedirect()
- {
-     window.location = "https://auto.ndtv.com";
-     return false;
- }
- </script>
-   </script>
+
+   
     </body>
 </html>
