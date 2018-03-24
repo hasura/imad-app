@@ -15,15 +15,16 @@
      <script type="text/javascript" src="/ui/main.js">
    </script>
    <script>
-   if(confirm("are you sure wnat do that"))
-   {
-       alert("you say yes");
-   }
-   else
-   {
-       alert("you said no");
-   }
-        
+ var ans = prompt("are you sure you want to do that");
+ if(ans)
+ {
+     alert("you said" +ans);
+     
+ }
+ else
+ {
+     alert("you refused to anser");
+ }
    </script>
     </body>
 </html>
