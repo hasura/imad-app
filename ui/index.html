@@ -15,10 +15,13 @@
      <script type="text/javascript" src="/ui/main.js">
    </script>
    <script>
-   window.onload = writeMessege;
-   function writeMessege()
+   if(confirm("are you sure wnat do that"))
    {
- document.getElementById("genius").innerHTML = "HELLO WORLD";
+       alert("you say yes");
+   }
+   else
+   {
+       alert("you said no");
    }
         
    </script>
