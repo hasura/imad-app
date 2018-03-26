@@ -19,6 +19,9 @@ function saySomething()
             case "kennedy":
                 alert("ask not what your country do four you...");
                 break;
+                case "Nixon":
+                    alert("i am not a crook");
+                    break;
                 default:
     }
 }
