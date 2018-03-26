@@ -11,5 +11,17 @@ function initAll()
 
 function saySomething()
 {
-    alert("hii");
+    switch(this.id)
+    {
+        case "Lincoln":
+            alert("four score and seven years ago..");
+            break;
+            case "kennedy":
+                alert("ask not what your country do four you...");
+                break;
+                case "Nixon":
+                    alert("i am not a crook");
+                    break;
+                default:
+    }
 }
