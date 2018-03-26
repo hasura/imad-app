@@ -15,5 +15,10 @@ function saySomething()
     {
         case "Lincoln":
             alert("four score and seven years ago..");
+            break;
+            case "kennedy":
+                alert("ask not what your country do four you...");
+                break;
+                default:
     }
 }
