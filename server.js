@@ -27,32 +27,7 @@ app.get('/ui/style.css', function (req, res) {
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
-window.onload = initAll;
-function initAll()
-{ 
-    document.getElementById("Lincoln").onclick = saySomething;
- 
-    document.getElementById("kennedy").onclick = saySomething;
-  
-    document.getElementById("NIxon").onclick = saySomething;
-}
 
-function saySomething()
-{
-    switch(this.id)
-    {
-        case "Lincoln":
-            alert("four score and seven years ago..");
-            break;
-            case "kennedy":
-                alert("ask not what your country do four you...");
-                break;
-                case "Nixon":
-                    alert("i am not a crook");
-                    break;
-                default:
-    }
-}
 
 
 // Do not change port, otherwise your app won't run on IMAD servers
