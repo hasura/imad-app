@@ -1,8 +1,8 @@
 console.log('Loaded!');
   
-   var button = document.getElementById("Lincoln")  ;
+   var car = document.getElementById("Lincoln")  ;
  
- button.onclick = function()
+ car.onclick = function()
  {
      alert("hii");
 };
