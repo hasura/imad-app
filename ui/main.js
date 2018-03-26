@@ -1,4 +1,4 @@
- 
+console.log('Loaded!');
  window.onload = initAll;
 function initAll()
 { 
