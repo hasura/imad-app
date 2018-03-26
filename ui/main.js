@@ -13,7 +13,7 @@ function saySomething()
 {
     switch(this.id)
     {
-        case "Lincoln":
+        case 'Lincoln':
             alert("four score and seven years ago..");
             break;
             case "kennedy":
