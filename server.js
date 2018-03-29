@@ -37,13 +37,4 @@ var port = 80;
 app.listen(port, function () {
   console.log(`IMAD course app listening on port ${port}!`);
 });
-window.onload = initAll;
-function initAll()
-{ 
-    document.getElementById("Lincoln").onclick = saySomething ;
- 
-    document.getElementById("kennedy").onclick = saySomething ;
-  
-    document.getElementById("NIxon").onclick = saySomething ;
-}
  
