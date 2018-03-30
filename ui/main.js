@@ -14,8 +14,11 @@ function saySomething()
     switch(this.id)
     {
         case "Lincoln":
-            alert("four score and seven years ago..");
-            break;
+           
+           alert("work for success");
+           break;
+             
+            
             case "kennedy":
                 alert("ask not what your country do four you...");
                 break;
