@@ -20,14 +20,7 @@
      height: 200px;
  }
  
- .mybox {
-    border: solid 0.3em gold;
-    border-left-color: red;
-    width: auto;
-}
-.redtext {
-    color: red;
-}
+
  
    p {
   border: .8em darkviolet;
@@ -63,4 +56,12 @@
  #title {
     flex: 1;
     font-family: "Georgia", arial, sans-serif;
+}
+ .mybox {
+    border: solid 0.3em gold;
+    border-left-color: red;
+    width: auto;
+}
+.redtext {
+    color: red;
 }
