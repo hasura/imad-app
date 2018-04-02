@@ -38,7 +38,7 @@
          
       }
        
-        .top-bar  {
+        #top-bar  {
     margin: 0;
     margin-left: 15px;
     border-left: 1px solid rgb(186, 188, 192);
@@ -48,7 +48,7 @@
     color: white;
     line-height: 1.52;
 }
- .title {
+ #title {
     flex: 1;
     font-family: "open sans", arial, sans-serif;
 }
