@@ -38,7 +38,17 @@
          
       }
        
- #title {
+        .top-bar  {
+    margin: 0;
+    margin-left: 15px;
+    border-left: 1px solid rgb(186, 188, 192);
+    padding-left: 12px;
+    font-size: 27px;
+    font-weight: normal;
+    color: white;
+    line-height: 1.52;
+}
+ .title {
     flex: 1;
     font-family: "open sans", arial, sans-serif;
 }
