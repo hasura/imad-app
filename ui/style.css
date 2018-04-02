@@ -35,7 +35,22 @@
      color: red;
      background-image: url(https://hips.htvapps.com/htv-prod-media.s3.amazonaws.com/images/ocean-water-1479055199.jpg?crop=1.00xw:1.00xh;0,0&resize=900:*);
        background-repeat: repeat-y;
+       -webkit-background-clip: text;
+       animation: animate 15s linear infinite;
          
+      }
+     
+      @keyframes animate {
+          0%
+          {
+              background-position: left 1px top 80px;
+              
+          }
+          40%
+          {
+              background-position: left 800px top -50px;
+          }
+          
       }
        
         #top-bar  {
