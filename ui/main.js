@@ -7,6 +7,34 @@ function choosePic() {
 var randomNum = Math.floor((Math.random() * myPix.length));
 document.getElementById("myPicture").src = myPix[randomNum];
     }
+    
+window.onload = initLinks;
+var youPix = new Array("","","");
+var thisPic = 0;
+
+function initLinks() {
+    document.getElementById("prevLink").onclick = processPrevious;
+    document.getElementById("nextLink").onclick = processNext;
+}
+
+function processPrevious() {
+    if(thisPic === 0) {
+        thisPic = youPix.length;
+    }
+    thisPic--;
+    document.getElementById("myPicture").src = youPix[thisPic];
+    return false;
+} 
+
+function processNext() {
+   thisPic++ ;
+      if (thisPic === youPix.length)
+         {
+             thisPic=0;
+         }
+    document.getElementById("myPicture").src = youPix[thisPic];
+    return false;
+} 
 
 
  
