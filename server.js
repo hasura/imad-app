@@ -26,6 +26,9 @@ app.get('/page3', function(req, res){
   res.sendFile(path.join(__dirname, 'ui', 'page3.html'));
 });
 
+ app.get('/page2', function(req, res){
+  res.sendFile(path.join(__dirname, 'ui', 'page4.html'));
+});
  
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
