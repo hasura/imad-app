@@ -9,7 +9,7 @@ document.getElementById("myPicture").src = myPix[randomNum];
     }
     
 window.onload = initLinks;
-var youPix = new Array("","","");
+var youPix = new Array("http://freepngimg.com/download/technology/35661-2-robot-transparent.png","https://img00.deviantart.net/baa5/i/2008/185/c/f/xcc_900_terminator_001_by_selficide_stock.png","http://freepngimg.com/download/technology/35747-4-robot-transparent-background.png");
 var thisPic = 0;
 
 function initLinks() {
