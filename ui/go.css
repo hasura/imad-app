@@ -17,21 +17,4 @@
   color: #000000;
 }
   
-  .lackground {
-  background: url(http://bgfons.com/uploads/ornaments/ornaments_texture1129.jpg) repeat;
-  border: 2px solid black;
-}
-
- .lransbox {
-  margin: 22px;
-  background-color: #ffffff;
-  border: 1px solid black;
-  opacity: 0.6;
-  filter: alpha(opacity=60); /* For IE8 and earlier */
-}
-
-.lransbox z {
-  margin: 7%;
-  font-weight: bold;
-  color: #000000;
-}
+  
