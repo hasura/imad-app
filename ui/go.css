@@ -1,6 +1,7 @@
 .background {
   background: url(https://avante.biz/wp-content/uploads/Black-Wallpapers-Texture/Black-Wallpapers-Texture-002.jpg) repeat;
   border: 2px solid black;
+  padding-top: 40%;
 }
 
  .transbox {
@@ -16,7 +17,7 @@
   margin: 7%;
   font-weight: bold;
   color: #000000;
-  padding-top: 40%;
+  
 }
   
   
