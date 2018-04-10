@@ -40,7 +40,7 @@ app.get('/ui/go.css', function (req, res) {
 
  
  
-app.get('/ui/main.js', function (req, res) {
+app.get('/ui/next.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'next.js'));
 });
 
