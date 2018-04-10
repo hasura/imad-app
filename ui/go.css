@@ -19,5 +19,10 @@
   color: #000000;
   
 }
-  
+  .img {
+      margin: 0 10px;
+      border: 3px #00F solid;
+      width: 160px;
+      height: 120px;
+  }
   
