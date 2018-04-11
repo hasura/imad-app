@@ -23,10 +23,10 @@
 
  
    p{
-  border: .8em darkviolet;
+  border: .6em darkviolet;
   border-style: dotted double;
   margin: 1em 0;
-  padding: 1.4em;
+  padding: 1.2em;
   background: linear-gradient(60deg, red, yellow, red, yellow, red);
   font: 900 1.2em sans-serif;
   text-decoration: underline;
@@ -35,6 +35,7 @@
 .border-box { background-clip: border-box; }
 .padding-box { background-clip: padding-box; }
 .content-box { background-clip: content-box; }
+ 
 
 .text {
   
