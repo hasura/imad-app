@@ -1,5 +1,5 @@
 console.log('loaded!');
-
+window.onload = initAll;
 var slideIndex = 1;
 showSlides(slideIndex);
 
