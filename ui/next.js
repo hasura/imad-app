@@ -33,15 +33,20 @@ window.onload = initAll;
 
 function initAll() {
     document.getElementById("Lincoln").onclick = saySomething;
-     document.getElementById("kennedy").onclick = saySomething;
+     document.getElementById("Kennedy").onclick = saySomething;
       document.getElementById("Nixon").onclick = saySomething;
 }
       
       function saySomething() {
     switch(this.id) {
         case "Lincoln":
-            
-                alert("You said"  );
+            var ans = prompt("nzxbcnxn","");
+            if (ans) {
+                alert("You said" +ans );}
+            else
+                alert("you refuse");
+          
+          
              
             break;
         case "Kennedy":
