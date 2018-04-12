@@ -13,6 +13,40 @@ document.getElementById("myPicture").src = myPix[randomNum];
 
 var randomN = Math.floor((Math.random() * thatPix.length));
 document.getElementById("thatPicture").src = thatPix[randomN];
+
+
+ switch(this.id) {
+        case "Lincoln":
+            var ans = prompt("Are you ready to make me your boyfriend ?","");
+            if(ans) {
+                alert("You said" +ans);
+            }
+            else {
+                alert("you refused yo answer");
+            }
+            break;
+        case "Kennedy":
+            var res = prompt("Are you ready to make me your boyfriend ?","");
+            if(res) {
+                alert("You said" +ans);
+            }
+            else {
+                alert("you refused yo answer");
+            }    
+             break;
+        case "Nixon":
+            var resp = prompt("Are you ready to make me your boyfriend ?","");
+            if(resp) {
+                alert("You said" +ans);
+            }
+            
+            else {
+                alert("you refused yo answer");
+            }    
+             break;
+             default:
+    }
+
 }
 
 
