@@ -29,26 +29,4 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
-window.onload = initAll;
-
-function initAll() {
-    switch(this.id) {
-        case "Lincoln":
-            
-                alert("You said"  );
-             
-            break;
-        case "Kennedy":
-             
-                alert("You said"  );
-            
-             
-             break;
-        case "Nixon":
-             
-                alert("You said"  );
-            
-             break;
-             default:
-    }
-}
+ 
