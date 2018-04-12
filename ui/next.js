@@ -40,24 +40,22 @@ function initAll() {
       function saySomething() {
     switch(this.id) {
         case "Lincoln":
-            var ans = prompt("nzxbcnxn","");
+            var ans = prompt("Are you Ready to make me your Boyfriend","");
             if (ans) {
                 alert("You said" +ans );}
             else
                 alert("you refuse");
+          break;
           
-          
-             
-            break;
         case "Kennedy":
              
-                alert("You said" );
+                alert("I follow You as a girlfriend & You Treat me as you Friend" );
             
              
              break;
         case "Nixon":
              
-                alert("You said");
+                alert("Sorry You have to obey bet of Deepak");
             
              break;
              default:
