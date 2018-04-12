@@ -32,12 +32,12 @@ function showSlides(n) {
 window.onload = initAll;
 
 function initAll() {
-    document.getElementById("Lincoln").onclick = saysomething;
-     document.getElementById("kennedy").onclick = saysomething;
-      document.getElementById("Nixon").onclick = saysomething;
+    document.getElementById("Lincoln").onclick = saySomething;
+     document.getElementById("kennedy").onclick = saySomething;
+      document.getElementById("Nixon").onclick = saySomething;
 }
       
-      function saysomething() {
+      function saySomething() {
     switch(this.id) {
         case "Lincoln":
             
