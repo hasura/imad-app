@@ -42,7 +42,7 @@ function initAll() {
         case "Lincoln":
             var ans = prompt("Are you Ready to make me your Boyfriend","");
             if (ans) {
-                alert("You said" +ans );}
+                alert("You said " +ans );}
             else
                 alert("you refuse");
           break;
@@ -50,14 +50,14 @@ function initAll() {
         case "Kennedy":
              var resp = prompt("I follow You as a girlfriend & You Treat me as you Friend","");
             if (resp) {
-               alert("You Said" +ans );}
+               alert("You Saidv" +resp );}
             else
                 alert("you refuse");
               break;
         case "Nixon":
              var res = prompt("Sorry You have to obey the bet of Deepak","");
             if (res) {
-                alert("You said" +ans );}
+                alert("You saidv" +res );}
             else
                 alert("you refuse");
             break;
