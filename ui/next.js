@@ -57,7 +57,7 @@ function initAll() {
         case "Nixon":
              var res = prompt("Sorry You have to obey the bet of Deepak","");
             if (res) {
-                alert("You said"   +res );}
+                alert("You said "   +res );}
             else
                 alert("you refuse");
             break;
