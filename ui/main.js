@@ -17,14 +17,10 @@ document.getElementById("thatPicture").src = thatPix[randomN];
 
  switch(this.id) {
         case "Lincoln":
-            var ans = prompt("Are you ready to make me your boyfriend ?","");
-            if(ans) {
-                alert("You said" +ans);
-            }
-            else {
-                alert("you refused yo answer");
-            }
+            
+                alert("You said");
             break;
+           
         case "Kennedy":
             var res = prompt("Are you ready to make me your boyfriend ?","");
             if(res) {
