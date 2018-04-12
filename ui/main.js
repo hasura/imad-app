@@ -14,26 +14,7 @@ document.getElementById("myPicture").src = myPix[randomNum];
 var randomN = Math.floor((Math.random() * thatPix.length));
 document.getElementById("thatPicture").src = thatPix[randomN];
 
-
-   switch(this.id) {
-        case "Lincoln":
-            
-                alert("You said"  );
-             
-            break;
-        case "Kennedy":
-             
-                alert("You said"  );
-            
-             
-             break;
-        case "Nixon":
-             
-                alert("You said"  );
-            
-             break;
-             default:
-    }
+ 
 }
 
 
