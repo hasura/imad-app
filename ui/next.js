@@ -48,16 +48,19 @@ function initAll() {
           break;
           
         case "Kennedy":
-             
-                alert("I follow You as a girlfriend & You Treat me as you Friend" );
-            
-             
-             break;
+             var resp = prompt("I follow You as a girlfriend & You Treat me as you Friend","");
+            if (resp) {
+               alert("You Said" +ans );}
+            else
+                alert("you refuse");
+              break;
         case "Nixon":
-             
-                alert("Sorry You have to obey bet of Deepak");
-            
-             break;
+             var res = prompt("Sorry You have to obey the bet of Deepak","");
+            if (res) {
+                alert("You said" +ans );}
+            else
+                alert("you refuse");
+            break;
              default:
     }
 }
