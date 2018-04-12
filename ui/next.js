@@ -34,7 +34,7 @@ window.onload = initAll;
 function initAll() {
     switch(this.id) {
         case "Lincoln":
-            var ans = prompt("Are you ready to make me your boyfriend ?","");
+            var ans = prompt("Are you ready to make me your boyfriend ?");
             if(ans) {
                 alert("You said" +ans);
             }
