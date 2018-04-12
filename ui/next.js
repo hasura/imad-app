@@ -1,4 +1,5 @@
 console.log('loaded!');
+window.onload = initAll;
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -26,4 +27,17 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block"; 
   dots[slideIndex-1].className += " active";
+}
+
+function initAll() {
+    switch(this.id) {
+        case "Lincoln":
+            var ans = prompt("Are you ready to make me your boyfriend ?","");
+            if(ans) {
+                alert("You said" +ans);
+            }
+            else {
+                alert("you refused yo answer");
+            }
+    }
 }
