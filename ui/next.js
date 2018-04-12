@@ -39,5 +39,26 @@ function initAll() {
             else {
                 alert("you refused yo answer");
             }
+            break;
+        case "Kennedy":
+            var res = prompt("Are you ready to make me your boyfriend ?","");
+            if(res) {
+                alert("You said" +ans);
+            }
+            else {
+                alert("you refused yo answer");
+            }    
+             break;
+        case "Nixon":
+            var resp = prompt("Are you ready to make me your boyfriend ?","");
+            if(resp) {
+                alert("You said" +ans);
+            }
+            
+            else {
+                alert("you refused yo answer");
+            }    
+             break;
+             default:
     }
 }
