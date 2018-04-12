@@ -50,14 +50,14 @@ function initAll() {
         case "Kennedy":
              var resp = prompt("I follow You as a girlfriend & You Treat me as you Friend","");
             if (resp) {
-               alert("You Saidv" +resp );}
+               alert("You Said "  +resp );}
             else
                 alert("you refuse");
               break;
         case "Nixon":
              var res = prompt("Sorry You have to obey the bet of Deepak","");
             if (res) {
-                alert("You saidv" +res );}
+                alert("You said"  +res );}
             else
                 alert("you refuse");
             break;
