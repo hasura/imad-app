@@ -29,4 +29,32 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
- 
+window.onload = initAll;
+
+function initAll() {
+    document.getElementzById("Lincoln").onclick = saysomething;
+     document.getElementzById("kennedy").onclick = saysomething;
+      document.getElementzById("Nixon").onclick = saysomething;
+}
+      
+      function saysomething() {
+    switch(this.id) {
+        case "Lincoln":
+            
+                alert("You said"  );
+             
+            break;
+        case "Kennedy":
+             
+                alert("You said" );
+            
+             
+             break;
+        case "Nixon":
+             
+                alert("You said");
+            
+             break;
+             default:
+    }
+}
