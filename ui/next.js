@@ -32,9 +32,9 @@ function showSlides(n) {
 window.onload = initAll;
 
 function initAll() {
-    document.getElementzById("Lincoln").onclick = saysomething;
-     document.getElementzById("kennedy").onclick = saysomething;
-      document.getElementzById("Nixon").onclick = saysomething;
+    document.getElementById("Lincoln").onclick = saysomething;
+     document.getElementById("kennedy").onclick = saysomething;
+      document.getElementById("Nixon").onclick = saysomething;
 }
       
       function saysomething() {
