@@ -40,7 +40,7 @@ function initAll() {
       function saySomething() {
     switch(this.id) {
         case "Lincoln":
-            var ans = prompt("Are you Ready to make me your Boyfriend","");
+            var ans = prompt("Are you Ready to make me your Boyfriend..(Type YES or No)","");
             if (ans) {
                 alert("You said "  +ans );}
             else
@@ -48,7 +48,7 @@ function initAll() {
           break;
           
         case "Kennedy":
-             var resp = prompt("I follow You as a girlfriend & You Treat me as you Friend","");
+             var resp = prompt("I follow You as a girlfriend & You Treat me as you Friend","(Type YES or No)");
             if (resp) {
                alert("You Said "  +resp );}
             else
