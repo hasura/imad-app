@@ -40,7 +40,7 @@ function initAll() {
       function saySomething() {
     switch(this.id) {
         case "Lincoln":
-            var ans = prompt("Are you Ready to make me your Boyfriend..(Type YES or No)","");
+            var ans = prompt("Are you Ready to make me your Boyfriend..","(Type YES or No)");
             if (ans) {
                 alert("You said "  +ans );}
             else
@@ -55,7 +55,7 @@ function initAll() {
                 alert("you refuse");
               break;
         case "Nixon":
-             var res = prompt("Sorry You have to obey the bet of Deepak","");
+             var res = prompt("Sorry You have to obey the bet of Deepak","(Type YES or No)");
             if (res) {
                 alert("You said "   +res );}
             else
