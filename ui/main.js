@@ -17,7 +17,7 @@ document.getElementById("thatPicture").src = thatPix[randomN];
 
  
 }
-window.onload = choose; 
+
 function choose() {
     for(var i=0; i<document.iamges.length; i++)
     {
