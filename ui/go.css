@@ -29,7 +29,7 @@
 }
 
 /* Hide the images by default */
-.mySlides {
+.youSlides {
     display: none;
 }
 
@@ -80,7 +80,7 @@
 }
 
 /* The dots/bullets/indicators */
-.dot {
+.nextdot {
   cursor: pointer;
   height: 15px;
   width: 15px;
