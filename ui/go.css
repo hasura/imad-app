@@ -146,5 +146,5 @@
 #slider figure img{width:20%;float:left;}
 #slider figure{position:relative;width:500%;margin:7;left:5;text-align:left;animation:20s slideshow infinite}
 
-@media screen and (max-width: 767px) {#slider {overflow: hidden; width: 100%; margin: 7 auto;}}
+@media screen and (max-width: 1000px) {#slider {overflow: hidden; width: 200%; margin: 20 auto;}}
  
