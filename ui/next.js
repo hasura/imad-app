@@ -47,8 +47,8 @@ function howSlides(m) {
   var i;
   var slides = document.getElementsByClassName("youSlides");
   var dots = document.getElementsByClassName("nextdot");
-  if (n > slides.length) {slideIndex = 1} 
-  if (n < 1) {slideIndex = slides.length}
+  if (n > slides.length) {slideInde = 1} 
+  if (n < 1) {slideInde = slides.length}
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none"; 
   }
