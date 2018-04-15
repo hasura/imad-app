@@ -127,9 +127,10 @@
 /* Fading animation */
 .fade {
    -webkit-animation: fade 5s infinite; /* Safari 4+ */
-  -moz-animation:    fae 5s infinite;
+  -moz-animation:    fade 5s infinite;
   animation-name: fade;
   animation-duration: 1.5s;
+      transition: left 0.15s ease-out;
 }
 
 @-webkit-keyframes fade {
@@ -142,105 +143,5 @@
   to {opacity: 1}
 }
 
-
-.slider {
-
-  position: relative;
-margin-top: 3rem;
-margin-right: auto;
-margin-left: auto;
- overflow: hidden;
- width: 40.625rem;
-height: 26.25rem;
- box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
-
-}
-
-.slider__list {
- position: absolute;
-left: 0;
-width: 162.5rem;
-}
-
-.slider__slide {
-float: left;
-
-}
-
-
-
-.slider__control {
-  margin-right: auto;
-  margin-left: auto;
-  width: 4.5rem;
-font-family: sans-serif;
-
-}
-
- 
-.slider__control label {
-  position: relative;
-  display: block;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  width: 4.5rem;
-  height: 2rem;
-  font-size: 1rem;
-  font-weight: normal;
-  line-height: 1.5;
-  color: transparent;
-  background: #ddd;
-  border-radius: 2rem;
-  cursor: pointer;
-  -webkit-transition: left 0.15s ease-out;
-  transition: left 0.15s ease-out;
-
-}
-
- 
-.slider__control label:before {
-  content: "autoplay";
-  position: absolute;
-  top: 2.5rem;
-  left: 0;
-  color: #333;
- font-size: .95rem;
-  font-weight: bold;
-  text-transform: uppercase;
-
-}
-
- .slider__control label:after {
-  content: "";
-  position: absolute;
- top: .25rem;
- left: .25rem;
-  display: block;
-  width: 1.5rem;
-  height: 1.5rem;
-  border-radius: 2rem;
-  background: #fff;
-  -webkit-transition: left 0.15s ease-out;
-  transition: left 0.15s ease-out;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-
-}
-
- .slider__switch:checked + .slider > .slider__list {
-  -webkit-animation-name: autoplay;
-  animation-name: autoplay;
-  /* This will change the time it takes to move to next slide */
-  -webkit-animation-duration: 10s;
-  animation-duration: 10s;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-
-}
-
-.slider__switch:checked + .slider + .slider__control > label { background: #455a64; }
-.slider__switch:checked + .slider + .slider__control > label:after { left: 2.75rem; }
-
- 
 
  
