@@ -17,8 +17,8 @@ document.getElementById("thatPicture").src = thatPix[randomN];
 
  
 }
-
-function choosePic() {
+window.onload = choose; 
+function choose() {
     for(var i=0; i<document.iamges.length; i++)
     {
         document.images[i].ondbclick = newWindow;
