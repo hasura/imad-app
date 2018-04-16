@@ -135,7 +135,14 @@
 	animation-delay: 15s; 
 	color: #9b6b9d;
 }
- 
+ .rw-words span:nth-child(6) { 
+	animation-delay: 12s; 
+	color: #8d6b9d;
+}
+.rw-words span:nth-child(7) {  
+	animation-delay: 15s; 
+	color: #9b6b9d;
+}
 
 @keyframes rotateWordsFirst {
     0% { opacity: 1; animation-timing-function: ease-in; height: 1px; }
