@@ -197,7 +197,7 @@
 	top: 0;
 	left: 0;
 	width: 50px; /* just cover visible part */
-	height: 100%;
+	height: 200%;
 	cursor: pointer;
 	border: 0;
 	padding: 0;
@@ -218,7 +218,7 @@
 }
 .ia-container figcaption {
 	width: 100%;
-	height: 100%;
+	height: 200%;
 	background: rgba(87, 73, 81, 0.1);
 	position: absolute;
 	top: 1px;
