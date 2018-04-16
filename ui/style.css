@@ -169,7 +169,7 @@
  
  
  .ia-container {
-	width: 685px;
+	width: 800px;
 	margin: 20px auto;
 	overflow: hidden;
 	box-shadow: 1px 1px 4px rgba(0,0,0,0.08);
@@ -270,9 +270,9 @@
 }
  
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1000px) {
     .ia-container { 
-		width: 540px; 
+		width: 800px; 
 	}
 	
 	.ia-container figure { 
@@ -312,7 +312,7 @@
 	}
 	
 	.ia-container figcaption span { 
-		font-size: 12px; 
+		font-size: 10px; 
 		letter-spacing: 2px; 
 		padding: 10px; 
 		margin-top: -20px; 
