@@ -37,11 +37,7 @@
 .content-box { background-clip: content-box; }
  
 
-.text {
-  
-  -webkit-background-clip: text;
-  color: gray;
-}
+ 
       
        
         #top-bar  {
