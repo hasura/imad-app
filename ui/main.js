@@ -17,7 +17,7 @@ button.onclick = function(){
       }
   };
 
-  request.open('GET','http://akashc777.imad.hasura-app.io/counter',true);
+  request.open('GET','https://akashc777.herokuapp.com/counter',true);
   request.send(null);
 };
 
@@ -48,7 +48,7 @@ submit.onclick = function(){
         }
     };
 
-    request.open('GET','http://akashc777.imad.hasura-app.io/submit-name?name=' + name,true);
+    request.open('GET','https://akashc777.herokuapp.com/submit-name?name=' + name,true);
     request.send(null);
 
 } ;
