@@ -66,6 +66,9 @@
 .text {
   color: white;
   font-size: 18px;
+  font-family: cursive;
+  font-variant: small-caps;
+  font-style: italic;
   padding: 8px 12px;
   position: absolute;
   bottom: 8px;
