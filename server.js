@@ -1,7 +1,7 @@
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
-const PORT = process.env.PORT || 5000
+const PORT = PORT = process.env.PORT || 5000
 
 var app = express();
 app.use(morgan('combined'));
@@ -133,8 +133,8 @@ app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
 
-app.get('/ui/madi.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
+app.get('/ui/kaneki.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'kaneki.jpg'));
 });
 
 
@@ -145,5 +145,5 @@ app.get('/ui/madi.png', function (req, res) {
 
 
 app.listen(PORT, function () {
-  console.log(`IMAD course app listening on port ${PORT}!`);
+  console.log(`listening on port ${PORT}!`);
 });
