@@ -193,12 +193,7 @@
 .padding-box { background-clip: padding-box; }
 .content-box { background-clip: content-box; }
  
-
-.text {
-  
-  -webkit-background-clip: text;
-  color: #008000;
-}
+ 
       
        
         #top-bar  {
