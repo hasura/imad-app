@@ -178,7 +178,7 @@
 
 .ia-container figure {
     position: absolute;
-	top: 6;
+	top: 0;
 	left: 50px; /* width of visible piece */
 	width: 335px;
     box-shadow: 0 0 0 1px rgba(255,255,255,0.6);
@@ -194,7 +194,7 @@
 }
 .ia-container input {
 	position: absolute;
-	top: 5;
+	top: 0;
 	left: 0;
 	width: 50px; /* just cover visible part */
 	height: 100%;
@@ -210,7 +210,7 @@
 .ia-container input:checked{
 	width: 5px;
 	left: auto;
-	right: 6px;
+	right: 1px;
 }
 .ia-container input:checked ~ figure {
     left: 335px;
@@ -221,21 +221,21 @@
 	height: 100%;
 	background: rgba(87, 73, 81, 0.1);
 	position: absolute;
-	top: 6px;
+	top: 1px;
     transition: all 0.2s linear;
 }
 
 .ia-container figcaption span {
 	position: absolute;
-	top: 60%;
-	margin-top: -10px;
+	top: 40%;
+	margin-top: -30px;
 	right: 20px;
 	left: 20px;
 	overflow: hidden;
 	text-align: center;
 	background: rgba(87, 73, 81, 0.3);
 	line-height: 20px;
-	font-size: 12px;
+	font-size: 18px;
     opacity: 0;
 	text-transform: uppercase;
 	letter-spacing: 4px;
@@ -277,7 +277,7 @@
 	
 	.ia-container figure { 
 		left: 40px; 
-		width: 340px; 
+		width: 260px; 
 	}
 	
 	.ia-container input { 
@@ -285,34 +285,34 @@
 	}
 	
 	.ia-container input:checked ~ figure { 
-		left: 340px; 
+		left: 260px; 
 	}
 	
 	.ia-container figcaption span { 
-		font-size: 12px; 
+		font-size: 16px; 
 	}
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 520px) {
     .ia-container { 
-		width: 550px; 
+		width: 320px; 
 	}
 	
 	.ia-container figure { 
-		left: 40px; 
-		width: 250px; 
+		left: 20px; 
+		width: 180px; 
 	}
 	
 	.ia-container input { 
-		width: 40px; 
+		width: 20px; 
 	}
 	
 	.ia-container input:checked ~ figure { 
-		left: 250px; 
+		left: 180px; 
 	}
 	
 	.ia-container figcaption span { 
-		font-size: 7px; 
+		font-size: 10px; 
 		letter-spacing: 2px; 
 		padding: 10px; 
 		margin-top: -20px; 
