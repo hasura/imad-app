@@ -64,7 +64,7 @@
  
 /* Caption text */
 .text {
-  color: #008000;
+  color: #8B0000;
   font-size: 18px;
   padding: 8px 12px;
   position: absolute;
@@ -90,7 +90,7 @@
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #008000;
+  background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
@@ -193,6 +193,7 @@
 .padding-box { background-clip: padding-box; }
 .content-box { background-clip: content-box; }
  
+
  
       
        
