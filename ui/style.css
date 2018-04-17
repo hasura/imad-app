@@ -1,3 +1,160 @@
+ .background {
+  background: url(https://avante.biz/wp-content/uploads/Black-Wallpapers-Texture/Black-Wallpapers-Texture-002.jpg  ) repeat;
+  border: 2px solid black;
+ 
+}
+
+ .transbox {
+  margin: 22px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+  
+}
+
+.transbox z {
+  margin: 7%;
+  font-weight: bold;
+  color: #000000;
+  
+}
+   
+   
+   
+ .slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+ 
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+ 
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+ 
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+ 
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+ 
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+
+
+.active, .nextdot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+   -webkit-animation: fade 5s infinite; /* Safari 4+ */
+  -moz-animation:    fade 5s infinite;
+  animation-name: fade;
+  animation-duration: 1.5s;
+      transition: left 0.15s ease-out;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+@keyframes slideshow {
+	10% {left: 0;}
+	20% {left: 0;}
+	30% {left: -100%;}
+	40% {left: -100%;}
+	50% {left: -200%;}
+	60% {left: -200%;}
+	70% {left: -300%;}
+	80% {left: -300%;}
+	90% {left: -400%;}
+	100% {left: -400%}
+}
+
+
+#slider{overflow:hidden;width:40%;margin:5px auto; border: 5px solid transparent;border-radius: 10px;}
+#slider figure img{width:20%;float:left;}
+#slider figure{position:relative;width:500%;margin:0;left:0;text-align:left;animation:20s slideshow infinite}
+
+@media screen and (max-width: 1000px) {#slider {overflow: hidden; width: 100%; margin: 0 auto;}}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
   body {
      font-family: sans-serif;
      background-color: lightgrey;
@@ -210,7 +367,7 @@
 .ia-container input:checked{
 	width: 5px;
 	left: auto;
-	right: 0px;
+	right: 1px;
 }
 .ia-container input:checked ~ figure {
     left: 335px;
