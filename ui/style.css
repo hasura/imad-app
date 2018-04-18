@@ -74,6 +74,7 @@
 	margin: 110px auto 0 auto;
 	font-family: 'Bree Serif';
 	padding: 10px;
+	color: #B8860B;
 }
  
 
@@ -92,7 +93,7 @@
 }
  
 .rw-words{
- color: #B8860B;
+ 
 	display: inline;
 	text-indent: 10px;
 }
