@@ -1,1 +1,70 @@
-   
+   body {
+     font-family: sans-serif;
+     background-color: lightgrey;
+     margin-top:75px;
+ }
+ 
+ .center {
+     text-align: center;
+ }
+ 
+ .text-big {
+     font-size: 300%;
+ }
+ 
+ .bold {
+     font-weight: bold;
+ }
+ 
+ .img-medium {
+     height: 200px;
+ }
+ 
+
+ 
+   p{
+  border: .6em darkviolet;
+  border-style: dotted double;
+  margin: 1em 0;
+  padding: 1.2em;
+  background: linear-gradient(60deg, red, yellow, red, yellow, red);
+  font: 900 1.2em sans-serif;
+  text-decoration: underline;
+}
+
+.border-box { background-clip: border-box; }
+.padding-box { background-clip: padding-box; }
+.content-box { background-clip: content-box; }
+ 
+
+ 
+      
+       
+        #top-bar  {
+    margin: 0;
+    margin-left: 15px;
+    border-left: 1px solid rgb(186, 188, 192);
+    padding-left: 12px;
+    font-size: 27px;
+    font-weight: normal;
+    
+    
+    color:DarkKhaki  ;
+    line-height: 1.52;
+}
+ #title {
+    flex: 1;
+    font-family: "Georgia", arial, sans-serif;
+}
+
+ .img {
+     margin: 0 10px;
+     border: 3px #00F solid;
+     width: 160px;
+     height: 120px;
+ }
+ 
+ 
+ 
+ 
+  
