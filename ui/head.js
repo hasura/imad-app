@@ -31,7 +31,7 @@ function Navigator(config) {
         // This will initialize the class, bind event handlers,
         // shuffle the li items, split the #carousel list into chunks
 
-    }
+    };
 
     // Method for handling arrow clicks
     this.handlePrevClick = function(e) {};
