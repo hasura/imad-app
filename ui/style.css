@@ -155,4 +155,86 @@
     100% { opacity: 0; }
 }
  
+ 
+ 
+ 
+ #carousel{
+    margin-top:200px;
+    text-align:center;
+    height:60px;
+    background-color:#111;
+    box-shadow:0 3px 5px #111;
+
+    /* Initially hidden */
+    opacity:0;
+
+    /* Will animate the grow effect */
+    -moz-transition:0.4s opacity;
+    -webkit-transition:0.4s opacity;
+    transition:0.4s opacity;
+}
+
+#carousel.active{
+    opacity:1;
+}
+
+/* The thumbnails, hidden by default */
+
+#carousel li{
+    display:none;
+    list-style:none;
+    width:150px;
+    height:150px;
+    margin: -82px 18px 0;
+    position:relative;
+
+    -moz-transition:0.4s all;
+    -webkit-transition:0.4s all;
+    transition:0.4s all;
+}
+
+/* This class will show the respective thumbnail */
+
+#carousel li.visible{
+    display:inline-block;
+}
+
+#carousel li a img{
+    border:none;
+}
+
+#carousel li img{
+    display:block;
+    width:auto;
+    height:auto;
+    max-width:100%;
+    max-height:100%;
+    position:relative;
+    z-index:10;
+}
+
+/* Creating the cradle below the thumbnails.
+    Uses % so that it grows with the image. */
+
+#carousel li:after{
+    content:'';
+    background:url('../img/cradle.png') no-repeat top center;
+    background-size:contain;
+    bottom: 4%;
+   
+    height: 50px;
+    left: -6.5%;
+    position: absolute;
+    right: -6.5%;
+    width: auto;
+    z-index: 1;
+}
+
+/* Enlarging the thumbnail */
+
+#carousel li:hover{
+    height: 197px;
+    margin-top: -152px;
+    width: 222px;
+}
   
