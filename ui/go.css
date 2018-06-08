@@ -1,0 +1,474 @@
+ .background {
+  background: url(https://avante.biz/wp-content/uploads/Black-Wallpapers-Texture/Black-Wallpapers-Texture-002.jpg  ) repeat;
+  border: 2px solid black;
+ 
+}
+
+ .transbox {
+  margin: 22px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+  
+}
+
+.transbox z {
+  margin: 7%;
+  font-weight: bold;
+  color: #000000;
+  
+}
+   
+   
+   
+ .slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+ 
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+ 
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+ 
+/* Caption text */
+.text {
+  color: white;
+  font-size: 18px;
+  font-family: cursive;
+  font-variant: small-caps;
+  font-style: italic;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 26px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+ 
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+ 
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+
+
+.active, .nextdot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+   -webkit-animation: fade 5s infinite; /* Safari 4+ */
+  -moz-animation:    fade 5s infinite;
+  animation-name: fade;
+  animation-duration: 1.5s;
+      transition: left 0.15s ease-out;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+@keyframes slideshow {
+	10% {left: 0;}
+	20% {left: 0;}
+	30% {left: -100%;}
+	40% {left: -100%;}
+	50% {left: -200%;}
+	60% {left: -200%;}
+	70% {left: -300%;}
+	80% {left: -300%;}
+	90% {left: -400%;}
+	100% {left: -400%}
+}
+
+
+#slider{overflow:hidden;width:40%;margin:5px auto; border: 5px solid transparent;border-radius: 10px;}
+#slider figure img{width:20%;float:left;}
+#slider figure{position:relative;width:500%;margin:0;left:0;text-align:left;animation:20s slideshow infinite}
+
+@media screen and (max-width: 1000px) {#slider {overflow: hidden; width: 100%; margin: 0 auto;}}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+ 
+ .center {
+     text-align: center;
+ }
+ 
+ .text-big {
+     font-size: 300%;
+ }
+ 
+ .bold {
+     font-weight: bold;
+ }
+ 
+ .img-medium {
+     height: 200px;
+ }
+ 
+
+ 
+   p{
+  border: .6em darkviolet;
+  border-style: dotted double;
+  margin: 1em 0;
+  padding: 1.2em;
+  background: linear-gradient(60deg, red, yellow, red, yellow, red);
+  font: 900 1.2em sans-serif;
+  text-decoration: underline;
+}
+
+.border-box { background-clip: border-box; }
+.padding-box { background-clip: padding-box; }
+.content-box { background-clip: content-box; }
+ 
+
+ 
+      
+       
+        #top-bar  {
+    margin: 0;
+    margin-left: 15px;
+    border-left: 1px solid rgb(186, 188, 192);
+    padding-left: 12px;
+    font-size: 27px;
+    font-weight: normal;
+    
+    
+    color:DarkKhaki  ;
+    line-height: 1.52;
+}
+ #title {
+    flex: 1;
+    font-family: "Georgia", arial, sans-serif;
+}
+
+ .img {
+     margin: 0 10px;
+     border: 3px #00F solid;
+     width: 160px;
+     height: 120px;
+ }
+ 
+ 
+ 
+ 
+ .rw-wrapper{
+	width: 80%;
+	position: relative;
+	margin: 110px auto 0 auto;
+	font-family: 'Bree Serif';
+	padding: 10px;
+}
+
+.rw-sentence{
+	margin: 0;
+	text-align: left;
+	text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+}
+ 
+
+.rw-sentence span{
+	color: #8B0000;
+	white-space: nowrap;
+	font-size: 200%;
+	font-weight: normal;
+}
+ 
+
+.rw-words{
+	display: inline;
+	text-indent: 10px;
+}
+ 
+
+.rw-words span{
+	position: absolute;
+	opacity: 0;
+	overflow: hidden;
+	width: 100%;
+	color: #6b969d;
+}
+ 
+
+.rw-words-1 span{
+	animation: rotateWordsFirst 18s linear infinite 0s;
+}
+.rw-words-2 span{
+	animation: rotateWordsSecond 18s linear infinite 0s;
+}
+.rw-words span:nth-child(2) { 
+	animation-delay: 3s; 
+	color: #6b889d;
+}
+.rw-words span:nth-child(3) { 
+	animation-delay: 6s; 
+	color: #6b739d;	
+}
+.rw-words span:nth-child(4) { 
+	animation-delay: 9s; 
+	color: #7a6b9d;
+}
+.rw-words span:nth-child(5) { 
+	animation-delay: 12s; 
+	color: #8d6b9d;
+}
+.rw-words span:nth-child(6) {  
+	animation-delay: 15s; 
+	color: #9b6b9d;
+}
+ .rw-words span:nth-child(6) { 
+	animation-delay: 12s; 
+	color: #8d6b9d;
+}
+.rw-words span:nth-child(7) {  
+	animation-delay: 15s; 
+	color: #9b6b9d;
+}
+
+@keyframes rotateWordsFirst {
+    0% { opacity: 1; animation-timing-function: ease-in; height: 1px; }
+    8% { opacity: 1; height: 60px; }
+    19% { opacity: 1; height: 60px; }
+	25% { opacity: 0; height: 60px; }
+    100% { opacity: 0; }
+}
+ 
+
+ 
+
+@keyframes rotateWordsSecond {
+    0% { opacity: 1; animation-timing-function: ease-in; width: 1px; }
+    10% { opacity: 0.3; width: 1px; }
+	20% { opacity: 1; width: 100%; }
+    27% { opacity: 0; width: 100%; }
+    100% { opacity: 0; }
+}
+ 
+ 
+ 
+ 
+ 
+ 
+ .ia-container {
+	width: 1000px;
+	margin: 20px auto;
+	overflow: hidden;
+	box-shadow: 1px 1px 4px rgba(0,0,0,0.08);
+	border: 7px solid rgba(255,255,255,0.6);
+}
+
+.ia-container figure {
+    position: absolute;
+	top: 0;
+	left: 50px; /* width of visible piece */
+	width: 335px;
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.6);
+    transition: all 0.3s ease-in-out;
+}
+.ia-container > figure {
+    position: relative;
+	left: 0 !important;
+}
+.ia-container img {
+	display: block;
+	width: 100%;
+}
+.ia-container input {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50px; /* just cover visible part */
+	height: 100%;
+	cursor: pointer;
+	border: 0;
+	padding: 0;
+    opacity: 0;
+	z-index: 100;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+.ia-container input:checked{
+	width: 5px;
+	left: auto;
+	right: 1px;
+}
+.ia-container input:checked ~ figure {
+    left: 335px;
+    transition: all 0.7s ease-in-out;
+}
+.ia-container figcaption {
+	width: 100%;
+	height: 100%;
+	background: rgba(87, 73, 81, 0.1);
+	position: absolute;
+	top: 1px;
+    transition: all 0.2s linear;
+}
+
+.ia-container figcaption span {
+	position: absolute;
+	top: 40%;
+	margin-top: -30px;
+	right: 20px;
+	left: 20px;
+	overflow: hidden;
+	text-align: center;
+	background: rgba(87, 73, 81, 0.3);
+	line-height: 20px;
+	font-size: 18px;
+    opacity: 0;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	font-weight: 700;
+	padding: 20px;
+	color: #fff;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+} 
+.ia-container input:checked + figcaption,
+.ia-container input:checked:hover + figcaption{
+	background: rgba(87, 73, 81, 0);
+}
+
+.ia-container input:checked + figcaption span {
+    transition: all 0.4s ease-in-out 0.5s;
+	opacity: 1;
+	top: 50%;
+}
+
+
+.ia-container #ia-selector-last:checked + figcaption span {
+	transition-delay: 0.3s;
+}
+
+.ia-container input:hover + figcaption {
+	background: rgba(87, 73, 81, 0.03);
+}
+ 
+
+.ia-container input:checked ~ figure input{
+    z-index: 1;
+}
+ 
+
+@media screen and (max-width: 1200px) {
+    .ia-container { 
+		width: 1000px; 
+	}
+	
+	.ia-container figure { 
+		left: 40px; 
+		width: 260px; 
+	}
+	
+	.ia-container input { 
+		width: 40px; 
+	}
+	
+	.ia-container input:checked ~ figure { 
+		left: 260px; 
+	}
+	
+	.ia-container figcaption span { 
+		font-size: 16px; 
+	}
+}
+
+@media screen and (max-width: 520px) {
+    .ia-container { 
+		width: 320px; 
+	}
+	
+	.ia-container figure { 
+		left: 20px; 
+		width: 180px; 
+	}
+	
+	.ia-container input { 
+		width: 20px; 
+	}
+	
+	.ia-container input:checked ~ figure { 
+		left: 180px; 
+	}
+	
+	.ia-container figcaption span { 
+		font-size: 10px; 
+		letter-spacing: 2px; 
+		padding: 10px; 
+		margin-top: -20px; 
+	} 
+
+}
+  

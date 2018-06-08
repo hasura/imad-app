@@ -9,13 +9,50 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
+app.get('/page1', function(req, res){
+  res.sendFile(path.join(__dirname, 'ui', 'page1.html'));
+});
+
+app.get('/page2', function(req, res){
+  res.sendFile(path.join(__dirname, 'ui', 'page2.html'));
+});
+
+app.get('/ui/main.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'main.js'));
+});
+ 
+ app.get('/ui/head.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'head.js'));
+});
+ 
+
+app.get('/page3', function(req, res){
+  res.sendFile(path.join(__dirname, 'ui', 'page3.html'));
+});
+
+ app.get('/page4', function(req, res){
+  res.sendFile(path.join(__dirname, 'ui', 'page4.html'));
+});
+ 
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
 
+app.get('/ui/go.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'go.css'));
+});
+
+ 
+ 
+app.get('/ui/next.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'next.js'));
+});
+
+
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
+
 
 
 // Do not change port, otherwise your app won't run on IMAD servers
@@ -25,3 +62,4 @@ var port = 80;
 app.listen(port, function () {
   console.log(`IMAD course app listening on port ${port}!`);
 });
+ 
