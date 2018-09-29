@@ -4,8 +4,8 @@
   "description": "IMAD course app",
   "main": "server.js",
   "scripts": {
-    "start": "node server"
-  },  
+    "start": "node server.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
