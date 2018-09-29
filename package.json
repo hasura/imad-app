@@ -10,10 +10,10 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  
-  "license": "Apache",
-"engines": {
-    "node": "~0.10.0 || ~4.2.0",
+  "license": "ISC",
+  "engines": {
+    "node": "~0.10.0 || ~4.2.0"
+  },
   "dependencies": {
     "express": "^4.16.2",
     "morgan": "^1.9.0"
