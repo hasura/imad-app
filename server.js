@@ -1,7 +1,7 @@
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
-const PORT =  process.env.PORT || 5000
+const PORT =  process.env.PORT || 3000
 
 var app = express();
 app.use(morgan('combined'));
