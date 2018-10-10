@@ -17,7 +17,7 @@ button.onclick = function(){
       }
   };
 
-  request.open('GET','https://testahnode.azurewebsites.net/counter',true);
+  request.open('GET','https://nodeahtest.azurewebsites.net/counter',true);
   request.send(null);
 };
 
@@ -48,7 +48,7 @@ submit.onclick = function(){
         }
     };
 
-    request.open('GET','https://testahnode.azurewebsites.net/submit-name?name=' + name,true);
+    request.open('GET','https://nodeahtest.azurewebsites.net/submit-name?name=' + name,true);
     request.send(null);
 
 } ;
