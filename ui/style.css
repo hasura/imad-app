@@ -1,7 +1,6 @@
 body {
     font-family: sans-serif;
-    background-color: lightgrey;
-    margin-top: 75px;
+    margin-top: 60px;
 }
 
 .center {
@@ -9,7 +8,7 @@ body {
 }
 
 .text-big {
-    font-size: 300%;
+    font-size: 350%;
 }
 
 .bold {
@@ -18,5 +17,14 @@ body {
 
 .img-medium {
     height: 200px;
+}
+
+.container { 
+       max-width: 800px;
+       margin: 0 auto;
+       color: #00000ee;
+       font-family: Segoe Script;
+       padding-right: 20px;
+       padding-left: 20px;
 }
 
