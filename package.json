@@ -1,20 +1,19 @@
 {
-"name": "nodejs-ex",
-"version": "0.0.1",
-"description": "Node.js sample app for OpenShift 3",
-"main": "server.js",
-"dependencies": {
-  "express": "^4.16.2",
-  "morgan": "^1.9.0"
-},
-"engine": {
-  "node": "*",
-  "npm": "*"
-},
-"scripts": {
-  "start": "node server.js"
-},
-"repository": {
-  "type": "git",
-  "url": "http://github.com/akashc777/imad-app.git"
+  "name": "imad-base",
+  "version": "8.11.1",
+  "description": "IMAD course app",
+  "main": "server.js",
+  
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": "~0.10.0 || ~4.2.0"
+  },
+  "dependencies": {
+    "express": "^4.16.2",
+    "morgan": "^1.9.0"
+  }
 }
