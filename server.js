@@ -1,7 +1,8 @@
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
-const PORT =  process.env.PORT || 8080
+const port = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080,
+    ip   = process.env.IP   || process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0',
 
 var app = express();
 app.use(morgan('combined'));
@@ -144,6 +145,6 @@ app.get('/ui/kaneki.jpg', function (req, res) {
 // Use 8080 only for local development if you already have apache running on 80
 
 
-app.listen(PORT, function () {
-  console.log(`listening on port ${PORT}!`);
+app.listen(port, function () {
+  console.log(`listening on port ${port}!`);
 });
