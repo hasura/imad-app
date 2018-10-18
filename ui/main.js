@@ -17,7 +17,7 @@ button.onclick = function(){
       }
   };
 
-  request.open('GET','https://nodeahtest.azurewebsites.net/counter',true);
+  request.open('GET','http://test-imadtest.1d35.starter-us-east-1.openshiftapps.com/counter',true);
   request.send(null);
 };
 
@@ -48,7 +48,7 @@ submit.onclick = function(){
         }
     };
 
-    request.open('GET','https://nodeahtest.azurewebsites.net/submit-name?name=' + name,true);
+    request.open('GET','http://test-imadtest.1d35.starter-us-east-1.openshiftapps.com/submit-name?name=' + name,true);
     request.send(null);
 
 } ;
