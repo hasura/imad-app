@@ -1,7 +1,22 @@
-body {
-    font-family: sans-serif;
+body{
     background-color: lightgrey;
-    margin-top: 75px;
+    padding: 0px 20px 0px 20px ;
+}
+
+.container {
+    max-width: 800px;
+    font-family: 'Roboto', sans-serif;
+    padding: 60px 40px 40px 40px;
+    margin: 0 auto;
+    background-color: lightgrey;
+}
+
+.heading{
+    color: #f45f42;
+}
+
+.date{
+    color: #4286f4;
 }
 
 .center {
