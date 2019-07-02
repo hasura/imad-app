@@ -1,7 +1,6 @@
 body {
     font-family: sans-serif;
-    background-color: lightgrey;
-    margin-top: 75px;
+   
 }
 
 .center {
@@ -19,4 +18,12 @@ body {
 .img-medium {
     height: 200px;
 }
-
+.links
+ {
+        max width: 800px;
+        Color: #A52A2A;
+        padding-top: 60px;
+        padding-right: 70px;
+        padding-left: 60px;
+        padding-bottom: 50px;
+ }
