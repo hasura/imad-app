@@ -1,22 +1,49 @@
 body {
     font-family: sans-serif;
-    background-color: lightgrey;
+    background-color: #b0b7b7;
+    color: black;
     margin-top: 75px;
 }
 
-.center {
-    text-align: center;
+
+
+.container_one{
+	max-width: 835px;
+	margin: 90px auto;
+	color: grey;
+	background-color: #2e3530;
+	padding-block-end: 3px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
 }
 
-.text-big {
-    font-size: 300%;
+.holder_one{
+	background-color: whitesmoke;
+	color: #2a2b2b;
+	padding-block-end: 10px;
+	padding-right: 09px;
+	padding-left: 09px;
+	padding-block-start: 3px;
 }
 
-.bold {
-    font-weight: bold;
+.container_two {
+	max-width: 817px;
+	margin: 74px auto;
+	color: whitesmoke;
+	background-color: #2e3530;
+	font-family: sans-serif;
+	padding-top: 25px;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-block-end: 3px;
 }
 
-.img-medium {
-    height: 200px;
+.holder_two {
+	color: #2a2b2b;
+	background-color: whitesmoke;
+	padding-block-end: 10px;
+	padding-block-start: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
-
