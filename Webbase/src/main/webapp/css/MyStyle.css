@@ -1,0 +1,39 @@
+@charset "ISO-8859-1";
+<style>
+ul {
+	list-syle-type:name;
+	margin:0;
+	padding:14px;
+	overflow:hidden;
+	background-color: #333;
+}
+
+li {
+	float:middle;
+}
+
+li a{
+	display:inline-block;
+	color:black;
+	text-align:center;
+	padding:14px ;
+	text-decoration:0;
+}
+
+li a:hover {
+	background-color:rgba(255, 99, 71, 0.2);
+	
+}
+button {
+  background-color:black;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+}
+
+</style>
