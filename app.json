@@ -1,0 +1,40 @@
+{
+  "name": "IMAD E-Learning Platform",
+  "description": "Comprehensive online learning management system with courses, live streaming, and interactive features",
+  "repository": "https://github.com/yourusername/imad-elearning",
+  "logo": "https://raw.githubusercontent.com/yourusername/imad-elearning/main/ui/madi.png",
+  "keywords": ["elearning", "education", "nodejs", "express", "learning-management-system"],
+  "image": "heroku/nodejs",
+  "stack": "heroku-22",
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "env": {
+    "NODE_ENV": {
+      "description": "Node.js environment",
+      "value": "production"
+    },
+    "NPM_CONFIG_PRODUCTION": {
+      "description": "Production npm configuration",
+      "value": "false"
+    }
+  },
+  "scripts": {
+    "postdeploy": "echo 'Deployment successful! Your IMAD E-Learning Platform is now live.'"
+  },
+  "environments": {
+    "test": {
+      "scripts": {
+        "test": "npm test"
+      }
+    }
+  }
+}

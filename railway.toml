@@ -1,0 +1,22 @@
+[build]
+cmd = "npm install"
+
+[deploy]
+startCommand = "npm start"
+restartPolicyType = "always"
+
+[env]
+NODE_ENV = "production"
+PORT = { default = "3000" }
+
+[healthcheck]
+path = "/"
+timeout = 100
+interval = 60
+
+[resources]
+memory = 512
+cpu = 0.5
+
+[networking]
+serviceName = "imad-elearning"

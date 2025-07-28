@@ -1,0 +1,33 @@
+services:
+  - type: web
+    name: imad-elearning-web
+    env: node
+    region: oregon
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+    healthCheckPath: /
+    
+  - type: static
+    name: imad-elearning-static
+    env: static
+    region: oregon
+    plan: free
+    buildCommand: echo "Static files ready"
+    staticPublishPath: ./ui
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
+
+databases:
+  - name: imad-elearning-db
+    databaseName: imad_elearning
+    user: imad_user
+    region: oregon
+    plan: free

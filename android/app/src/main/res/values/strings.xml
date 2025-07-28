@@ -1,0 +1,219 @@
+<resources>
+    <string name="app_name">IMAD E-Learning</string>
+    
+    <!-- Auth Strings -->
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="full_name">Full Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="dont_have_account">Don\'t have an account?</string>
+    <string name="already_have_account">Already have an account?</string>
+    <string name="sign_in_with_google">Sign in with Google</string>
+    <string name="sign_in_with_phone">Sign in with Phone</string>
+    <string name="verify_email">Verify Email</string>
+    <string name="email_verification_sent">Verification email sent to your email address</string>
+    <string name="resend_verification">Resend Verification</string>
+    
+    <!-- Course Strings -->
+    <string name="courses">Courses</string>
+    <string name="my_courses">My Courses</string>
+    <string name="featured_courses">Featured Courses</string>
+    <string name="popular_courses">Popular Courses</string>
+    <string name="course_details">Course Details</string>
+    <string name="enroll_now">Enroll Now</string>
+    <string name="continue_learning">Continue Learning</string>
+    <string name="completed">Completed</string>
+    <string name="in_progress">In Progress</string>
+    <string name="not_started">Not Started</string>
+    <string name="lessons">Lessons</string>
+    <string name="duration">Duration</string>
+    <string name="level">Level</string>
+    <string name="category">Category</string>
+    <string name="instructor">Instructor</string>
+    <string name="students">Students</string>
+    <string name="rating">Rating</string>
+    <string name="reviews">Reviews</string>
+    <string name="what_you_will_learn">What you\'ll learn</string>
+    <string name="course_content">Course Content</string>
+    <string name="requirements">Requirements</string>
+    <string name="description">Description</string>
+    
+    <!-- Video Player Strings -->
+    <string name="play">Play</string>
+    <string name="pause">Pause</string>
+    <string name="next_lesson">Next Lesson</string>
+    <string name="previous_lesson">Previous Lesson</string>
+    <string name="fullscreen">Fullscreen</string>
+    <string name="exit_fullscreen">Exit Fullscreen</string>
+    <string name="playback_speed">Playback Speed</string>
+    <string name="quality">Quality</string>
+    <string name="subtitles">Subtitles</string>
+    <string name="download">Download</string>
+    <string name="downloaded">Downloaded</string>
+    <string name="downloading">Downloading</string>
+    <string name="bookmark">Bookmark</string>
+    <string name="notes">Notes</string>
+    <string name="add_note">Add Note</string>
+    
+    <!-- Payment Strings -->
+    <string name="price">Price</string>
+    <string name="free">Free</string>
+    <string name="buy_now">Buy Now</string>
+    <string name="payment">Payment</string>
+    <string name="payment_successful">Payment Successful</string>
+    <string name="payment_failed">Payment Failed</string>
+    <string name="payment_pending">Payment Pending</string>
+    <string name="apply_coupon">Apply Coupon</string>
+    <string name="coupon_applied">Coupon Applied</string>
+    <string name="invalid_coupon">Invalid Coupon</string>
+    <string name="total_amount">Total Amount</string>
+    <string name="discount">Discount</string>
+    <string name="proceed_to_payment">Proceed to Payment</string>
+    
+    <!-- Profile Strings -->
+    <string name="profile">Profile</string>
+    <string name="my_profile">My Profile</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="save_changes">Save Changes</string>
+    <string name="change_password">Change Password</string>
+    <string name="current_password">Current Password</string>
+    <string name="new_password">New Password</string>
+    <string name="settings">Settings</string>
+    <string name="notifications">Notifications</string>
+    <string name="language">Language</string>
+    <string name="theme">Theme</string>
+    <string name="about">About</string>
+    <string name="help">Help</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="terms_of_service">Terms of Service</string>
+    
+    <!-- Dashboard Strings -->
+    <string name="dashboard">Dashboard</string>
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="search_courses">Search Courses</string>
+    <string name="downloads">Downloads</string>
+    <string name="live_classes">Live Classes</string>
+    <string name="upcoming">Upcoming</string>
+    <string name="join_class">Join Class</string>
+    <string name="class_started">Class Started</string>
+    <string name="class_ended">Class Ended</string>
+    
+    <!-- Teacher/Instructor Strings -->
+    <string name="create_course">Create Course</string>
+    <string name="course_title">Course Title</string>
+    <string name="course_description">Course Description</string>
+    <string name="upload_thumbnail">Upload Thumbnail</string>
+    <string name="add_lesson">Add Lesson</string>
+    <string name="lesson_title">Lesson Title</string>
+    <string name="upload_video">Upload Video</string>
+    <string name="upload_document">Upload Document</string>
+    <string name="create_quiz">Create Quiz</string>
+    <string name="add_question">Add Question</string>
+    <string name="question">Question</string>
+    <string name="options">Options</string>
+    <string name="correct_answer">Correct Answer</string>
+    <string name="publish_course">Publish Course</string>
+    <string name="draft">Draft</string>
+    <string name="published">Published</string>
+    <string name="analytics">Analytics</string>
+    <string name="students_enrolled">Students Enrolled</string>
+    <string name="completion_rate">Completion Rate</string>
+    <string name="average_rating">Average Rating</string>
+    <string name="total_revenue">Total Revenue</string>
+    
+    <!-- Quiz Strings -->
+    <string name="quiz">Quiz</string>
+    <string name="start_quiz">Start Quiz</string>
+    <string name="submit_quiz">Submit Quiz</string>
+    <string name="quiz_completed">Quiz Completed</string>
+    <string name="your_score">Your Score</string>
+    <string name="correct_answers">Correct Answers</string>
+    <string name="wrong_answers">Wrong Answers</string>
+    <string name="time_taken">Time Taken</string>
+    <string name="retake_quiz">Retake Quiz</string>
+    <string name="view_answers">View Answers</string>
+    <string name="quiz_results">Quiz Results</string>
+    <string name="passed">Passed</string>
+    <string name="failed">Failed</string>
+    
+    <!-- General Strings -->
+    <string name="loading">Loading...</string>
+    <string name="error">Error</string>
+    <string name="success">Success</string>
+    <string name="warning">Warning</string>
+    <string name="info">Info</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="retry">Retry</string>
+    <string name="refresh">Refresh</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="share">Share</string>
+    <string name="back">Back</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="close">Close</string>
+    <string name="open">Open</string>
+    <string name="select">Select</string>
+    <string name="upload">Upload</string>
+    <string name="update">Update</string>
+    <string name="create">Create</string>
+    <string name="remove">Remove</string>
+    <string name="clear">Clear</string>
+    <string name="filter">Filter</string>
+    <string name="sort">Sort</string>
+    <string name="view_all">View All</string>
+    <string name="show_more">Show More</string>
+    <string name="show_less">Show Less</string>
+    
+    <!-- Error Messages -->
+    <string name="error_network">Network error. Please check your connection.</string>
+    <string name="error_generic">Something went wrong. Please try again.</string>
+    <string name="error_invalid_email">Please enter a valid email address.</string>
+    <string name="error_password_too_short">Password must be at least 6 characters.</string>
+    <string name="error_passwords_dont_match">Passwords don\'t match.</string>
+    <string name="error_field_required">This field is required.</string>
+    <string name="error_file_upload">Failed to upload file.</string>
+    <string name="error_payment_failed">Payment failed. Please try again.</string>
+    <string name="error_course_not_found">Course not found.</string>
+    <string name="error_permission_denied">Permission denied.</string>
+    
+    <!-- Success Messages -->
+    <string name="success_profile_updated">Profile updated successfully.</string>
+    <string name="success_password_changed">Password changed successfully.</string>
+    <string name="success_course_created">Course created successfully.</string>
+    <string name="success_enrollment">Successfully enrolled in course.</string>
+    <string name="success_quiz_submitted">Quiz submitted successfully.</string>
+    <string name="success_file_uploaded">File uploaded successfully.</string>
+    
+    <!-- Offline Messages -->
+    <string name="offline_mode">Offline Mode</string>
+    <string name="no_internet_connection">No internet connection</string>
+    <string name="content_downloaded">Content available offline</string>
+    <string name="download_for_offline">Download for offline viewing</string>
+    
+    <!-- Live Streaming -->
+    <string name="live">Live</string>
+    <string name="go_live">Go Live</string>
+    <string name="end_stream">End Stream</string>
+    <string name="viewers">Viewers</string>
+    <string name="chat">Chat</string>
+    <string name="send_message">Send Message</string>
+    <string name="mute">Mute</string>
+    <string name="unmute">Unmute</string>
+    <string name="camera_on">Camera On</string>
+    <string name="camera_off">Camera Off</string>
+    <string name="screen_share">Screen Share</string>
+    <string name="record">Record</string>
+    <string name="recording">Recording</string>
+    <string name="recorded">Recorded</string>
+</resources>
